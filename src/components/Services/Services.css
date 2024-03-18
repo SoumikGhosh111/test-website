@@ -1,0 +1,66 @@
+.services-section-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    gap: 2rem;
+    padding: 0rem 2rem;
+    margin: 2rem 1rem;
+}
+.services-section-title{ 
+    flex: 0.35;
+}
+.services-section-cards{ 
+    flex: 0.75;
+    display: grid;
+    row-gap: 40px;    
+    column-gap: 40px;
+    grid-template-columns: auto auto;
+}
+.services-section-items{ 
+    /* width: 300px;
+    height: 300px; */
+    background-color: var(--grid-card-color);
+    padding: 3rem 2rem;
+}
+.services-section-items h1 ,p { 
+    margin: 0;
+    padding: 0;
+}
+.services-section-items h1 { 
+    font-weight: 300;
+}
+.services-section-items p{ 
+    color: var(--darkgrey);
+    font-size: 17px;
+    margin: 1rem 0rem;
+}
+.services-section-items span{ 
+    font-size: 13px;
+    color: var(--darkblue);
+}
+.line{ 
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--darkgrey);
+    margin: 1rem 0rem;
+}
+
+.list-items{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 1rem 0rem;
+    color: var(--darkblue);
+}
+.tick{ 
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* border: 0.5px solid black; */
+    background-color: var(--white-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

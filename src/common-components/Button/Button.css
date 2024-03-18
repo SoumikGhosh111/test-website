@@ -1,0 +1,39 @@
+button{ 
+    width: 130px;
+    height: 45px;
+    margin-right: 1rem;
+    border: none;
+    color: var(--white); 
+    font-size: 15px;
+     backdrop-filter: blur(20px);
+     -webkit-backdrop-filter: blur(20px);
+     border: 1px solid var(--white);
+     border-radius: 8px;
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+  }
+  
+ button::before{ 
+      content: attr(data-attr); 
+      position: absolute;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      transition: all 0.2s ease;
+  
+  }
+  
+button::after{ 
+      content: attr(data-attr); 
+      position: absolute;
+      width: 100%;
+      transform: translate(-50%, 300%);
+      transition: all 0.2s ease;
+  }
+ button:hover::after{ 
+      transform: translate(-50%, -50%);
+  }
+  
+button:hover::before{ 
+      transform: translate(-50%, -300%);
+  }
