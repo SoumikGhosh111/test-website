@@ -45,14 +45,26 @@
 }
 
 
-/* .notification{ 
-    border-radius: 50%;
-    border: 1px solid red;
-    
+.notification-button{ 
     display: flex;
     justify-content: center;
     align-items: center;
-} */
+    gap: 3rem;
+}
+
+.notification{ 
+    width: 40px;
+    height: 40px;
+    background-color: var(--blur-bg);
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
 /* .nav-section-wrapper button{ 
   width: 130px;
   height: 45px;

@@ -16,7 +16,7 @@ function AboutUsComp() {
                 <span>With a commitment to excellence, innovation, and client success, discover how our integrated services can elevate your business journey and unlock its full potential.</span>
 
                 <div className='link-to-about-us'>
-                <a href='#'>About us</a>
+                <a href='/about'>About us</a>
                 </div>
 
             </div>

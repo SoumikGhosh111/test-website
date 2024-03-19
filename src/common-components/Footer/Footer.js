@@ -18,7 +18,7 @@ function Footer() {
         "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
     const insideStyles = {
         // background: "white",
-        border: "1px solid red",
+        // border: "1px solid red",
         width: "100%",
         height: "100%",
         position: "absolute",

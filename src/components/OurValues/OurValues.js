@@ -15,10 +15,6 @@ function OurValues() {
                 <span className='sub-span'>Innovation is the driving force propelling us forward, infusing every project with creativity and forward-thinking solutions. Collaboration is the heartbeat, creating a vibrant environment where diverse talents converge to achieve greatness.</span> <br/> <br/>
                 <span>These values are not just words; they are the pillars shaping our culture, defining our actions, and guiding us on a journey of collective success. Join us in unveiling the essence of Nikka, where our values illuminate the path to excellence.</span>
 
-                <div className='link-to-our-values'>
-                <a href='#'>About us</a>
-                </div>
-
             </div>
         </div>
     )
