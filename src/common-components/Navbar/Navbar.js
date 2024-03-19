@@ -18,7 +18,7 @@ function Navbar() {
     }
   }, [])
   return (
-    <div className='nav-section-wrapper' style={{backgroundColor: scroll > 900 ? 'var(--darkblue)' : '', position: scroll > 900 ? 'fixed': '', top: "0", height: scroll > 900 ? '80px' : '' , transition: 'all 0.5s ease', backgroundColor: window.location.href !== 'http://localhost:3000/' ? 'var(--darkblue)' : 'transparent' }}>
+    <div className='nav-section-wrapper' style={{backgroundColor: scroll > 900 ? 'var(--darkblue)' : '', position: scroll > 900 ? 'fixed': '', top: "0", height: scroll > 900 ? '80px' : '' , transition: 'all 0.5s ease'}}>
         <div className='nav-section-container-1'>
             <img src={logoImg} alt='PowerMyCode'/>
             <ul>
