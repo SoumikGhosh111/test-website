@@ -9,7 +9,7 @@ function TempComponent() {
           const scrollPosition = window.pageYOffset;
           const parallaxElement = parallaxRef.current;
           if (parallaxElement) {
-            parallaxElement.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
+            parallaxElement.style.transform = `translateY(-${scrollPosition * 0.12}px)`;
           }
         };
     

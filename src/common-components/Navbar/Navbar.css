@@ -6,10 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 10;
-    /* background: var(--white); */
+    background: transparent;
 }
 
 .nav-section-container-1{ 
