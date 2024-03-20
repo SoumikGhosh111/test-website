@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react'; 
+import BlogsPageHero from '../blogs-page-components/BlogsPageHeroSection/BlogsPageHero';
+import BlogsAndArticles from '../blogs-page-components/BlogsAndArticles/BlogsAndArticles';
 
 function BlogsPage() {
   return (
-    <div>BlogsPage</div>
+    <>
+      <BlogsPageHero />
+      <BlogsAndArticles />
+    </>
   )
 }
 
-export default BlogsPage
+export default BlogsPage; 

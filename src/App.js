@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom"; 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // all the common components
 import Navbar from './common-components/Navbar/Navbar';
@@ -15,17 +15,17 @@ import ContactUsPage from './pages/ContactUsPage';
 function App() {
   return (
     <div>
-      <Navbar />
       <Router>
+        <Navbar />
         <Routes>
           <Route path='/' element={<HomePage />} />
-          <Route path='/about' element={<AboutUsPage />}/>
-          <Route path='/blogs' element={<BlogsPage />}/>
-          <Route path='/services' element={<ServicesPage />}/>
-          <Route  path='/contact_us' element={<ContactUsPage />}/>
+          <Route path='/about' element={<AboutUsPage />} />
+          <Route path='/blogs' element={<BlogsPage />} />
+          <Route path='/services' element={<ServicesPage />} />
+          <Route path='/contact_us' element={<ContactUsPage />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

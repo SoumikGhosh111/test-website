@@ -2,9 +2,11 @@ import React,{useState, useEffect} from 'react'
 import "./Navbar.css"; 
 import Button from '../Button/Button';
 import logoImg from "../../assets/logo.svg"; 
+import {useLocation} from "react-router-dom"; 
 
 function Navbar() {
   const [scroll , setScroll] = useState(0); 
+  const location = useLocation(); 
   useEffect(() => { 
     const handleScroll = () => { 
       setScroll(window.scrollY);
@@ -16,9 +18,23 @@ function Navbar() {
     return () => { 
       window.removeEventListener("scroll", handleScroll); 
     }
-  }, [])
+  }, []); 
+
+  const getNavBarColor = () => { 
+    if(location.pathname === '/' && scroll < 900){ 
+      return 'transparent'
+    }
+    if(location.pathname === '/' && scroll > 900){ 
+      return 'var(--darkblue)'; 
+    }
+    if(location.pathname !== '/' ){ 
+      return 'var(--darkblue)';  
+    }
+  }
+  // scroll > 900 ? 'var(--darkblue)' : ''
+
   return (
-    <div className='nav-section-wrapper' style={{backgroundColor: scroll > 900 ? 'var(--darkblue)' : '', position: scroll > 900 ? 'fixed': '', top: "0", height: scroll > 900 ? '80px' : '' , transition: 'all 0.5s ease' }}>
+    <div className='nav-section-wrapper' style={{backgroundColor: getNavBarColor(), position: scroll > 900 ? 'fixed': '', top: "0", height: scroll > 900 ? '80px' : '' , transition: 'all 0.5s ease' }}>
         <div className='nav-section-container-1'>
             <img src={logoImg} alt='PowerMyCode'/>
             <ul>
