@@ -12,7 +12,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Footer() {
     const image1 =
-        "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
+        "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ";
     const insideStyles = {
         // background: "white",
         // border: "1px solid red",

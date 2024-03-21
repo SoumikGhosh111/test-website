@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HeadRoom from "react-headroom"; 
 
 // all the common components
 import Navbar from './common-components/Navbar/Navbar';
@@ -16,7 +17,9 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar />
+        <HeadRoom>
+          <Navbar />
+        </HeadRoom>
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutUsPage />} />
