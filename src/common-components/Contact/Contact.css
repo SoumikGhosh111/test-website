@@ -83,14 +83,17 @@
 
 
 /* Form  */
-.contact-section-form-body, .contact-us-form, .name-email,.form-items{ 
+.contact-section-form-body, .contact-us-form, .name-email,.form-items, .form-textarea{ 
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-
+.name-email{ 
+    width: 100%;
+    justify-content: space-between;
+}
 .contact-us-form{ 
     width: 500px;
 }
@@ -99,14 +102,40 @@ form{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: white;
 }
 .form-items{ 
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    /* width: 100%; */
     margin: 1rem 0rem;
 }
 textarea{ 
     resize: none;
+    width: 91%;
+    border: none;
+    background-color: var(--lightgrey);
+    border: 0.5px solid var(--darkblue);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+}
+textarea:focus{ 
+    outline: none;
+}
+.form-textarea{ 
     width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 0rem;
+}
+.form-items-button{ 
+    width: 100%;
+    margin: 1rem 0rem;
+}
+.form-items-button button{ 
+    width: 100%;
+    background-color: var(--darkblue);
+
 }

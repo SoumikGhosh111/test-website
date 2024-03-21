@@ -55,12 +55,14 @@ function Contact() {
 
             </div>
 
-            <div className='form-items'>
+            <div className=' form-textarea'>
               <label htmlFor='message'>Message</label>
               <textarea name='message' placeholder='Message' rows={10}></textarea>
             </div>
 
-
+            <div className='form-items-button'>
+              <button>Get in Touch</button>
+            </div>
           </form>
         </div>
       </div>
