@@ -31,10 +31,22 @@ function Navbar() {
       return 'var(--darkblue)';  
     }
   }
+
+  const getNavBarPosition = () => { 
+    if(location.pathname === '/' && scroll < 900){ 
+      return 'absolute'
+    }
+    if(location.pathname !== '/' && scroll < 900){ 
+      return 'relative'; 
+    }
+    if((location.pathname !== '/' ||  location.pathname === '/' )&& scroll > 900) { 
+      return "fixed"; 
+    }
+  }
   // scroll > 900 ? 'var(--darkblue)' : ''
 
   return (
-    <div className='nav-section-wrapper' style={{backgroundColor: getNavBarColor(), position: scroll > 900 ? 'fixed': '', top: "0", height: scroll > 900 ? '80px' : '' , transition: 'all 0.5s ease' }}>
+    <div className='nav-section-wrapper' style={{backgroundColor: getNavBarColor(), position: getNavBarPosition(), height: scroll > 900 ? '80px' : '' , transition: 'all 0.5s ease' }}>
         <div className='nav-section-container-1'>
             <img src={logoImg} alt='PowerMyCode'/>
             <ul>
