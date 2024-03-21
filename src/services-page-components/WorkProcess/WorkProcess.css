@@ -1,0 +1,87 @@
+.work-rpocess-comp-wrapper{ 
+    width: 100%;
+    /* min-height: 100vh; */
+    flex: 1;
+    margin: 8rem 0rem;
+    padding: 0rem 0rem;
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 2rem;
+}
+.work-rpocess-container-items{ 
+    flex: 0.3;
+    height: 100%;
+}
+
+.work-rpocess-container-items p{ 
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 1st div */
+.work-rpocess-title{    
+}
+.ver-line{ 
+    width: 70%;
+    margin-top: 1rem;
+    height: 1px;
+    background-color: var(--darkgrey);
+}
+.work-rpocess-header{ 
+    font-size: 45px;
+    font-weight: 200;
+}
+
+.work-rpocess-content p{ 
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+.work-rpocess-content span{ 
+    color: var(--darkgrey);
+}
+
+.work-rpocess-content a{ 
+    margin-top: 1rem;
+}
+
+
+.link-to-work-rpocess a:hover::before{ 
+    width: 0;
+}
+.work-rpocess-icons{ 
+    font-size: 16px;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+.work-rpocess-icons a{ 
+    text-decoration: none;
+    color: var(--darkblue);
+    position: relative;
+}
+.work-rpocess-icons a::before{ 
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0.5px;
+    background-color: var(--darkblue);
+    transition: all 0.4s ease;
+}
+.work-rpocess-icons a:hover::before{ 
+    width: 0;
+}
+.icons{ 
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--grid-card-color);
+    margin: 1rem 0rem;
+}
