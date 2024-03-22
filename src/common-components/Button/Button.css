@@ -37,3 +37,16 @@ button::after{
 button:hover::before{ 
       transform: translate(-50%, -300%);
   }
+
+
+
+
+  /* media queries */
+  @media screen and (orientation: portrait){ 
+    button { 
+        width: 80px;
+        height: 40px;
+        font-size: 13px;
+        padding: 1rem 1rem;
+    }
+  }

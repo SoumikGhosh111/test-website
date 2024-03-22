@@ -6,7 +6,7 @@ function Button({text ,bgColor, color, linkToOpen}) {
     window.location.href = linkToOpen; 
   }
   return (
-    <button data-attr = {text} style={{backgroundColor: bgColor, color: color}} onClick={handleClick}></button>
+    <button data-attr = {text} style={{backgroundColor: bgColor, color: color}} onClick={handleClick} className='universal-button'></button>
   )
 }
 

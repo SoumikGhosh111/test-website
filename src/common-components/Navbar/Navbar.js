@@ -3,6 +3,7 @@ import "./Navbar.css";
 import Button from '../Button/Button';
 import logoImg from "../../assets/logo.svg";
 import { useLocation } from "react-router-dom";
+import TemporaryDrawer from './Drawer';
 
 function Navbar() {
  const [scroll, setScroll] = useState(0);
@@ -71,7 +72,8 @@ function Navbar() {
   // style={{ backgroundColor: getNavBarColor(), height: scroll > 900 ? '80px' : '' }}
 
   return (
-        <div className='nav-section-wrapper' style={{ backgroundColor: getNavBarColor(), height: scroll > 200 ? '80px' : '' }}>
+       <>
+         <div className='nav-section-wrapper' style={{ backgroundColor: getNavBarColor(), height: scroll > 200 ? '80px' : '' }}>
           <div className='nav-section-container-1'>
             <img src={logoImg} alt='PowerMyCode' />
             <ul>
@@ -86,6 +88,10 @@ function Navbar() {
             <Button text={"Get in Touch"} bgColor={"var(--blur-bg)"} color={"var(--white)"} linkToOpen={"/contact_us"} />
           </div>
         </div>
+        <div className='mob-view-nav'>
+          <img src={logoImg}/>
+          <TemporaryDrawer /></div>
+       </>
   )
 }
 
