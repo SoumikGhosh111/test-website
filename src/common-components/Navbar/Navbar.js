@@ -71,7 +71,6 @@ function Navbar() {
   // style={{ backgroundColor: getNavBarColor(), height: scroll > 900 ? '80px' : '' }}
 
   return (
-    // <header>
         <div className='nav-section-wrapper' style={{ backgroundColor: getNavBarColor(), height: scroll > 700 ? '80px' : '' }}>
           <div className='nav-section-container-1'>
             <img src={logoImg} alt='PowerMyCode' />
@@ -87,9 +86,6 @@ function Navbar() {
             <Button text={"Get in Touch"} bgColor={"var(--blur-bg)"} color={"var(--white)"} linkToOpen={"/contact_us"} />
           </div>
         </div>
-    // </header>
-        
-    // </Headroom>
   )
 }
 

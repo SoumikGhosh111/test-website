@@ -20,5 +20,6 @@ body {
   --lightgrey:  #f4f8f8;  
   --grid-card-color:  #e1e7e7; 
   --footer-body-head: #142528; 
-  --footer-body-body: #0C1E21; 
+  --footer-body-body: #0C1E21;
+  --contact-form-border-color: rgb(217, 219, 219);  
 }

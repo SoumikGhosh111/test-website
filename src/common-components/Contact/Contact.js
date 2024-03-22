@@ -43,7 +43,7 @@ function Contact() {
             <div className='name-email'>
 
 
-              <div className='form-items'>
+              <div className='form-items form-name-emails'>
                 <label htmlFor='name'>Name</label>
                 <input placeholder='Name' name='name' />
               </div>
@@ -57,7 +57,7 @@ function Contact() {
 
             <div className=' form-textarea'>
               <label htmlFor='message'>Message</label>
-              <textarea name='message' placeholder='Message' rows={10}></textarea>
+              <textarea name='message' placeholder='Message' rows={8}></textarea>
             </div>
 
             <div className='form-items-button'>

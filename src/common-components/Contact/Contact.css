@@ -1,5 +1,5 @@
 .contact-section-wrapper{ 
-    height: 100vh;;
+    height: 120vh;
     display: flex;
     flex: 1;
     background-color: var(--lightgrey);
@@ -12,9 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .contact-section-header-content{ 
-    width: 500px;
+    width: 500px;   
 }
 .contact-section-header-content h1{ 
     font-size: 5vw;
@@ -83,19 +84,26 @@
 
 
 /* Form  */
+
 .contact-section-form-body, .contact-us-form, .name-email,.form-items, .form-textarea{ 
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-
+label{ 
+    font-weight: 200;
+    font-size: 18px;
+}
 .name-email{ 
     width: 100%;
     justify-content: space-between;
+    gap: 2rem;
 }
 .contact-us-form{ 
-    width: 500px;
+    /* width: 600px; */
+    
+    
 }
 form{ 
     display: flex;
@@ -103,23 +111,29 @@ form{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 1rem 2rem;
-    background-color: white;
+    padding: 2rem 4rem;
+    background-color: var(--white-white);
+    border-radius: 10px;
+    border: 1px solid var(--contact-form-border-color);
 }
 .form-items{ 
     flex-direction: column;
     align-items: flex-start;
     /* width: 100%; */
-    margin: 1rem 0rem;
+    /* margin: 1rem 0rem; */
+    /* border: 1px solid red; */
+    width: 50%;
+    gap: 1rem   ;
 }
 textarea{ 
     resize: none;
-    width: 91%;
+    width: 96%;
     border: none;
     background-color: var(--lightgrey);
-    border: 0.5px solid var(--darkblue);
+    border: 0.5px solid var(--contact-form-border-color);
     border-radius: 10px;
-    padding: 1rem 1rem;
+    padding: 1rem 0.5rem;
+    font-size: 17px;
 }
 textarea:focus{ 
     outline: none;
@@ -130,12 +144,27 @@ textarea:focus{
     align-items: flex-start;
     margin: 1rem 0rem;
 }
+.form-textarea label{ 
+    margin: 1rem 0rem;
+}
 .form-items-button{ 
     width: 100%;
-    margin: 1rem 0rem;
+    margin: 1.5rem 0rem;
+
 }
 .form-items-button button{ 
     width: 100%;
     background-color: var(--darkblue);
 
+}
+
+.name-email input{ 
+    padding: 1rem 0.5rem;
+    border: 0.5px solid var(--contact-form-border-color);
+    border-radius: 10px;
+    background-color: var(--lightgrey);
+    /* border: 0.5px solid var(--darkblue); */
+    outline: none; 
+    width: 91%;
+    font-size: 17px;
 }
