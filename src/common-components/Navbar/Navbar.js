@@ -45,10 +45,10 @@ function Navbar() {
   }, []);
 
   const getNavBarColor = () => {
-    if (location.pathname === '/' && scroll < 900) {
+    if (location.pathname === '/' && scroll < 700) {
       return 'transparent'
     }
-    if (location.pathname === '/' && scroll > 900) {
+    if (location.pathname === '/' && scroll > 700) {
       return 'var(--darkblue)';
     }
     if (location.pathname !== '/') {
@@ -72,7 +72,7 @@ function Navbar() {
 
   return (
     // <header>
-        <div className='nav-section-wrapper' style={{ backgroundColor: getNavBarColor(), height: scroll > 900 ? '80px' : '' }}>
+        <div className='nav-section-wrapper' style={{ backgroundColor: getNavBarColor(), height: scroll > 700 ? '80px' : '' }}>
           <div className='nav-section-container-1'>
             <img src={logoImg} alt='PowerMyCode' />
             <ul>
