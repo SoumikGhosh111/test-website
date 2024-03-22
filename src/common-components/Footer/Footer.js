@@ -39,8 +39,8 @@ function Footer() {
                             Seize the moment. Click now to propel your journey and <br /> unlock the door to success.
                         </p>
                         <div className='footer-buttons'>
-                            <Button text={"Get Started"} bgColor={"var(--white)"} color={"var(--darkblue)"} />
-                            <Button text={"About Us"} bgColor={"var(--blur-bg)"} color={"var(--white)"} />
+                            <Button text={"Get Started"} bgColor={"var(--white)"} color={"var(--darkblue)" } linkToOpen={"contact_us"}/>
+                            <Button text={"About Us"} bgColor={"var(--blur-bg)"} color={"var(--white)" } linkToOpen={"/about"} />
                         </div>
                     </div>
                 </div>

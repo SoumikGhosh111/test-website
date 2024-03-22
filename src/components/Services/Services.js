@@ -14,7 +14,7 @@ function Services() {
                 <h1>
                     Web Application Developement
                 </h1>
-                <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
+                <p>Harness the potential of the web with dynamic and responsive web applications that engage users and drive conversions.</p>
                 <span>STRATEGY SERVICES</span>
                 <div className='line'></div>
                 <div className='list-items'>
@@ -41,7 +41,7 @@ function Services() {
                 <h1>
                     Mobile App Developement
                 </h1>
-                <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
+                <p>Reach your audience on their favorite devices with intuitive and feature-rich mobile apps that deliver an exceptional user experience.</p>
                 <span>STRATEGY SERVICES</span>
                 <div className='line'></div>
                 <div className='list-items'>
@@ -69,7 +69,7 @@ function Services() {
                 <h1>
                     Custom Software Solutions
                 </h1>
-                <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
+                <p>Whether it's automating processes or creating specialized tools, we craft tailor-made software that empowers your business to thrive.</p>
                 <span>STRATEGY SERVICES</span>
                 <div className='line'></div>
                 <div className='list-items'>
@@ -96,7 +96,7 @@ function Services() {
                 <h1>
                     UI/UX Design
                 </h1>
-                <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
+                <p> Our design experts create visually stunning and user-centric interfaces that make your software not only functional but also delightful to use.</p>
                 <span>STRATEGY SERVICES</span>
                 <div className='line'></div>
                 <div className='list-items'>
@@ -125,7 +125,7 @@ function Services() {
                 <h1>
                     E-Commerce Solutions
                 </h1>
-                <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
+                <p>Open up new avenues of revenue with robust and secure e-commerce platforms that ensure seamless online transactions.</p>
                 <span>STRATEGY SERVICES</span>
                 <div className='line'></div>
                 <div className='list-items'>
@@ -154,7 +154,7 @@ function Services() {
                 <h1>
                     Consulting Services
                 </h1>
-                <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
+                <p> Leverage our industry insights and technical expertise to make informed decisions about your software strategy and architecture.</p>
                 <span>STRATEGY SERVICES</span>
                 <div className='line'></div>
                 <div className='list-items'>

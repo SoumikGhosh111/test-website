@@ -22,6 +22,7 @@
     height: 300px; */
     background-color: var(--grid-card-color);
     padding: 3rem 2rem;
+    border-radius: 10px;
 }
 .services-section-items h1 ,p { 
     margin: 0;

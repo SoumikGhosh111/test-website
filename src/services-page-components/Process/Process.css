@@ -15,7 +15,7 @@
     /* margin-bottom: 2.5rem; */
     position: absolute;
     bottom: 25%;
-    transform: translate(-40%);
+    /* transform: translate(-1  0%); */
 }
 .process-content{ 
     flex: 0.5;

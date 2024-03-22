@@ -41,7 +41,7 @@ function OurProcess() {
   return (
     <div className='our-process-wrapper'>
       <div className='our-process-wrapper-img-bg' >
-        <Parallax bgImage={bgImg} strength={200} style={paralaxStyle}>
+        <Parallax bgImage={ bgImg} strength={200} style={paralaxStyle}>
           <div style={{ height: 778,  }}>
             <div style={insideStyles}>
 

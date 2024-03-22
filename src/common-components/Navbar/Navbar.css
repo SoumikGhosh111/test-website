@@ -35,6 +35,7 @@
     text-decoration: none;
     color: var(--darkgrey);
     position: relative;
+    transition: all 0.4s ease;
 }
 
 .nav-section-container-1 ul li a::before{ 
@@ -46,9 +47,13 @@
     position: absolute;
     bottom: 0;
 }
-
+.nav-section-container-1 ul li a:hover{ 
+    color: var(--white);
+}
 .nav-section-container-1 ul li a:hover::before{ 
     width: 100%;
+    background-color: var(--white);
+
 }
 
 
