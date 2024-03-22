@@ -12,7 +12,7 @@ function Services() {
         <div className='services-section-cards'>
         <div className='services-section-items'>
                 <h1>
-                    Strategy
+                    Web Application Developement
                 </h1>
                 <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
                 <span>STRATEGY SERVICES</span>
@@ -39,7 +39,7 @@ function Services() {
 
             <div className='services-section-items'>
                 <h1>
-                    Strategy
+                    Mobile App Developement
                 </h1>
                 <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
                 <span>STRATEGY SERVICES</span>
@@ -67,7 +67,7 @@ function Services() {
 
             <div className='services-section-items'>
                 <h1>
-                    Strategy
+                    Custom Software Solutions
                 </h1>
                 <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
                 <span>STRATEGY SERVICES</span>
@@ -94,7 +94,65 @@ function Services() {
 
             <div className='services-section-items'>
                 <h1>
-                    Strategy
+                    UI/UX Design
+                </h1>
+                <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
+                <span>STRATEGY SERVICES</span>
+                <div className='line'></div>
+                <div className='list-items'>
+                    <div className='tick'>
+                        <DoneRoundedIcon />
+                    </div>
+                    Market Entry Strategies
+                </div>
+                <div className='list-items'>
+                    <div className='tick'>
+                        <DoneRoundedIcon />
+                    </div>
+                    Market Entry Strategies
+                </div>
+                <div className='list-items'>
+                    <div className='tick'>
+                        <DoneRoundedIcon />
+                    </div>
+                    Market Entry Strategies
+                </div>
+            </div>
+
+
+
+            <div className='services-section-items'>
+                <h1>
+                    E-Commerce Solutions
+                </h1>
+                <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
+                <span>STRATEGY SERVICES</span>
+                <div className='line'></div>
+                <div className='list-items'>
+                    <div className='tick'>
+                        <DoneRoundedIcon />
+                    </div>
+                    Market Entry Strategies
+                </div>
+                <div className='list-items'>
+                    <div className='tick'>
+                        <DoneRoundedIcon />
+                    </div>
+                    Market Entry Strategies
+                </div>
+                <div className='list-items'>
+                    <div className='tick'>
+                        <DoneRoundedIcon />
+                    </div>
+                    Market Entry Strategies
+                </div>
+            </div>
+
+
+
+            <div className='services-section-items'>
+                <h1>
+                    Consulting Services
                 </h1>
                 <p>We craft a roadmap that aligns with your vision, <br/>ensuring every move is purposeful and impactful.</p>
                 <span>STRATEGY SERVICES</span>

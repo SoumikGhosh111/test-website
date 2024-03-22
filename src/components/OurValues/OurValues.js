@@ -11,9 +11,9 @@ function OurValues() {
             <div className='our-values-header our-values-container-items'><span>Guiding Principles:<br/>
             Our Values Unveiled</span></div>
             <div className='our-values-content our-values-container-items'>
-                <p>In the tapestry of PowerMyCode, our core values are the threads weaving excellence. Integrity is the backbone, anchoring our commitment to transparency, honesty, and ethical practices.</p>
-                <span className='sub-span'>Innovation is the driving force propelling us forward, infusing every project with creativity and forward-thinking solutions. Collaboration is the heartbeat, creating a vibrant environment where diverse talents converge to achieve greatness.</span> <br/> <br/>
-                <span>These values are not just words; they are the pillars shaping our culture, defining our actions, and guiding us on a journey of collective success. Join us in unveiling the essence of Nikka, where our values illuminate the path to excellence.</span>
+                <p>Discover the bedrock of our success as we unveil our guiding principles—a roadmap forged with integrity, innovation, and unwavering commitment.</p>
+                <span className='sub-span'> At PowerMyCode, our values aren't just words; they're the driving force behind every line of code, every design pixel, and every client interaction.</span> <br/> <br/> 
+                <span>Join us as we elevate software development to new heights, guided by principles that shape not just our projects, but our promise to you.</span>
 
             </div>
         </div>

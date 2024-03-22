@@ -22,9 +22,10 @@ function OurMisson() {
                 </div>
             </div>
             <div className='our-misson-content our-misson-container-items'>
-                <p>Our mission at PowerMyCode is a dynamic force—innovation in action, commitment to excellence, and client-centric values. We stand at the forefront of empowering businesses through transformative solutions that redefine success.</p>
-                <span className='sub-span'>Our mission is to pioneer innovation, infuse creativity into every project, and collaborate with unwavering commitment to client success. At Nikka, our journey is guided by a vision that prioritizes integrity, adaptability, and the pursuit of excellence.</span> <br/> <br/>
-                <span>Join us as we unfold a future where businesses not only survive but thrive, and success is a continuous evolution. Welcome to a mission that goes beyond statements—it's a promise of crafting a future where your success is our mission.</span>
+                <p>At PowerMyCode, innovation isn't just a buzzword. It's the heartbeat of our mission. With a relentless commitment to excellence and a client-centric approach, we stand at the forefront of empowering businesses through transformative solutions.</p>
+
+                <span className='sub-span'> Join us as we pioneer innovation, infusing creativity into every project and collaborating with unwavering dedication to our clients' success.</span> <br/> <br/>
+                <span>Welcome to a mission that transcends mere statements—it's a promise to craft a future where your success is our sole mission.</span>
 
             </div>
         </div>
