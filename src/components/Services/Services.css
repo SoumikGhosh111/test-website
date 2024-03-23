@@ -88,6 +88,7 @@
         flex-direction: column;
         box-sizing: border-box;
         padding: 1rem 1rem;
+        margin: 2rem 0rem;
     }
     .services-section-title{ 
         width: 100%;
@@ -95,6 +96,7 @@
     }
     .services-section-cards{ 
         grid-template-columns: auto;
+        row-gap: 25px;
     }
     .list-items{ 
         width: 70%;
