@@ -85,3 +85,36 @@
     background-color: var(--grid-card-color);
     margin: 1rem 0rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .our-misson-comp-wrapper{ 
+        flex-direction: column;
+        padding: 1rem 1rem;
+        box-sizing: border-box;
+
+    }
+    .our-misson-container-items{ 
+        width: 100%;
+    }
+    .our-misson-header{ 
+        font-size: 30px !important;
+    }
+    .our-misson-content p{ 
+        font-size: 18px !important;
+    }
+
+    .our-misson-content span{ 
+        font-size: 14px;
+    }
+}

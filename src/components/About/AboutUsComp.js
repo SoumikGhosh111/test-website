@@ -6,10 +6,10 @@ function AboutUsComp() {
         <div className='about-us-comp-wrapper'>
             <div className='about-us-title about-us-container-items' >
                 ABOUT
-                <div className='ver-line'></div>
+                <div className='ver-line mob-view-ver-line'></div>
             </div>
             <div className='about-us-header about-us-container-items'><span>Navigating Success: <br/>
-                Your Strategic <br/> Partner</span></div>
+                Your Strategic  Partner</span></div>
             <div className='about-us-content about-us-container-items'>
                 <p>At PowerMyCode, we empower success through tailored strategic solutions. From innovative consulting to business development and monitoring, we navigate the complexities of the business landscape with you.</p>
                 <span className='sub-span'>Our team is dedicated to crafting strategies that align with your vision, consulting services that address challenges, and driving business development for expansion. We monitor your operations with precision, ensuring continuous improvement and sustainable growth.</span> <br/> <br/>

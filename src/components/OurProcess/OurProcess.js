@@ -1,23 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 
 import "./OurProcess.css"
 import bgImg from "../../assets/parallax-hook-bg.jpg";
 import { Parallax } from "react-parallax";
 
 function OurProcess() {
-  // const parallaxRef = useRef(null);
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollPosition = window.pageYOffset;
-  //     const parallaxElement = parallaxRef.current;
-  //     if (parallaxElement) {
-  //       parallaxElement.style.transform = `translateY(-${scrollPosition * 0.1}px)`;
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, []);
   const insideStyles = {
     // background: "white",
     // border: "1px solid red",

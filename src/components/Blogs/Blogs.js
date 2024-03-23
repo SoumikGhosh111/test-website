@@ -24,7 +24,7 @@ function Blogs() {
         <div className='blogs-section-wrapper'>
             <div className='blogs-section-title'>
                 BLOGS & ARTICLES
-                <div className='ver-line'> </div>
+                <div className='ver-line mob-view-ver-line'> </div>
             </div>
             <div className='blogs-section-cards'>
                 <div className='blogs-section-cards-items'>

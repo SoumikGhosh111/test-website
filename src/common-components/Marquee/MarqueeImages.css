@@ -52,3 +52,15 @@ img{
         transform: translateX(-100%);
     }
 }
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .mrqee-images-body-items{ 
+        width: 100px;
+        height: 100px;
+    }
+    .star{ 
+       display: none;
+    }
+}

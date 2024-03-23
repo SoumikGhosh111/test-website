@@ -8,7 +8,7 @@ function OurMisson() {
         <div className='our-misson-comp-wrapper'>
             <div className='our-misson-title our-misson-container-items' >
                 OUR MISSON
-                <div className='ver-line'></div>
+                <div className='ver-line mob-view-ver-line'></div>
             </div>
             <div className='our-misson-header our-misson-container-items'><span>Innovation in Action: <br/>
             Our Mission Revealed</span>

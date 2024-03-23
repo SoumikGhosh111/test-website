@@ -87,3 +87,27 @@
 .blogs-content a:hover::before{ 
     width: 0;
 }
+
+
+
+
+
+
+/* media queries  */
+@media screen and (orientation: portrait){ 
+    .blogs-section-wrapper{ 
+        flex-direction: column;
+        margin-top: 4rem;
+        padding: 1rem 0.5rem;
+        box-sizing: border-box;
+    }
+    .blogs-section-title{ 
+        width: 100%;
+    }
+    .blogs-section-cards{ 
+        grid-template-columns: auto;
+    }
+    .blogs-section-cards-items{
+        width: 100%;
+    }
+}

@@ -67,3 +67,40 @@
 .link-to-about-us a:hover::before{ 
     width: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .about-us-comp-wrapper{ 
+        flex-direction: column;
+        padding: 1rem 1rem;
+        box-sizing: border-box;
+    }
+    .about-us-container-items{ 
+        width: 100%;
+    }
+    .mob-view-ver-line{ 
+        width: 100% !important;
+    }
+    .about-us-header{ 
+        font-size: 30px !important;
+    }
+    .about-us-content p{ 
+        font-size: 18px !important;
+    }
+    .about-us-content span{ 
+        font-size: 14px;
+    }
+}

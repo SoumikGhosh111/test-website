@@ -7,3 +7,15 @@
 .our-process-wrapper-img-bg{  
     flex: 0.5;
 }
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .our-process-wrapper{ 
+        flex-direction: column;
+    }
+    .our-process-wrapper-img-bg{ 
+        width: 100%;
+    }
+}

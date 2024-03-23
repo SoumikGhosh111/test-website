@@ -67,3 +67,41 @@
 .link-to-our-values a:hover::before{ 
     width: 0;
 }
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .our-values-comp-wrapper{ 
+        margin: 0rem 0rem;
+        flex-direction: column;
+        padding: 1rem 1rem;
+        box-sizing: border-box;
+        gap: 1rem;
+    }
+    .our-values-title{ 
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .our-values-container-items{ 
+        width: 100%;
+    }
+    .our-values-header{ 
+        font-size: 30px !important;
+    }
+
+    .our-values-content p{ 
+        font-size: 18px !important;
+    }
+    .our-values-content span{ 
+        font-size: 14px;
+    }
+}

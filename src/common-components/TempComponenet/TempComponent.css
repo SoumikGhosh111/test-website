@@ -9,3 +9,10 @@
     color: var(--white);
     padding: 0rem 2rem;
 }
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .temp-comp-wrapper-span{ 
+        font-size: 40px;
+    }
+}

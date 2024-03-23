@@ -28,15 +28,21 @@ function Footer() {
         alignItems: "center",
         flexDirection: "column"
     };
+
+    const paraStyling = { 
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+    }
     return (
         <div className='footer-wrapper'>
             <Parallax bgImage={image1} strength={200}>
                 <div style={{ height: 600 }}>
                     <div style={insideStyles}>
-                        <span className='footer-header'>Action Now: Propel Your <br /> Journey to Success</span>
+                        <span className='footer-header'>Action Now: Propel Your Journey to Success</span>
 
                         <p className='footer-para'>
-                            Seize the moment. Click now to propel your journey and <br /> unlock the door to success.
+                            Seize the moment. Click now to propel your journey and  unlock the door to success.
                         </p>
                         <div className='footer-buttons'>
                             <Button text={"Get Started"} bgColor={"var(--white)"} color={"var(--darkblue)" } linkToOpen={"contact_us"}/>

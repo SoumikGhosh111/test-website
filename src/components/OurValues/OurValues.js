@@ -6,7 +6,7 @@ function OurValues() {
         <div className='our-values-comp-wrapper'>
             <div className='our-values-title our-values-container-items' >
                 OUR VALUES
-                <div className='ver-line'></div>
+                <div className='ver-line  mob-view-ver-line'></div>
             </div>
             <div className='our-values-header our-values-container-items'><span>Guiding Principles:<br/>
             Our Values Unveiled</span></div>
