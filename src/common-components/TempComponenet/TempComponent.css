@@ -15,4 +15,7 @@
     .temp-comp-wrapper-span{ 
         font-size: 40px;
     }
+    .temp-comp-wrapper{ 
+        height: fit-content;
+    }
 }

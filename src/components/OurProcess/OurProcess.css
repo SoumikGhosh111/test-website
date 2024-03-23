@@ -14,6 +14,7 @@
 @media screen and (orientation: portrait){ 
     .our-process-wrapper{ 
         flex-direction: column;
+        height: fit-content;
     }
     .our-process-wrapper-img-bg{ 
         width: 100%;
