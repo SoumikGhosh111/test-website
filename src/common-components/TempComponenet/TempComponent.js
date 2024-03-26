@@ -25,7 +25,7 @@ const [paraStrength, setParaStrength] = useState(200)
   useEffect(() => {
         const handleOrientationChange = () => {
             const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-            setParaStrength(isPortrait ? 46 : paraStrength);
+            setParaStrength(isPortrait ? 40 : paraStrength);
         };
     
         window.addEventListener('resize', handleOrientationChange);
