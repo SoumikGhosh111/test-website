@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Footer.css";
 import { Parallax } from "react-parallax";
 import Button from '../Button/Button';
@@ -12,6 +12,7 @@ import bgImg from "../../assets/parallax-hook-bg.jpg";
 
 
 function Footer() {
+    const [paraStrength, setParaStrength] = useState(200)
     const image1 =
         "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ";
     const insideStyles = {
@@ -34,9 +35,26 @@ function Footer() {
         justifyContent: "center",
         alignItems: "center",
     }
+
+    useEffect(() => {
+            const handleOrientationChange = () => {
+                const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+                setParaStrength(isPortrait ? 75 : paraStrength);
+            };
+        
+            window.addEventListener('resize', handleOrientationChange);
+        
+            // Call the handler right away so state gets updated with initial window size
+            handleOrientationChange();
+        
+            return () => {
+                window.removeEventListener('resize', handleOrientationChange);
+            };
+        }, []);
+    
     return (
         <div className='footer-wrapper'>
-            <Parallax bgImage={image1} strength={200}>
+            <Parallax bgImage={image1} strength={paraStrength}>
                 <div style={{ height: 600 }}>
                     <div style={insideStyles}>
                         <span className='footer-header'>Action Now: Propel Your Journey to Success</span>

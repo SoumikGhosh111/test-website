@@ -28,3 +28,11 @@
     font-size: 20px;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+@media screen and (orientation: portrait){ 
+    .blogs-page-hero-section h1{ 
+        font-size: 35px;
+    }
+}

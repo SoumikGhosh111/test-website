@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from 'react'; 
+import React, { useEffect, useState } from 'react'; 
 import { Parallax } from 'react-parallax';
 
 import "./TempComponent.css"
 
 function TempComponent() {
+const [paraStrength, setParaStrength] = useState(200)
  const image = "https://picsum.photos/id/323/1920/1080"; 
 
      const insideStyles = {
@@ -20,9 +21,26 @@ function TempComponent() {
       alignItems: "center",
       flexDirection: "column"
   };
+
+  useEffect(() => {
+        const handleOrientationChange = () => {
+            const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+            setParaStrength(isPortrait ? 75 : paraStrength);
+        };
+    
+        window.addEventListener('resize', handleOrientationChange);
+    
+        // Call the handler right away so state gets updated with initial window size
+        handleOrientationChange();
+    
+        return () => {
+            window.removeEventListener('resize', handleOrientationChange);
+        };
+    }, []);
+
      return (
         <div className='temp-comp-wrapper'>
-            <Parallax bgImage={image} strength={200}>
+            <Parallax bgImage={image} strength={paraStrength}>
                 <div style={{ height: 700 }}>
                     <div style={insideStyles}>
                         <span className='temp-comp-wrapper-span'> Their commitment surpassed our expectations. A innovative collaboration!</span>

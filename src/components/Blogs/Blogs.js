@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Parallax } from 'react-parallax';
 import "./Blogs.css";
 
 function Blogs() {
-
+    const [paraStrength, setParaStrength] = useState(100)
     const image1 = "https://picsum.photos/id/386/1920/1080";
     const image2 = "https://picsum.photos/id/387/1920/1080";
     const image3 = "https://picsum.photos/id/388/1920/1080";
@@ -20,6 +20,23 @@ function Blogs() {
         alignItems: "center",
         flexDirection: "column"
     };
+
+    useEffect(() => {
+            const handleOrientationChange = () => {
+                const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+                setParaStrength(isPortrait ? 75 : paraStrength);
+            };
+        
+            window.addEventListener('resize', handleOrientationChange);
+        
+            // Call the handler right away so state gets updated with initial window size
+            handleOrientationChange();
+        
+            return () => {
+                window.removeEventListener('resize', handleOrientationChange);
+            };
+        }, []);
+    
     return (
         <div className='blogs-section-wrapper'>
             <div className='blogs-section-title'>
@@ -28,7 +45,7 @@ function Blogs() {
             </div>
             <div className='blogs-section-cards'>
                 <div className='blogs-section-cards-items'>
-                    <Parallax bgImage={image1} strength={100}>
+                    <Parallax bgImage={image1} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -50,7 +67,7 @@ function Blogs() {
 
 
                 <div className='blogs-section-cards-items'>
-                    <Parallax bgImage={image2} strength={100}>
+                    <Parallax bgImage={image2} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -73,7 +90,7 @@ function Blogs() {
 
 
                 <div className='blogs-section-cards-items'>
-                    <Parallax bgImage={image3} strength={100}>
+                    <Parallax bgImage={image3} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -95,7 +112,7 @@ function Blogs() {
 
 
                 <div className='blogs-section-cards-items'>
-                    <Parallax bgImage={image4} strength={100}>
+                    <Parallax bgImage={image4} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>

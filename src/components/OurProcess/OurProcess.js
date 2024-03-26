@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 import "./OurProcess.css"
 import bgImg from "../../assets/parallax-hook-bg.jpg";
 import { Parallax } from "react-parallax";
 
 function OurProcess() {
+  const [paraStrength, setParaStrength] = useState(200); 
   const insideStyles = {
     // background: "white",
     // border: "1px solid red",
@@ -24,11 +25,29 @@ function OurProcess() {
     justifyContent: "center",
     alignItems: "center",
   }
+
+
+  useEffect(() => {
+        const handleOrientationChange = () => {
+            const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+            setParaStrength(isPortrait ? 75 : paraStrength);
+        };
+    
+        window.addEventListener('resize', handleOrientationChange);
+    
+        // Call the handler right away so state gets updated with initial window size
+        handleOrientationChange();
+    
+        return () => {
+            window.removeEventListener('resize', handleOrientationChange);
+        };
+    }, []);
+
   // const image1 = "../../assets/parallax-hook-bg.jpg"
   return (
     <div className='our-process-wrapper'>
       <div className='our-process-wrapper-img-bg' >
-        <Parallax bgImage={ bgImg} strength={200} style={paralaxStyle}>
+        <Parallax bgImage={ bgImg} strength={paraStrength} style={paralaxStyle}>
           <div style={{ height: 778,  }}>
             <div style={insideStyles}>
 

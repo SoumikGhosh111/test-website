@@ -87,3 +87,34 @@
 .blogs-content a:hover::before{ 
     width: 0;
 }
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .blogs-articles-wrapper{ 
+        padding: 1rem 1rem;
+        margin: 2rem 0rem;
+        box-sizing: border-box;
+        flex-direction: column;
+    }
+    .blogs-articles-title{ 
+        width: 100%;
+    }
+
+    .blogs-articles-cards{ 
+        width: 100%;
+        grid-template-columns: auto;
+    }
+    .blogs-articles-cards-items{ 
+        width: 100%;
+    }
+
+}

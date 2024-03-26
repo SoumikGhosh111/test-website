@@ -1,8 +1,9 @@
-import React from 'react'; 
+import React, {useState, useEffect} from 'react'; 
 import "./BlogsAndArticles.css"
 import { Parallax } from 'react-parallax';
 
 function BlogsAndArticles() {
+    const [paraStrength, setParaStrength] = useState(100)
     const image1 = "https://picsum.photos/id/386/1920/1080";
     const image2 = "https://picsum.photos/id/387/1920/1080";
     const image3 = "https://picsum.photos/id/388/1920/1080";
@@ -25,15 +26,30 @@ function BlogsAndArticles() {
         alignItems: "center",
         flexDirection: "column"
     };
+    useEffect(() => {
+            const handleOrientationChange = () => {
+                const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+                setParaStrength(isPortrait ? 75 : paraStrength);
+            };
+        
+            window.addEventListener('resize', handleOrientationChange);
+        
+            // Call the handler right away so state gets updated with initial window size
+            handleOrientationChange();
+        
+            return () => {
+                window.removeEventListener('resize', handleOrientationChange);
+            };
+        }, []);
     return (
         <div className='blogs-articles-wrapper'>
             <div className='blogs-articles-title'>
                 BLOGS & ARTICLES
-                <div className='ver-line'> </div>
+                <div className='ver-line mob-view-ver-line'> </div>
             </div>
             <div className='blogs-articles-cards'>
                 <div className='blogs-articles-cards-items'>
-                    <Parallax bgImage={image1} strength={100}>
+                    <Parallax bgImage={image1} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -55,7 +71,7 @@ function BlogsAndArticles() {
 
 
                 <div className='blogs-articles-cards-items'>
-                    <Parallax bgImage={image2} strength={100}>
+                    <Parallax bgImage={image2} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -78,7 +94,7 @@ function BlogsAndArticles() {
 
 
                 <div className='blogs-articles-cards-items'>
-                    <Parallax bgImage={image3} strength={100}>
+                    <Parallax bgImage={image3} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -100,7 +116,7 @@ function BlogsAndArticles() {
 
 
                 <div className='blogs-articles-cards-items'>
-                    <Parallax bgImage={image4} strength={100}>
+                    <Parallax bgImage={image4} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -122,7 +138,7 @@ function BlogsAndArticles() {
 
 
                 <div className='blogs-articles-cards-items'>
-                    <Parallax bgImage={image5} strength={100}>
+                    <Parallax bgImage={image5} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -144,30 +160,7 @@ function BlogsAndArticles() {
 
 
                 <div className='blogs-articles-cards-items'>
-                    <Parallax bgImage={image6} strength={100}>
-                        <div style={{ height: 300 }}>
-                            <div style={insideStyles}>
-                                <div className='date-blogs'>
-                                    19 <br/>
-                                    Mar
-                                </div>
-                            </div>
-                        </div>
-                    </Parallax>
-                    <div className='blogs-content'>
-                        <span>CONSULTING</span>
-                        <div className='line'> </div>
-                        <h2>A Blueprint for Business Brilliance</h2>
-                        <p>Explore the intricacies of strategic planning and discover how it can transform your business landscape.</p>
-                        <a href='/blogs'>Read Article</a>
-
-                    </div>
-                </div>
-
-
-
-                <div className='blogs-articles-cards-items'>
-                    <Parallax bgImage={image7} strength={100}>
+                    <Parallax bgImage={image6} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
@@ -190,7 +183,30 @@ function BlogsAndArticles() {
 
 
                 <div className='blogs-articles-cards-items'>
-                    <Parallax bgImage={image8} strength={100}>
+                    <Parallax bgImage={image7} strength={paraStrength}>
+                        <div style={{ height: 300 }}>
+                            <div style={insideStyles}>
+                                <div className='date-blogs'>
+                                    19 <br/>
+                                    Mar
+                                </div>
+                            </div>
+                        </div>
+                    </Parallax>
+                    <div className='blogs-content'>
+                        <span>CONSULTING</span>
+                        <div className='line'> </div>
+                        <h2>A Blueprint for Business Brilliance</h2>
+                        <p>Explore the intricacies of strategic planning and discover how it can transform your business landscape.</p>
+                        <a href='/blogs'>Read Article</a>
+
+                    </div>
+                </div>
+
+
+
+                <div className='blogs-articles-cards-items'>
+                    <Parallax bgImage={image8} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
                                 <div className='date-blogs'>
