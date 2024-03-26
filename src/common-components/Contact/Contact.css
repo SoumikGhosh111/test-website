@@ -168,3 +168,52 @@ textarea:focus{
     width: 91%;
     font-size: 17px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .contact-section-wrapper{ 
+        flex-direction: column;
+        padding: 1rem 1rem ;
+        box-sizing: border-box;
+    }
+    .contact-section-header-content{ 
+        width: 100%;
+        margin-bottom: 2rem;
+        margin-top: 3.5rem;
+    }
+    .contact-section-header-content h1{ 
+
+        font-size: 30px;
+
+    }
+    .contact-section-header-content p{ 
+        font-size: 18px;
+    }
+   form{ 
+    padding: 2rem 1rem;
+   }
+   .form-items-button button{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+}
