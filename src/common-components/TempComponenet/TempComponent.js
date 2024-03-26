@@ -24,18 +24,8 @@ const [paraStrength, setParaStrength] = useState(200)
 
   useEffect(() => {
         const handleOrientationChange = () => {
-            // const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-            // setParaStrength(isPortrait ? 75 : paraStrength);
             const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-            const screenWidth = window.innerWidth;
-            const screenHeight = window.innerHeight;
-            const pixelRatio = window.devicePixelRatio;
-      
-            // Adjust the parallax strength based on screen size and pixel density
-            const newStrength = isPortrait ? 75 : 200;
-            const adjustedStrength = newStrength * (screenWidth / 360) * pixelRatio;
-      
-            setParaStrength(adjustedStrength);
+            setParaStrength(isPortrait ? 55 : paraStrength);
         };
     
         window.addEventListener('resize', handleOrientationChange);
