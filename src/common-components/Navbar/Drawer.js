@@ -21,7 +21,7 @@ export default function TemporaryDrawer() {
                 anchor={"right"}    
                 open={isOpen}
                 onClose={() => setOpen(false)}
-                sx={{zIndex: "1"}}
+                sx={{zIndex: "999"}}
             >
                 <div className='drawer-div'>
                     <a href='/' ><div className='link'> <div className='drawer-link-items'><HomeRoundedIcon /></div>Home</div></a>

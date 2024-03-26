@@ -72,6 +72,7 @@
         flex-direction: column;
         height: 100vh;
         flex: 1;
+        margin-top: 3.5rem;
     }
 
     .hero-section-container-2 video{ 
