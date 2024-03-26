@@ -5,7 +5,7 @@ import "./TempComponent.css"
 
 function TempComponent() {
 const [paraStrength, setParaStrength] = useState(200)
- const image = "https://picsum.photos/id/323/1080/1920"; 
+ const image = "https://picsum.photos/id/323/2160/3840"; 
 
      const insideStyles = {
       // background: "white",
