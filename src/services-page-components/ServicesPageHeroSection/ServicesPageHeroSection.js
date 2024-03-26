@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "./ServicesPageHeroSection.css";
 import { Parallax } from 'react-parallax';
 
 function ServicesPageHeroSection() {
   const image1 = "https://picsum.photos/id/541/1920/1080";
+  const [paraStrength, setParaStrength] = useState(200)
   const insideStyles = {
     // background: "white",
     // border: "1px solid red",
@@ -18,9 +19,24 @@ function ServicesPageHeroSection() {
     alignItems: "center",
     flexDirection: "column"
   };
+  useEffect(() => {
+    const handleOrientationChange = () => {
+        const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+        setParaStrength(isPortrait ? 40 : paraStrength);
+    };
+
+    window.addEventListener('resize', handleOrientationChange);
+
+    // Call the handler right away so state gets updated with initial window size
+    handleOrientationChange();
+
+    return () => {
+        window.removeEventListener('resize', handleOrientationChange);
+    };
+}, []);
   return (
     <div className='services-page-hero-wrapper'>
-      <Parallax bgImage={image1} strength={200}>
+      <Parallax bgImage={image1} strength={paraStrength}>
         <div style={{ height: 700 }}>
           <div style={insideStyles}>
             <span className='footer-header'>Crafting Solutions for <br/>

@@ -1,9 +1,10 @@
-import React from 'react'; 
+import React, {useState, useEffect} from 'react'; 
 import "./AboutUsHeroSection.css"; 
 import { Parallax } from 'react-parallax';
 
 function AboutUsHeroSection() {
     const image1 = "https://picsum.photos/id/247/1920/1080";
+    const [paraStrength ,setParaStrength] = useState(200)
     const insideStyles = {
         // background: "white",
         // border: "1px solid red",
@@ -18,9 +19,25 @@ function AboutUsHeroSection() {
         alignItems: "center",
         flexDirection: "column"
     };
+
+    useEffect(() => {
+      const handleOrientationChange = () => {
+          const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+          setParaStrength(isPortrait ? 40 : paraStrength);
+      };
+  
+      window.addEventListener('resize', handleOrientationChange);
+  
+      // Call the handler right away so state gets updated with initial window size
+      handleOrientationChange();
+  
+      return () => {
+          window.removeEventListener('resize', handleOrientationChange);
+      };
+  }, []);
   return (
     <div className='about-us-hero-wrapper'>
-         <Parallax bgImage={image1} strength={200}>
+         <Parallax bgImage={image1} strength={paraStrength}>
                 <div style={{ height:700 }}>
                     <div style={insideStyles}>
                         <span className='footer-header'>A Journey of Passion <br/> and Dedication</span>
