@@ -3,7 +3,7 @@ import "./BlogsAndArticles.css"
 import { Parallax } from 'react-parallax';
 
 function BlogsAndArticles() {
-    const [paraStrength, setParaStrength] = useState(100)
+    const [paraStrength, setParaStrength] = useState(200)
     const image1 = "https://picsum.photos/id/386/1920/1080";
     const image2 = "https://picsum.photos/id/387/1920/1080";
     const image3 = "https://picsum.photos/id/388/1920/1080";
@@ -29,7 +29,7 @@ function BlogsAndArticles() {
     useEffect(() => {
             const handleOrientationChange = () => {
                 const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-                setParaStrength(isPortrait ? 75 : paraStrength);
+                setParaStrength(isPortrait ? 50 : paraStrength);
             };
         
             window.addEventListener('resize', handleOrientationChange);
