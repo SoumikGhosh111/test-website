@@ -6,7 +6,7 @@ function OurTeam() {
         <div className='our-team-section-wrapper'>
             <div className='our-team-title our-team-container-items' >
                 TEAM
-                <div className='ver-line'></div>
+                <div className='ver-line mob-view-ver-line'></div>
             </div>
             <div className='our-team-header our-team-container-items'><span>Our Team: <br /> Catalysts of Success</span></div>
             <div className='our-team-content our-team-container-items'>

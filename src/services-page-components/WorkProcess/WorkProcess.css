@@ -85,3 +85,39 @@
     background-color: var(--grid-card-color);
     margin: 1rem 0rem;
 }
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .work-rpocess-comp-wrapper{ 
+        flex-direction: column;
+        padding: 1rem 1rem ;
+        box-sizing: border-box;
+    }
+    .work-rpocess-title{ 
+        width: 100%;
+    }
+    .work-rpocess-header{ 
+        width: 100%;
+        font-size: 30px;
+    }
+    .work-rpocess-content p{ 
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .work-rpocess-content span{ 
+        font-size: 14px;
+        width: 100%;
+    }
+
+}
+
+
+/* 30px header */
+/* 18px para */
+/* 14px span */

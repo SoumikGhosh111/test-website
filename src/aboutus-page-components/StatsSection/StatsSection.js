@@ -5,8 +5,8 @@ function StatsSection() {
     return (
         <div className='stats-section-wrapper'>
             <div className='stats-section-title'>
-                SERVICES
-                <div className='ver-line'> </div>
+                STATS
+                <div className='ver-line mob-view-ver-line'> </div>
             </div>
             <div className='stats-section-cards'>
                 <div className='stats-section-items'>

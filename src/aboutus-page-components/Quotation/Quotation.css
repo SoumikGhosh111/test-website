@@ -9,3 +9,17 @@
     color: var(--white);
     padding: 0rem 5rem;
 }
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .quote-comp-wrapper-span{ 
+        font-size: 40px;
+        width: 80%;
+
+    }
+    .quote-comp-wrapper{ 
+        height: fit-content;
+    }
+}

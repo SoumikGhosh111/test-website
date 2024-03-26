@@ -1,12 +1,12 @@
-import React from 'react'; 
+import React, {useState, useEffect} from 'react'; 
 import "./TeamMembers.css"; 
 import { Parallax } from 'react-parallax';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function TeamMembers() {
+    const [paraStrength, setParaStrength] = useState(200); 
     const image1 = "https://picsum.photos/id/400/1080/1920";
     const image2 = "https://picsum.photos/id/560/1080/1920";
     const image3 = "https://picsum.photos/id/388/1080/1920";
@@ -25,11 +25,27 @@ function TeamMembers() {
         alignItems: "center",
         flexDirection: "column"
     };
+
+    useEffect(() => {
+            const handleOrientationChange = () => {
+                const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+                setParaStrength(isPortrait ? 75 : paraStrength);
+            };
+        
+            window.addEventListener('resize', handleOrientationChange);
+        
+            // Call the handler right away so state gets updated with initial window size
+            handleOrientationChange();
+        
+            return () => {
+                window.removeEventListener('resize', handleOrientationChange);
+            };
+        }, []);
   return (
     <div className='team-members-wrapper'>
             <div className='team-members-cards'>
                 <div className='team-members-cards-items'>
-                    <Parallax bgImage={image1} strength={200}>
+                    <Parallax bgImage={image1} strength={paraStrength}>
                         <div style={{ height: 450}}>
                             <div style={insideStyles}>
                                 <div className='team-members-social'>
@@ -52,33 +68,7 @@ function TeamMembers() {
 
 
                 <div className='team-members-cards-items'>
-                    <Parallax bgImage={image2} strength={200}>
-                        <div style={{ height: 450}}>
-                            <div style={insideStyles}>
-                                <div className='team-members-social'>
-                                    <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{fontSize: "15px"}}/></div></a>
-                                    <div className='team-members-social-icons'><FacebookIcon sx={{fontSize: "15px"}} /></div>
-                                    <div className='team-members-social-icons'><LinkedInIcon sx={{fontSize: "15px"}} /></div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </Parallax>
-                    <div className='team-members-content'>
-                        <span>PROJECT CORDINATOR</span>
-                        <div className='line'> </div>
-                        <h2>SOPHIE TURNER</h2>
-                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
-
-                    </div>
-                </div>
-
-
-
-
-
-                <div className='team-members-cards-items'>
-                    <Parallax bgImage={image3} strength={200}>
+                    <Parallax bgImage={image2} strength={paraStrength}>
                         <div style={{ height: 450}}>
                             <div style={insideStyles}>
                                 <div className='team-members-social'>
@@ -102,8 +92,9 @@ function TeamMembers() {
 
 
 
+
                 <div className='team-members-cards-items'>
-                    <Parallax bgImage={image4} strength={200}>
+                    <Parallax bgImage={image3} strength={paraStrength}>
                         <div style={{ height: 450}}>
                             <div style={insideStyles}>
                                 <div className='team-members-social'>
@@ -128,7 +119,7 @@ function TeamMembers() {
 
 
                 <div className='team-members-cards-items'>
-                    <Parallax bgImage={image5} strength={200}>
+                    <Parallax bgImage={image4} strength={paraStrength}>
                         <div style={{ height: 450}}>
                             <div style={insideStyles}>
                                 <div className='team-members-social'>
@@ -153,7 +144,32 @@ function TeamMembers() {
 
 
                 <div className='team-members-cards-items'>
-                    <Parallax bgImage={image6} strength={200}>
+                    <Parallax bgImage={image5} strength={paraStrength}>
+                        <div style={{ height: 450}}>
+                            <div style={insideStyles}>
+                                <div className='team-members-social'>
+                                    <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{fontSize: "15px"}}/></div></a>
+                                    <div className='team-members-social-icons'><FacebookIcon sx={{fontSize: "15px"}} /></div>
+                                    <div className='team-members-social-icons'><LinkedInIcon sx={{fontSize: "15px"}} /></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </Parallax>
+                    <div className='team-members-content'>
+                        <span>PROJECT CORDINATOR</span>
+                        <div className='line'> </div>
+                        <h2>SOPHIE TURNER</h2>
+                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+
+                    </div>
+                </div>
+
+
+
+
+                <div className='team-members-cards-items'>
+                    <Parallax bgImage={image6} strength={paraStrength}>
                         <div style={{ height: 450}}>
                             <div style={insideStyles}>
                                 <div className='team-members-social'>

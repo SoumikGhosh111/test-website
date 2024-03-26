@@ -6,7 +6,7 @@ function AboutSection() {
         <div className='about-section-wrapper'>
             <div className='about-us-title about-us-container-items' >
                 ABOUT
-                <div className='ver-line'></div>
+                <div className='ver-line mob-view-ver-line'></div>
             </div>
             <div className='about-us-header about-us-container-items'><span>Our Story, <br/> Our Journey</span></div>
             <div className='about-us-content about-us-container-items'>

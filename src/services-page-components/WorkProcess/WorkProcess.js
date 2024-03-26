@@ -8,7 +8,7 @@ function WorkProcess() {
         <div className='work-rpocess-comp-wrapper'>
             <div className='work-rpocess-title work-rpocess-container-items' >
                 HOW WE WORK
-                <div className='ver-line'></div>
+                <div className='ver-line mob-view-ver-line'></div>
             </div>
             <div className='work-rpocess-header work-rpocess-container-items'><span>Tailored Solutions for<br />
             Business Excellence</span>

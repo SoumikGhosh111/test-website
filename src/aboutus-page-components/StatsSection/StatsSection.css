@@ -44,3 +44,25 @@
     color: var(--darkgrey);
 }
 
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .stats-section-wrapper{ 
+        flex-direction: column;
+        padding: 1rem 1rem ;
+        box-sizing: border-box;
+        margin: 2rem 0rem;
+    }
+    .stats-section-title{ 
+        width: 100%;
+    }
+    .stats-section-cards{ 
+        grid-template-columns: auto;
+    }
+
+}

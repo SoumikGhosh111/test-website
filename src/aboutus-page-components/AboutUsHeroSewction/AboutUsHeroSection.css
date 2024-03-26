@@ -1,3 +1,9 @@
 .about-us-hero-wrapper{ 
     height: 100vh;
 }
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .about-us-hero-wrapper{ 
+        height: fit-content;
+    }
+}

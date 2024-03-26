@@ -78,3 +78,37 @@
     flex: 1;
     flex-direction: row-reverse;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .process-section-1, .process-section-2{ 
+        flex-direction: column;
+        height: fit-content;
+    }
+    .process-header{ 
+        font-size: 50px;
+    }
+    .process-content{ 
+        width: 100%;
+        padding: 1rem 1rem ;
+        box-sizing: border-box;
+    }
+    .process-content-wrapper h1{ 
+        font-size: 30px;
+    }
+    .process-content-wrapper p{ 
+        font-size: 18px;
+    }
+}

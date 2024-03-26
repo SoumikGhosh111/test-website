@@ -41,3 +41,30 @@
 }
 .our-team-content span{ 
 }
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .our-team-section-wrapper{ 
+        flex-direction: column;
+        padding: 1rem 1rem;
+        box-sizing: border-box;
+    }
+    .our-team-container-items{ 
+        width: 100%;
+    }
+    .our-team-header{ 
+        font-size: 30px;
+    }
+    .our-team-content p{ 
+        font-size: 14px;
+    }
+}

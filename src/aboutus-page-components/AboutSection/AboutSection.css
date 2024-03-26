@@ -41,3 +41,36 @@
 .about-us-content span{ 
     color: var(--darkgrey);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media screen and (orientation: portrait){ 
+    .about-section-wrapper{ 
+        flex-direction: column;
+        padding: 1rem 1rem;
+        box-sizing: border-box;
+    }
+    .about-us-title{ 
+        width: 100%;
+    }
+    .about-us-header{ 
+        font-size: 30px;
+    }
+    .about-us-content p{ 
+        font-size: 18px;
+    }
+    .about-us-content span{ 
+        font-size: 14px;
+    }
+}
