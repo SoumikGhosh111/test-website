@@ -5,14 +5,18 @@ import { IconButton } from '@mui/material';
 import {Switch} from '@mui/material';
 import "./Navbar.css"
 import zIndex from '@mui/material/styles/zIndex';
+import NewspaperRoundedIcon from '@mui/icons-material/NewspaperRounded';
+import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
+import InfoRoundedIcon from '@mui/icons-material/InfoRounded'; 
+import DesignServicesRoundedIcon from '@mui/icons-material/DesignServicesRounded';
 
 export default function TemporaryDrawer() {
     let [isOpen, setOpen] = useState(false);
 
     return (
-        <div>
+        <div >
 
-            <IconButton onClick={() => setOpen(true)}><MenuRoundedIcon className='link' sx={{color: "var(--white)"}}/></IconButton>
+            <IconButton onClick={() => setOpen(true)}><MenuRoundedIcon  sx={{color: "var(--white)"}}/></IconButton>
             <Drawer
                 anchor={"right"}    
                 open={isOpen}
@@ -20,10 +24,10 @@ export default function TemporaryDrawer() {
                 sx={{zIndex: "1"}}
             >
                 <div className='drawer-div'>
-                    <a href='/' className='link'><p>Home</p></a>
-                    <a href='/about' className='link'><p>About Us</p></a>
-                    <a href='/services' className='link'><p>Services</p></a>
-                    <a href='/blogs' className='link'><p>News</p></a>
+                    <a href='/' ><div className='link'> <div className='drawer-link-items'><HomeRoundedIcon /></div>Home</div></a>
+                    <a href='/services' ><div className='link'><div className='drawer-link-items'><DesignServicesRoundedIcon  /></div>Services</div></a>
+                    <a href='/about' ><div className='link'><div className='drawer-link-items'><InfoRoundedIcon  /></div>About Us</div></a>
+                    <a href='/blogs' ><div className='link'><div className='drawer-link-items'><NewspaperRoundedIcon /></div>News</div></a>
                    {/* <SwitchModes /> */}
                 </div>
             </Drawer>
