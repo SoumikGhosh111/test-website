@@ -5,7 +5,7 @@ import "./TempComponent.css"
 
 function TempComponent() {
 const [paraStrength, setParaStrength] = useState(200)
- const image = "https://picsum.photos/id/323/1920/1080"; 
+ const image = "https://picsum.photos/id/323/1080/1920"; 
 
      const insideStyles = {
       // background: "white",
@@ -25,7 +25,7 @@ const [paraStrength, setParaStrength] = useState(200)
   useEffect(() => {
         const handleOrientationChange = () => {
             const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-            setParaStrength(isPortrait ? 60 : paraStrength);
+            setParaStrength(isPortrait ? 75 : paraStrength);
         };
     
         window.addEventListener('resize', handleOrientationChange);
