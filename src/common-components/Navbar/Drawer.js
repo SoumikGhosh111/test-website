@@ -9,6 +9,7 @@ import NewspaperRoundedIcon from '@mui/icons-material/NewspaperRounded';
 import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import InfoRoundedIcon from '@mui/icons-material/InfoRounded'; 
 import DesignServicesRoundedIcon from '@mui/icons-material/DesignServicesRounded';
+import ContactPhoneRoundedIcon from '@mui/icons-material/ContactPhoneRounded';
 
 export default function TemporaryDrawer() {
     let [isOpen, setOpen] = useState(false);
@@ -28,6 +29,7 @@ export default function TemporaryDrawer() {
                     <a href='/services' ><div className='link'><div className='drawer-link-items'><DesignServicesRoundedIcon  /></div>Services</div></a>
                     <a href='/about' ><div className='link'><div className='drawer-link-items'><InfoRoundedIcon  /></div>About Us</div></a>
                     <a href='/blogs' ><div className='link'><div className='drawer-link-items'><NewspaperRoundedIcon /></div>News</div></a>
+                    <a href='/contact_us' ><div className='link'><div className='drawer-link-items'><ContactPhoneRoundedIcon /></div>Get in Touch</div></a>
                    {/* <SwitchModes /> */}
                 </div>
             </Drawer>
