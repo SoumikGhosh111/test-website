@@ -9,7 +9,7 @@ import img5 from "../../assets/partner-05.svg";
 
 function MarqueeImages() {
     return (
-      <div className='marquee-images-wrapper'>
+      <div className='marquee-images-wrapper ' id='our_colabrators'>
         <div className='marquee-images-body'>
           <div className='marquee-images-body-slide'>
             <img src={img1} alt='img1' className='mrqee-images-body-items' />

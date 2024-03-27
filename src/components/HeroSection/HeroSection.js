@@ -2,9 +2,14 @@ import React from 'react'
 import "./HeroSection.css";
 import Button from "../../common-components/Button/Button"
 import bgVideo from "../../assets/bg-video.mp4";
+import SouthRoundedIcon from '@mui/icons-material/SouthRounded';
 
 
 function HeroSection() {
+
+    const handleClick = () => { 
+        window.location.href = '#our_colabrators'
+    }
     return (
         <div className='hero-section-wrapper'>
             <div className='hero-section-container-1'>
@@ -19,14 +24,16 @@ function HeroSection() {
 
             </div>
             <div className='hero-section-container-2'>
-                <video playsInline="playsInline" autoPlay="autoPlay" muted="muted" loop="loop">
+                <video playsInline="playsIvideo-bgnline" autoPlay="autoPlay" muted="muted" loop="loop">
                     <source src={bgVideo} type='video/mp4' />
                     Browser not supported
                 </video>
                 <div className='video-bg'>
                 </div>
                 <div className='rating'>
-
+                    <div className='scroll-animation-icon'>
+                        SCROLL DOWN <div className='scroll-icon' onClick={handleClick}><SouthRoundedIcon sx={{fontSize: "18px"}}/></div>
+                    </div>
                 </div>
             </div>
         </div>
