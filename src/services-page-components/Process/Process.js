@@ -20,7 +20,7 @@ function Process() {
             const isPortrait = window.matchMedia("(orientation: portrait)").matches;
             if(isPortrait){ 
                 setWindowHeight(window.innerHeight / 2);
-                setParaStrength(75)
+                setParaStrength(40)
             }
             else{ 
                 setWindowHeight(window.innerHeight);
