@@ -22,6 +22,7 @@
     height: 200px; */
     background-color: var(--grid-card-color);
     padding: 2rem 2rem;
+    border-radius: 10px;
 }
 .stats-line{ 
     width: 100%;
