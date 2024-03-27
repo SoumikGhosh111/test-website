@@ -132,4 +132,9 @@
     .buttons{ 
         margin-bottom: 1rem;
     }
+    .rating{ 
+        bottom: 3%;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
