@@ -1,7 +1,6 @@
 import './App.css';
 import React, {useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import { useSmoothScroll } from './functions/useSmoothScroll';
 
 
 // all the common components
@@ -17,21 +16,10 @@ import ContactUsPage from './pages/ContactUsPage';
 
 
 function App() {
-
-  // function init(){
-  //   new useSmoothScroll(document,120,12)
-  // }
-
-
-  // useEffect(() => { 
-  //   init(); 
-  // }, [])
   return (
     <div className='app'>
       <Router>
-        {/* <HeadRoom> */}
           <Navbar />
-        {/* </HeadRoom> */}
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/about' element={<AboutUsPage />} />

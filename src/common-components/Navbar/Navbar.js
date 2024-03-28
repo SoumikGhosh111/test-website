@@ -90,7 +90,8 @@ function Navbar() {
       </div>
       <div className='mob-view-nav'>
         <img src={logoImg} />
-        <TemporaryDrawer /></div>
+        <TemporaryDrawer />
+        </div>
     </>
   )
 }

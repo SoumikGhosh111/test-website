@@ -94,9 +94,20 @@
 
 
 /* media queries  */
-@media screen and (orientation: portrait){ 
+@media screen and (max-width: 1196px){ 
     .blogs-section-wrapper{ 
         flex-direction: column;
+    }
+    .blogs-section-cards-items{ 
+        width: 100%;
+    }
+    .blogs-section-title{ 
+        width: 30%;
+    }
+}
+
+@media screen and (orientation: portrait){ 
+    .blogs-section-wrapper{ 
         margin-top: 4rem;
         padding: 1rem 0.5rem;
         box-sizing: border-box;
@@ -107,7 +118,7 @@
     .blogs-section-cards{ 
         grid-template-columns: auto;
     }
-    .blogs-section-cards-items{
+    /* .blogs-section-cards-items{
         width: 100%;
-    }
+    } */
 }

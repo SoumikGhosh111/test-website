@@ -100,6 +100,20 @@
 
 
 /* media queries */
+@media screen and (max-width: 1300px){ 
+    .hero-section-container-1-content span{ 
+        font-size: 50px;
+    }
+    .hero-section-container-1-content p{ 
+        font-size: 18px;
+    }
+    .hero-section-container-1-content{ 
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
 @media screen and (orientation: portrait){ 
     .hero-section-wrapper{ 
         flex-direction: column;
