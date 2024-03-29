@@ -2,10 +2,13 @@ import React, {useState, useEffect} from 'react';
 import "./Quotation.css"
 import bgVideo from "../../assets/bg-video.mp4"
 import { Parallax } from 'react-parallax';
+import Stars from '../../common-components/Review/Stars';
 
 function Quotation() {
     const video = "https://picsum.photos/id/327/1920/1080"; 
-    const [paraStrength ,setParaStrength] = useState(200)
+    const [paraStrength ,setParaStrength] = useState(200); 
+    const trustPilotLogo = "https://powermycode.com/assets/img/home-5/trustpilot-1.svg"; 
+    const unQuote = "https://assets-global.website-files.com/653e50f60ac329e82ba89473/6542276b627fc9baf1f06120_quote-icon-inverse.svg";
 
     const insideStyles = {
      // background: "white",
@@ -43,7 +46,15 @@ function Quotation() {
            <Parallax bgImage={video} strength={paraStrength}>
                <div style={{ height: 700 }}>
                    <div style={insideStyles}>
-                       <span className='quote-comp-wrapper-span'>I love the collaborative spirit, <br/> innovation & growth <br/> opportunities here.</span>
+                   
+                       <span className='quote-comp-wrapper-span'>
+                       <div><img src={unQuote} /></div>
+                        I love the collaborative spirit, innovation & growth  opportunities here.
+                       <div className='company-review'>
+                                <img src={trustPilotLogo} />
+                                <div className='google-ratting'><Stars rate={5} />5/5</div>
+                            </div>
+                       </span>
                    </div>
                </div>
            </Parallax>

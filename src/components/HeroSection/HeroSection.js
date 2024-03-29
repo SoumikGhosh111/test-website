@@ -3,11 +3,11 @@ import "./HeroSection.css";
 import Button from "../../common-components/Button/Button"
 import bgVideo from "../../assets/bg-video.mp4";
 import SouthRoundedIcon from '@mui/icons-material/SouthRounded';
-
+import Stars from '../../common-components/Review/Stars';
 
 function HeroSection() {
 
-    const handleClick = () => { 
+    const handleClick = () => {
         window.location.href = '#our_colabrators'
     }
     return (
@@ -18,7 +18,7 @@ function HeroSection() {
                     <p>Navigate the future with our innovative consulting, where today's breakthroughs become the leadership strategies propelling your business into tomorrow's forefront.</p>
                     <div className='buttons'>
                         <Button text={"Our Services"} bgColor={"var(--white-white)"} color={"var(--darkblue)"} linkToOpen={"/services"} />
-                        <Button text={"About Us"} bgColor={"var(--blur-bg)"} color={"var(--white-white)"} linkToOpen ={"/about"}/>
+                        <Button text={"About Us"} bgColor={"var(--blur-bg)"} color={"var(--white-white)"} linkToOpen={"/about"} />
                     </div>
                 </div>
 
@@ -32,7 +32,30 @@ function HeroSection() {
                 </div>
                 <div className='rating'>
                     <div className='scroll-animation-icon'>
-                        SCROLL DOWN <div className='scroll-icon' onClick={handleClick}><SouthRoundedIcon sx={{fontSize: "18px"}}/></div>
+                        SCROLL DOWN <div className='scroll-icon' onClick={handleClick}><SouthRoundedIcon sx={{ fontSize: "18px" }} /></div>
+                    </div>
+                    <div className='stars-images-hero'>
+                        <div className='review-stars'>
+                            <Stars rate={5} /> 
+                            trusted by 100+ companies
+                        </div>
+
+                        <div className='stars-images-hero-video-bg'>
+                            <div className='stars-images-hero-video-bg-items stars-images-item-1'>
+                                <img src='https://picsum.photos/id/260/50/50' />
+                            </div>
+                            <div className='stars-images-hero-video-bg-items  stars-images-item-2'>
+                                <img src='https://picsum.photos/id/261/50/50' />
+                            </div>
+                            <div className='stars-images-hero-video-bg-items stars-images-item-3'>
+                                <img src='https://picsum.photos/id/264/50/50' />
+                            </div>
+                            <div className='stars-images-hero-video-bg-items stars-images-item-4'>
+                                <img src='https://picsum.photos/id/263/50/50' />
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

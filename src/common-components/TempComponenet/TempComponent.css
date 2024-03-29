@@ -10,6 +10,31 @@
     padding: 0rem 2rem;
 }
 
+.qoute-unquote{ 
+    width: 95%;
+}
+.company-review{ 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 20px !important; 
+    margin-top: 20px;
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+    border: 1px solid var(--lightgrey);
+    border-radius: 10px;
+    background: var(--blur-bg);
+    width: fit-content;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+.google-ratting{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* media queries */
 @media screen and (orientation: portrait){ 
     .temp-comp-wrapper-span{ 

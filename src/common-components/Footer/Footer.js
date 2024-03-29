@@ -9,6 +9,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import bgImg from "../../assets/parallax-hook-bg.jpg";
+import {useNavigate} from 'react-router-dom'
 
 
 function Footer() {
@@ -29,6 +30,8 @@ function Footer() {
         alignItems: "center",
         flexDirection: "column"
     };
+    const location = useNavigate(); 
+    console.log(location); 
 
     const paraStyling = { 
         display: "flex",
@@ -51,6 +54,11 @@ function Footer() {
                 window.removeEventListener('resize', handleOrientationChange);
             };
         }, []);
+
+
+        const handleClick = () => { 
+            location('/services#web_dev');
+        }
     
     return (
         <div className='footer-wrapper'>
@@ -95,20 +103,20 @@ function Footer() {
 
                         <div className='footer-social-links-items'>
                             <div className='footer-social-links-icons'><InstagramIcon sx={{fontSize: "18px"}}/></div>
-                            <a href='#'>INSTAGRAM</a>
+                            <a href='https://www.instagram.com/abhishek.rachuri'>INSTAGRAM</a>
                         </div>
                         <div className='footer-social-links-items'>
                             <div className='footer-social-links-icons'><LinkedInIcon sx={{fontSize: "18px"}}/></div>
-                            <a href='#'>LINKEDIN</a>
+                            <a href='https://www.linkedin.com/company/powermycode/'>LINKEDIN</a>
                         </div>
                         <div className='footer-social-links-items'>
                             <div className='footer-social-links-icons'><FacebookIcon sx={{fontSize: "18px"}}/></div>
-                            <a href='#'>FACEBOOK</a>
+                            <a href='https://www.facebook.com/profile.php?id=100089064531542&mibextid=ZbWKwL'>FACEBOOK</a>
                         </div>
-                        <div className='footer-social-links-items'>
+                        {/* <div className='footer-social-links-items'>
                             <div className='footer-social-links-icons'><XIcon sx={{fontSize: "18px"}}/></div>
                             <a href='#'>TWITTER</a>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -116,13 +124,13 @@ function Footer() {
                 <div className='footer-body-items padd'>
                     <h2>Our Solutions</h2>
                     <div className='footer-ver-line'></div>
-                    <a href='#services'>Web Developement</a>
-                    <a href='#services'>Mobile Developement</a>
-                    <a href='#services'>App Developement</a>
-                    <a href='#services'>Consulting Services</a>
-                    <a href='#services'>E-Commerce Solutions</a>
-                    <a href='#services'>UI/UX Design</a>
-                    <a href='#services'>Software developement</a>
+                    <a href='#' onClick={handleClick}>Web Developement</a>
+                    <a href='/services#mob_dev'>Mobile Developement</a>
+                    <a href='/services#app_dev'>App Developement</a>
+                    <a href='/services#consulting_services'>Consulting Services</a>
+                    <a href='/services#e_comm'>E-Commerce Solutions</a>
+                    <a href='/services#ui_ux'>UI/UX Design</a>
+                    <a href='/services#soft_dev'>Software developement</a>
                 </div>
 
 

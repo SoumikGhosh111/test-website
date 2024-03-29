@@ -15,6 +15,8 @@ import BlogsPage from './pages/BlogsPage';
 import ContactUsPage from './pages/ContactUsPage';
 
 
+import Process from './services-page-components/Process/Process';
+
 function App() {
   return (
     <div className='app'>

@@ -82,8 +82,8 @@ function Process() {
                         </div>
                     </Parallax>
                 </div>
-                <div className='process-content'>
-                    <div className='process-content-wrapper'>
+                <div className='process-content' id='web_dev'>
+                    <div className='process-content-wrapper' >
                         <h1>Pioneering Web Application Development</h1>
                         <p className='sub-para-1'>Empower your digital presence with bespoke web applications embodying innovation, efficiency, and scalability. Our team harnesses modern web technologies to create responsive, adaptive solutions. Strategically designed, they enhance user engagement and maximize conversion rates.</p>
                         <p className='sub-para-2'>Dedicated to your success, we craft web applications that push boundaries, offering seamless experiences and driving impactful results.</p>

@@ -6,7 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function TeamMembers() {
-    const [paraStrength, setParaStrength] = useState(200); 
+    const [paraStrength, setParaStrength] = useState(100); 
     const image1 = "https://picsum.photos/id/400/1080/1920";
     const image2 = "https://picsum.photos/id/560/1080/1920";
     const image3 = "https://picsum.photos/id/388/1080/1920";
