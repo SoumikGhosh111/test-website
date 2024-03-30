@@ -2,8 +2,16 @@ import React, { useState, useEffect } from 'react';
 import "./Process.css";
 import { Parallax } from 'react-parallax';
 import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
+import { useLocation } from 'react-router-dom';
 
 function Process() {
+    // const location = useLocation(); 
+    // console.log(scrollOp); 
+    // useEffect(() => { 
+    //     if(location.pathname === '/services' && scrollOp){ 
+    //         location.pathname = `${location.pathname}${scrollOp}`; 
+    //     }
+    // }, [scrollOp]); 
 
     const image1 = "https://picsum.photos/id/539/1920/1080";
     const image2 = "https://picsum.photos/id/542/1920/1080";
@@ -70,6 +78,8 @@ function Process() {
         alignItems: "center",
         flexDirection: "column"
     };
+
+
     return (
         <div className='process-wrapper'>
             <div className='process-section-1'>
