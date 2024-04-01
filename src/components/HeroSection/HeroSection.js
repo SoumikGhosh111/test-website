@@ -37,7 +37,7 @@ function HeroSection() {
                     <div className='stars-images-hero'>
                         <div className='review-stars'>
                             <Stars rate={5} /> 
-                            trusted by 100+ companies
+                            Trusted by our clients and partners.
                         </div>
 
                         <div className='stars-images-hero-video-bg'>
