@@ -28,6 +28,7 @@ function App() {
           <Route path='/blogs' element={<BlogsPage />} />
           <Route path='/services' element={<ServicesPage />} />
           <Route path='/contact_us' element={<ContactUsPage />} />
+          <Route path='#process' element={<Process />} />
         </Routes>
         <Footer />
       </Router>

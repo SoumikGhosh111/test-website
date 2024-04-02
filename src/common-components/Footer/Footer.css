@@ -38,7 +38,7 @@
 }
 .footer-body h3{ 
     font-size: 2.25vw;
-    font-weight: 400;
+    font-weight: 200;
     color: var(--white);
 }
 .footer-ph-email{ 
@@ -193,7 +193,20 @@
 }
 
 
-
+/* .copy-right-border-line{ 
+    width: 100%;
+    background-color: var(--lightgrey); 
+    height: 0.5px;
+    box-sizing: border-box;
+} */
+.copy-right{ 
+    background-color: var(--footer-body-head);
+    color: var(--white);
+    padding: 2rem 2.5rem;
+    box-sizing: border-box;
+    font-weight: 200;
+   text-align: center;
+}
 
 
 /* Media queries */

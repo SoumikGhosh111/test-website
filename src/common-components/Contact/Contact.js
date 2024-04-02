@@ -18,20 +18,20 @@ function Contact() {
 
             <div className='contact-us-links-items'>
               <div className='contact-us-links-icons'><InstagramIcon sx={{ fontSize: "18px" }} /></div>
-              <a href='#'>INSTAGRAM</a>
+              <a href='https://www.instagram.com/abhishek.rachuri'>INSTAGRAM</a>
             </div>
             <div className='contact-us-links-items'>
               <div className='contact-us-links-icons'><LinkedInIcon sx={{ fontSize: "18px" }} /></div>
-              <a href='#'>LINKEDIN</a>
+              <a href='https://www.linkedin.com/company/powermycode/'>LINKEDIN</a>
             </div>
             <div className='contact-us-links-items'>
               <div className='contact-us-links-icons'><FacebookIcon sx={{ fontSize: "18px" }} /></div>
-              <a href='#'>FACEBOOK</a>
+              <a href='https://www.facebook.com/profile.php?id=100089064531542&mibextid=ZbWKwL'>FACEBOOK</a>
             </div>
-            <div className='contact-us-links-items'>
+            {/* <div className='contact-us-links-items'>
               <div className='contact-us-links-icons'><XIcon sx={{ fontSize: "18px" }} /></div>
               <a href='#'>TWITTER</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

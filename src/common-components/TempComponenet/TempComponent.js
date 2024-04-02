@@ -53,6 +53,7 @@ function TempComponent() {
                                 <div className='google-ratting'><Stars rate={4} />4.5/5</div>
                             </div>
                         </span>
+                        
                     </div>
                 </div>
             </Parallax>

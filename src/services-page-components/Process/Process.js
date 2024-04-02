@@ -27,7 +27,7 @@ function Process() {
         const handleResize = () => {
             const isPortrait = window.matchMedia("(orientation: portrait)").matches;
             if (isPortrait) {
-                setWindowHeight(window.innerHeight / 2);
+                setWindowHeight(window.innerHeight / 1.1);
                 setParaStrength(40)
             }
             else {
@@ -104,34 +104,34 @@ function Process() {
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Platform Integration Strategy
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Performance Optimization Tactics
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Security and Compliance Measures
                             </div>
+
+                            <div className='process-list-items'>
+                                <div className='process-tick'>
+                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
+                                </div>
+                                System Integration Enhancement
+                            </div>
+
 
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
-                            </div>
-
-
-                            <div className='process-list-items'>
-                                <div className='process-tick'>
-                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
-                                </div>
-                                Market Entry Strategies
+                                Continuous Monitoring and Maintenance
                             </div>
                         </div>
                     </div>
@@ -161,34 +161,34 @@ function Process() {
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                ASO(App Store Optimization)
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                User Engagement Tactics
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                User Experience Amplification
                             </div>
+
+                            <div className='process-list-items'>
+                                <div className='process-tick'>
+                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
+                                </div>
+                                Cross-Platform Development
+                            </div>
+
 
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
-                            </div>
-
-
-                            <div className='process-list-items'>
-                                <div className='process-tick'>
-                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
-                                </div>
-                                Market Entry Strategies
+                                Performance Monitoring and Optimization
                             </div>
                         </div>
                     </div>
@@ -223,34 +223,34 @@ function Process() {
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Business Process Analysis
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                User-Centric Approach
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Scalability and Future-Proofing
                             </div>
+
+                            <div className='process-list-items'>
+                                <div className='process-tick'>
+                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
+                                </div>
+                                Adaptive Architecture
+                            </div>
+
 
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
-                            </div>
-
-
-                            <div className='process-list-items'>
-                                <div className='process-tick'>
-                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
-                                </div>
-                                Market Entry Strategies
+                                Integration Flexibility
                             </div>
                         </div>
                     </div>
@@ -279,34 +279,34 @@ function Process() {
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                User-Focused Principle
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Visual Storytelling
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Iterative Design Process
                             </div>
+
+                            <div className='process-list-items'>
+                                <div className='process-tick'>
+                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
+                                </div>
+                                Accessibility Enhancement
+                            </div>
+
 
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
-                            </div>
-
-
-                            <div className='process-list-items'>
-                                <div className='process-tick'>
-                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
-                                </div>
-                                Market Entry Strategies
+                                Interactive Prototyping
                             </div>
                         </div>
                     </div>
@@ -339,34 +339,34 @@ function Process() {
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Market Penetration Strategies
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Conversion Optimization Tactics
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Customer Retention Strategies
                             </div>
+
+                            <div className='process-list-items'>
+                                <div className='process-tick'>
+                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
+                                </div>
+                                Personalized Marketing Initiatives
+                            </div>
+
 
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
-                            </div>
-
-
-                            <div className='process-list-items'>
-                                <div className='process-tick'>
-                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
-                                </div>
-                                Market Entry Strategies
+                                Streamlined Checkout Experience
                             </div>
                         </div>
                     </div>
@@ -394,34 +394,34 @@ function Process() {
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Strategic Planning and Guidance
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Technology Roadmap Development
                             </div>
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
+                                Risk Assessment and Mitigation
                             </div>
+
+                            <div className='process-list-items'>
+                                <div className='process-tick'>
+                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
+                                </div>
+                                Operational Assistance
+                            </div>
+
 
                             <div className='process-list-items'>
                                 <div className='process-tick'>
                                     <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
                                 </div>
-                                Market Entry Strategies
-                            </div>
-
-
-                            <div className='process-list-items'>
-                                <div className='process-tick'>
-                                    <DoneRoundedIcon sx={{ color: "var(--darkgrey)" }} />
-                                </div>
-                                Market Entry Strategies
+                                Continuous Improvement Framework
                             </div>
                         </div>
                     </div>

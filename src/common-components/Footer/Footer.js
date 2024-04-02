@@ -13,7 +13,7 @@ import {useNavigate} from 'react-router-dom'
 
 
 function Footer() {
-    const [paraStrength, setParaStrength] = useState(200)
+    const [paraStrength, setParaStrength] = useState(150)
     const image1 =
         "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ";
     const insideStyles = {
@@ -30,8 +30,8 @@ function Footer() {
         alignItems: "center",
         flexDirection: "column"
     };
-    const location = useNavigate(); 
-    console.log(location); 
+    const navigate = useNavigate(); 
+ 
 
     const paraStyling = { 
         display: "flex",
@@ -56,9 +56,7 @@ function Footer() {
         }, []);
 
 
-        const handleClick = () => { 
-            location('/services#web_dev');
-        }
+       
     
     return (
         <div className='footer-wrapper'>
@@ -97,7 +95,7 @@ function Footer() {
                 <div className='footer-body-items padd'>
 
                    <h1>PowerMyCode</h1>
-                    <p>Innovate Today Lead Tomorrow</p>
+                    <p>Lets Power Your Code Together</p>
 
                     <div className='footer-social-links'>
 
@@ -124,9 +122,8 @@ function Footer() {
                 <div className='footer-body-items padd'>
                     <h2>Our Solutions</h2>
                     <div className='footer-ver-line'></div>
-                    <a href='#' onClick={handleClick}>Web Developement</a>
+                    <a href='#'>Web Developement</a>
                     <a href='/services#mob_dev'>Mobile Developement</a>
-                    <a href='/services#app_dev'>App Developement</a>
                     <a href='/services#consulting_services'>Consulting Services</a>
                     <a href='/services#e_comm'>E-Commerce Solutions</a>
                     <a href='/services#ui_ux'>UI/UX Design</a>
@@ -138,10 +135,10 @@ function Footer() {
                 <div className='footer-body-items padd'>
                     <h2>Company</h2>
                     <div className='footer-ver-line'></div>
-                    <a href='#about-us'>About us</a>
-                    <a href='#services'>Case Study</a>
+                    <a href='/services'>Services</a>
+                    <a href='/about'>About Us</a>
                     <a href='/blogs'>News & Article</a>
-                    <a href='#team-members'>Our Team</a>
+                    <a href='/contact_us'>Contact Us</a>
                 </div>
 
 
@@ -156,8 +153,18 @@ function Footer() {
                     <a href='#'>Career</a>
                 </div>
             </div>
+            <div className='copy-right'>
+            {/* <div className='copy-right-border-line'></div> */}
+
+                <span>© 2024 PowerMyCode. All rights reserved.</span>
+            </div>
+
         </div>
     )
 }
 
 export default Footer
+
+
+
+// ©

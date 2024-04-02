@@ -21,19 +21,19 @@ function Services() {
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Platform Integration Strategy
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Performance Optimization Tactics
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Security and Compliance Measures
                     </div>
                 </div>
 
@@ -48,19 +48,19 @@ function Services() {
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        ASO Strategy
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        User Engagement Tactics
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Cross-Platform Development
                     </div>
                 </div>
 
@@ -76,19 +76,19 @@ function Services() {
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Business Process Analysis
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        User-Centric Design Approach
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Scalability and Future-Proofing
                     </div>
                 </div>
 
@@ -103,19 +103,19 @@ function Services() {
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        User-Focused Principle
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Visual Storytelling
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Iterative Design Process
                     </div>
                 </div>
 
@@ -132,19 +132,19 @@ function Services() {
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Market Penetration Strategies
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Conversion Optimization Tactics
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Customer Retention Strategies
                     </div>
                 </div>
 
@@ -161,19 +161,19 @@ function Services() {
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Strategic Planning and Guidance
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Technology Roadmap Development
                     </div>
                     <div className='list-items'>
                         <div className='tick'>
                             <DoneRoundedIcon />
                         </div>
-                        Market Entry Strategies
+                        Risk Assessment and Mitigation
                     </div>
                 </div>
             </div>
