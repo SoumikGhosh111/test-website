@@ -5,6 +5,10 @@ import bgVideo from "../../assets/bg-video.mp4";
 import SouthRoundedIcon from '@mui/icons-material/SouthRounded';
 import Stars from '../../common-components/Review/Stars';
 
+
+// importing framer motions 
+import { motion } from 'framer-motion';
+
 function HeroSection() {
 
     const handleClick = () => {
@@ -13,14 +17,24 @@ function HeroSection() {
     return (
         <div className='hero-section-wrapper'>
             <div className='hero-section-container-1'>
-                <div className='hero-section-container-1-content'>
-                    <span><span>Innovate <br /> Today, <br /></span> Lead <br />Tommorow.</span>
+                <motion.div className='hero-section-container-1-content'
+                    initial={{ opacity: 0, y: 100 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.8,
+                      delay: 0.5,
+                      ease: [0, 0.71, 0.2, 1.01]
+                    }}
+                >
+                    <span>
+                        <span>Innovate <br /> Today, <br /></span> Lead <br />Tommorow.
+                    </span>
                     <p>Navigate the future with our innovative consulting, where today's breakthroughs become the leadership strategies propelling your business into tomorrow's forefront.</p>
                     <div className='buttons'>
                         <Button text={"Our Services"} bgColor={"var(--white-white)"} color={"var(--darkblue)"} linkToOpen={"/services"} />
                         <Button text={"About Us"} bgColor={"var(--blur-bg)"} color={"var(--white-white)"} linkToOpen={"/about"} />
                     </div>
-                </div>
+                </motion.div>
 
             </div>
             <div className='hero-section-container-2'>

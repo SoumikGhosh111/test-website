@@ -157,9 +157,9 @@ function TeamMembers() {
                         </div>
                     </Parallax>
                     <div className='team-members-content'>
-                        <span>SUBHANKAR GHOSH</span>
+                        <span>FRONTEND DEVELOPER</span>
                         <div className='line'> </div>
-                        <h2>FRONTEND DEVELOPER</h2>
+                        <h2>SUBHANKAR GHOSH</h2>
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
