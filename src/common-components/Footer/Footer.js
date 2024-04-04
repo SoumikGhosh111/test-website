@@ -122,12 +122,12 @@ function Footer() {
                 <div className='footer-body-items padd'>
                     <h2>Our Solutions</h2>
                     <div className='footer-ver-line'></div>
-                    <a href='#'>Web Developement</a>
-                    <a href='/services#mob_dev'>Mobile Developement</a>
-                    <a href='/services#consulting_services'>Consulting Services</a>
-                    <a href='/services#e_comm'>E-Commerce Solutions</a>
-                    <a href='/services#ui_ux'>UI/UX Design</a>
-                    <a href='/services#soft_dev'>Software developement</a>
+                    <a href='/services'>Web Developement</a>
+                    <a href='/services'>Mobile Developement</a>
+                    <a href='/services'>Consulting Services</a>
+                    <a href='/services'>E-Commerce Solutions</a>
+                    <a href='/services'>UI/UX Design</a>
+                    <a href='/services'>Software developement</a>
                 </div>
 
 

@@ -27,12 +27,10 @@ function Process() {
         const handleResize = () => {
             const isPortrait = window.matchMedia("(orientation: portrait)").matches;
             if (isPortrait) {
-                setWindowHeight(window.innerHeight / 1.1);
-                setParaStrength(40)
-            }
-            else {
-                setWindowHeight(window.innerHeight);
-
+                setWindowHeight(500);
+                setParaStrength(40); 
+            }else{ 
+                setWindowHeight(window.innerHeight)
             }
 
         };

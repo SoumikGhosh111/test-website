@@ -47,4 +47,6 @@ body {
   border-radius: 5px;
 }
 
-
+::-webkit-scrollbar-thumb:hover{ 
+  cursor: pointer;
+}

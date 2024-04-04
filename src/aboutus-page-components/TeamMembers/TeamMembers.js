@@ -58,9 +58,9 @@ function TeamMembers() {
                         </div>
                     </Parallax>
                     <div className='team-members-content'>
-                        <span>PROJECT CORDINATOR</span>
+                        <span>DIRECTOR/CEO</span>
                         <div className='line'> </div>
-                        <h2>SOPHIE TURNER</h2>
+                        <h2>ARUN RACHURI</h2>
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
@@ -81,9 +81,9 @@ function TeamMembers() {
                         </div>
                     </Parallax>
                     <div className='team-members-content'>
-                        <span>PROJECT CORDINATOR</span>
+                        <span>ACCOUNT MANAGER</span>
                         <div className='line'> </div>
-                        <h2>SOPHIE TURNER</h2>
+                        <h2>BARRY GOENKA</h2>
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
@@ -107,9 +107,9 @@ function TeamMembers() {
                         </div>
                     </Parallax>
                     <div className='team-members-content'>
-                        <span>PROJECT CORDINATOR</span>
+                        <span>ACCOUNT MANAGER</span>
                         <div className='line'> </div>
-                        <h2>SOPHIE TURNER</h2>
+                        <h2>TINA D</h2>
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
@@ -132,9 +132,9 @@ function TeamMembers() {
                         </div>
                     </Parallax>
                     <div className='team-members-content'>
-                        <span>PROJECT CORDINATOR</span>
+                        <span>SENIOR DEVELOPER</span>
                         <div className='line'> </div>
-                        <h2>SOPHIE TURNER</h2>
+                        <h2>SOMNATH MISTRY</h2>
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
@@ -157,9 +157,9 @@ function TeamMembers() {
                         </div>
                     </Parallax>
                     <div className='team-members-content'>
-                        <span>PROJECT CORDINATOR</span>
+                        <span>SUBHANKAR GHOSH</span>
                         <div className='line'> </div>
-                        <h2>SOPHIE TURNER</h2>
+                        <h2>FRONTEND DEVELOPER</h2>
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
@@ -168,7 +168,7 @@ function TeamMembers() {
 
 
 
-                <div className='team-members-cards-items'>
+                {/* <div className='team-members-cards-items'>
                     <Parallax bgImage={image6} strength={paraStrength}>
                         <div style={{ height: 450}}>
                             <div style={insideStyles}>
@@ -188,7 +188,7 @@ function TeamMembers() {
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
-                </div>
+                </div> */}
 
 
 

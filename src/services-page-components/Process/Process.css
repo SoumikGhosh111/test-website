@@ -55,14 +55,14 @@
     /* justify-content: space-between; */
     align-items: center;
     /* width: 40%; */
-    width: fit-content;
+    width: 100%;
     gap: 1.5rem;
     margin: 1rem 0rem;
     color: var(--darkblue);
 }
 .process-tick{ 
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50%;
     border: 0.5px solid var(--darkgrey);
     background-color: var(--lightgrey);
@@ -131,4 +131,7 @@
     .process-content-wrapper p{ 
         font-size: 18px;
     }
+    /* .process-list-items{ 
+        font-size: 13px;
+    } */
 }
