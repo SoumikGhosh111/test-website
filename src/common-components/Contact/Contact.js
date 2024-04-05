@@ -5,11 +5,22 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import XIcon from '@mui/icons-material/X';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+
+// importing framer motions
+import { motion } from 'framer-motion';
+
 function Contact() {
   return (
     <div className='contact-section-wrapper'>
       <div className='contact-section-header common'>
-        <div className='contact-section-header-content'
+        <motion.div className='contact-section-header-content'
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.7,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
         >
           <h1>Let's  Talk</h1>
           <p>Reach out for inquiries, collaborations, or <br /> just to say hello. We're eager to connect!</p>
@@ -33,10 +44,20 @@ function Contact() {
               <a href='#'>TWITTER</a>
             </div> */}
           </div>
-        </div>
+        </motion.div>
+
       </div>
+
       <div className='contact-section-form-body common'>
-        <div className='contact-us-form'>
+        <motion.div className='contact-us-form'
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+        >
           <form className='form'>
 
 
@@ -64,7 +85,7 @@ function Contact() {
               <button>Get in Touch</button>
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   )

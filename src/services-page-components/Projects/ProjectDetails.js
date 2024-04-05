@@ -1,9 +1,20 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import "./ProjectDetails.css";
 import CarouselComp from '../../common-components/Carousel/CarouselComp';
 
+import { useInView } from 'framer-motion';
+
 
 function ProjectDetails() {
+    const ref1 = useRef(null);
+    const ref2 = useRef(null);
+    const ref3 = useRef(null);
+    const ref4 = useRef(null);
+
+    const isInView1 = useInView(ref1);
+    const isInView2 = useInView(ref2);
+    const isInView3 = useInView(ref3);
+    const isInView4 = useInView(ref4);
 
     const [isClick, setClick] = useState(Array(4).fill(false));
     const toggleState = (index) => {
@@ -20,7 +31,14 @@ function ProjectDetails() {
         <div className='project-details-section-wrapper'>
 
 
-            <div className='project-card-1 project-card'>
+            <div className='project-card-1 project-card'
+                ref={ref1}
+                style={{
+                    transform: isInView1 ? "none" : "translateY(100px)",
+                    opacity: isInView1 ? 1 : 0,
+                    transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                }}
+            >
                 <div className='project-content project-card-items'>
                     <h1 >Precio</h1>
                     <div className='project-details'>
@@ -37,7 +55,14 @@ function ProjectDetails() {
                 </div>
             </div>
 
-            <div className='project-card-2 project-card'>
+            <div className='project-card-2 project-card'
+                ref={ref2}
+                style={{
+                    transform: isInView2 ? "none" : "translateY(100px)",
+                    opacity: isInView2 ? 1 : 0,
+                    transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                }}
+            >
                 <div className='project-content project-card-items'>
                     <h1 >PowerMyCode</h1>
                     <div className='project-details'>
@@ -55,7 +80,14 @@ function ProjectDetails() {
             </div>
 
 
-            <div className='project-card-1 project-card'>
+            <div className='project-card-1 project-card'
+                ref={ref3}
+                style={{
+                    transform: isInView3 ? "none" : "translateY(100px)",
+                    opacity: isInView3 ? 1 : 0,
+                    transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                }}
+            >
                 <div className='project-content project-card-items'>
                     <h1 >Precio</h1>
                     <div className='project-details'>
@@ -73,7 +105,14 @@ function ProjectDetails() {
             </div>
 
 
-            <div className='project-card-2 project-card'>
+            <div className='project-card-2 project-card'
+                 ref={ref4}
+                 style={{
+                     transform: isInView4 ? "none" : "translateY(100px)",
+                     opacity: isInView4 ? 1 : 0,
+                     transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                 }}
+            >
                 <div className='project-content project-card-items'>
                     <h1 >PowerMyCode</h1>
                     <div className='project-details'>

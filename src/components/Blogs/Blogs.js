@@ -1,8 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Parallax } from 'react-parallax';
 import "./Blogs.css";
 
+
+import { useInView } from 'framer-motion';
+
 function Blogs() {
+    const ref = useRef(null); 
+    const ref2 = useRef(null); 
+
+    const isInView = useInView(ref); 
+    const isInView2 = useInView(ref2); 
+
     const [paraStrength, setParaStrength] = useState(200)
     const image1 = "https://picsum.photos/id/386/1920/1080";
     const image2 = "https://picsum.photos/id/387/1920/1080";
@@ -44,7 +53,14 @@ function Blogs() {
                 <div className='ver-line mob-view-ver-line'> </div>
             </div>
             <div className='blogs-section-cards'>
-                <div className='blogs-section-cards-items'>
+                <div className='blogs-section-cards-items' 
+                    ref={ref}
+                    style={{
+                        transform: isInView ? "none" : "translateY(100px)", 
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
                     <Parallax bgImage={image1} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -66,7 +82,14 @@ function Blogs() {
                 </div>
 
 
-                <div className='blogs-section-cards-items'>
+                <div className='blogs-section-cards-items'
+                    ref={ref}
+                    style={{
+                        transform: isInView ? "none" : "translateY(100px)", 
+                        opacity: isInView ? 1 : 0,
+                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
                     <Parallax bgImage={image2} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -89,7 +112,14 @@ function Blogs() {
 
 
 
-                <div className='blogs-section-cards-items'>
+                <div className='blogs-section-cards-items'
+                    ref={ref2}
+                    style={{
+                        transform: isInView2 ? "none" : "translateY(100px)", 
+                        opacity: isInView2 ? 1 : 0,
+                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
                     <Parallax bgImage={image3} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -111,7 +141,14 @@ function Blogs() {
                 </div>
 
 
-                <div className='blogs-section-cards-items'>
+                <div className='blogs-section-cards-items'
+                    ref={ref2}
+                    style={{
+                        transform: isInView2 ? "none" : "translateY(100px)", 
+                        opacity: isInView2 ? 1 : 0,
+                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
                     <Parallax bgImage={image4} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>

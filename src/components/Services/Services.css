@@ -59,8 +59,8 @@
 
 }
 .tick{ 
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     border-radius: 50%;
     /* border: 0.5px solid black; */
     background-color: var(--white-white);
