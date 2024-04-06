@@ -88,7 +88,7 @@ function TeamMembers() {
                                 ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
                                 : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         }
-                        transition={{ duration: 1, delay: 1 }}
+                        transition={{ duration: 1}}
                     >
                         <Parallax bgImage={image1} strength={paraStrength} >
                             <div style={{ height: 450 }}>
@@ -129,7 +129,7 @@ function TeamMembers() {
                                 ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
                                 : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         }
-                        transition={{ duration: 1, delay: 1 }}
+                        transition={{ duration: 1}}
                     // viewport={{ once: true }}
                     // onViewportEnter={() => setIsInView(true)}
                     >
@@ -175,7 +175,7 @@ function TeamMembers() {
                                 ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
                                 : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         }
-                        transition={{ duration: 1, delay: 1 }}
+                        transition={{ duration: 1}}
                     >
                         <Parallax bgImage={image3} strength={paraStrength} onLoad={() => toggleImageLoad(2)}>
                             <div style={{ height: 450 }}>
@@ -218,7 +218,7 @@ function TeamMembers() {
                                 ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
                                 : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         }
-                        transition={{ duration: 1, delay: 1 }}
+                        transition={{ duration: 1}}
                     >
                         <Parallax bgImage={image4} strength={paraStrength} onLoad={() => toggleImageLoad(3)}>
                             <div style={{ height: 450 }}>
@@ -260,7 +260,7 @@ function TeamMembers() {
                                 ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
                                 : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         }
-                        transition={{ duration: 1, delay: 1 }}
+                        transition={{ duration: 1}}
                     >
                         <Parallax bgImage={image5} strength={paraStrength} onLoad={() => toggleImageLoad(4)}>
                             <div style={{ height: 450 }}>

@@ -10,10 +10,16 @@ function Services() {
     const ref = useRef(null);
     const ref2 = useRef(null); 
     const ref3 = useRef(null); 
+    const ref4 = useRef(null);
+    const ref5 = useRef(null);
+    const ref6 = useRef(null);
 
     const isInView = useInView(ref);
     const isInView2 = useInView(ref2); 
     const isInView3 = useInView(ref3); 
+    const isInView4 = useInView(ref4);
+    const isInView5 = useInView(ref5);
+    const isInView6 = useInView(ref6);
 
     return (
         <div className='services-section-wrapper'>
@@ -58,10 +64,10 @@ function Services() {
                 </div>
 
                 <div className='services-section-items'
-                    ref={ref}
+                    ref={ref2}
                     style={{
-                        transform: isInView ? "none" : "translateY(100px)",
-                        opacity: isInView ? 1 : 0,
+                        transform: isInView2 ? "none" : "translateY(100px)",
+                        opacity: isInView2 ? 1 : 0,
                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
                 >
@@ -93,10 +99,10 @@ function Services() {
 
 
                 <div className='services-section-items'
-                    ref={ref2}
+                    ref={ref3}
                     style={{
-                        transform: isInView2 ? "none" : "translateY(100px)", 
-                        opacity: isInView2 ? 1 : 0,
+                        transform: isInView3 ? "none" : "translateY(100px)", 
+                        opacity: isInView3 ? 1 : 0,
                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
                 >
@@ -127,10 +133,10 @@ function Services() {
                 </div>
 
                 <div className='services-section-items'
-                    ref={ref2}
+                    ref={ref4}
                     style={{
-                        transform: isInView2 ? "none" : "translateY(100px)", 
-                        opacity: isInView2 ? 1 : 0,
+                        transform: isInView4 ? "none" : "translateY(100px)", 
+                        opacity: isInView4 ? 1 : 0,
                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
                 >
@@ -163,10 +169,10 @@ function Services() {
 
 
                 <div className='services-section-items'
-                    ref={ref3}
+                    ref={ref5}
                     style={{ 
-                        transform: isInView3 ? "none" : "translateY(100px)", 
-                        opacity: isInView3 ? 1 : 0, 
+                        transform: isInView5 ? "none" : "translateY(100px)", 
+                        opacity: isInView5 ? 1 : 0, 
                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
                 >
@@ -199,10 +205,10 @@ function Services() {
 
 
                 <div className='services-section-items'
-                     ref={ref3}
+                     ref={ref6}
                      style={{ 
-                         transform: isInView3 ? "none" : "translateY(100px)", 
-                         opacity: isInView3 ? 1 : 0, 
+                         transform: isInView6 ? "none" : "translateY(100px)", 
+                         opacity: isInView6 ? 1 : 0, 
                          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                      }}
                 >

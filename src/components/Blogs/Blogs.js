@@ -8,11 +8,16 @@ import { useInView } from 'framer-motion';
 function Blogs() {
     const ref = useRef(null); 
     const ref2 = useRef(null); 
+    const ref3 = useRef(null);
+    const ref4 = useRef(null);
+    
 
     const isInView = useInView(ref); 
     const isInView2 = useInView(ref2); 
+    const isInView3 = useInView(ref3); 
+    const isInView4 = useInView(ref4); 
 
-    const [paraStrength, setParaStrength] = useState(200)
+    const [paraStrength, setParaStrength] = useState(100)
     const image1 = "https://picsum.photos/id/386/1920/1080";
     const image2 = "https://picsum.photos/id/387/1920/1080";
     const image3 = "https://picsum.photos/id/388/1920/1080";
@@ -83,10 +88,10 @@ function Blogs() {
 
 
                 <div className='blogs-section-cards-items'
-                    ref={ref}
+                    ref={ref2}
                     style={{
-                        transform: isInView ? "none" : "translateY(100px)", 
-                        opacity: isInView ? 1 : 0,
+                        transform: isInView2 ? "none" : "translateY(100px)", 
+                        opacity: isInView2 ? 1 : 0,
                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
                 >
@@ -113,10 +118,10 @@ function Blogs() {
 
 
                 <div className='blogs-section-cards-items'
-                    ref={ref2}
+                    ref={ref3}
                     style={{
-                        transform: isInView2 ? "none" : "translateY(100px)", 
-                        opacity: isInView2 ? 1 : 0,
+                        transform: isInView3 ? "none" : "translateY(100px)", 
+                        opacity: isInView3 ? 1 : 0,
                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
                 >
@@ -142,10 +147,10 @@ function Blogs() {
 
 
                 <div className='blogs-section-cards-items'
-                    ref={ref2}
+                    ref={ref4}
                     style={{
-                        transform: isInView2 ? "none" : "translateY(100px)", 
-                        opacity: isInView2 ? 1 : 0,
+                        transform: isInView4 ? "none" : "translateY(100px)", 
+                        opacity: isInView4 ? 1 : 0,
                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
                     }}
                 >
