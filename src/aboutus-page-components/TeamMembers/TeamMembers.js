@@ -1,12 +1,41 @@
-import React, {useState, useEffect} from 'react'; 
-import "./TeamMembers.css"; 
+import React, { useState, useEffect, useRef } from 'react';
+import "./TeamMembers.css";
 import { Parallax } from 'react-parallax';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
+// importing framer motions
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+const hiddenMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)`;
+const visibleMask = `repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)`;
+
+
+
 function TeamMembers() {
-    const [paraStrength, setParaStrength] = useState(100); 
+    const [isLoaded, setIsLoaded] = useState(Array(5).fill(false));
+    // const [isInView, setIsInView] = useState(false);
+    const ref1 = useRef(null);
+    const ref2 = useRef(null);
+    const ref3 = useRef(null);
+    const ref4 = useRef(null);
+    const ref5 = useRef(null);
+
+    const cardInView1 = useInView(ref1);
+    const cardInView2 = useInView(ref2);
+    const cardInView3 = useInView(ref3);
+    const cardInView4 = useInView(ref4);
+    const cardInView5 = useInView(ref5);
+
+
+    const toggleImageLoad = (index) => {
+        const newList = [...isLoaded];
+        newList[index] = true;
+        setIsLoaded(newList);
+    }
+
+    const [paraStrength, setParaStrength] = useState(100);
     const image1 = "https://picsum.photos/id/400/1080/1920";
     const image2 = "https://picsum.photos/id/560/1080/1920";
     const image3 = "https://picsum.photos/id/388/1080/1920";
@@ -27,36 +56,53 @@ function TeamMembers() {
     };
 
     useEffect(() => {
-            const handleOrientationChange = () => {
-                const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-                setParaStrength(isPortrait ? 50 : paraStrength);
-            };
-        
-            window.addEventListener('resize', handleOrientationChange);
-        
-            // Call the handler right away so state gets updated with initial window size
-            handleOrientationChange();
-        
-            return () => {
-                window.removeEventListener('resize', handleOrientationChange);
-            };
-        }, []);
-  return (
-    <div className='team-members-wrapper'>
+        const handleOrientationChange = () => {
+            const isPortrait = window.matchMedia("(orientation: portrait)").matches;
+            setParaStrength(isPortrait ? 50 : paraStrength);
+        };
+
+        window.addEventListener('resize', handleOrientationChange);
+
+        // Call the handler right away so state gets updated with initial window size
+        handleOrientationChange();
+
+        return () => {
+            window.removeEventListener('resize', handleOrientationChange);
+        };
+    }, []);
+    return (
+        <div className='team-members-wrapper'>
             <div className='team-members-cards'>
-                <div className='team-members-cards-items'>
-                    <Parallax bgImage={image1} strength={paraStrength}>
-                        <div style={{ height: 450}}>
-                            <div style={insideStyles}>
-                                <div className='team-members-social'>
-                                    <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{fontSize: "15px"}}/></div></a>
-                                    <div className='team-members-social-icons'><FacebookIcon sx={{fontSize: "15px"}} /></div>
-                                    <div className='team-members-social-icons'><LinkedInIcon sx={{fontSize: "15px"}} /></div>
+                <div className='team-members-cards-items'
+                    ref={ref1}
+                    style={{
+                        transform: cardInView1 ? "none" : "translateY(100px)",
+                        opacity: cardInView1 ? 1 : 0,
+                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+                    <motion.div
+                        initial={false}
+                        animate={
+                            cardInView1
+                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        }
+                        transition={{ duration: 1, delay: 1 }}
+                    >
+                        <Parallax bgImage={image1} strength={paraStrength} >
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                    </div>
+
                                 </div>
-                                
                             </div>
-                        </div>
-                    </Parallax>
+                        </Parallax>
+                    </motion.div>
                     <div className='team-members-content'>
                         <span>DIRECTOR/CEO</span>
                         <div className='line'> </div>
@@ -67,19 +113,39 @@ function TeamMembers() {
                 </div>
 
 
-                <div className='team-members-cards-items'>
-                    <Parallax bgImage={image2} strength={paraStrength}>
-                        <div style={{ height: 450}}>
-                            <div style={insideStyles}>
-                                <div className='team-members-social'>
-                                    <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{fontSize: "15px"}}/></div></a>
-                                    <div className='team-members-social-icons'><FacebookIcon sx={{fontSize: "15px"}} /></div>
-                                    <div className='team-members-social-icons'><LinkedInIcon sx={{fontSize: "15px"}} /></div>
+                <div className='team-members-cards-items'
+                    ref={ref2}
+                    style={{
+                        transform: cardInView2 ? "none" : "translateY(100px)",
+                        opacity: cardInView2 ? 1 : 0,
+                        transition: "all 0.7s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+                    <motion.div
+
+                        initial={false}
+                        animate={
+                             cardInView2
+                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        }
+                        transition={{ duration: 1, delay: 1 }}
+                    // viewport={{ once: true }}
+                    // onViewportEnter={() => setIsInView(true)}
+                    >
+                        <Parallax bgImage={image2} strength={paraStrength} onLoad={() => toggleImageLoad(1)}>
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                    </div>
+
                                 </div>
-                                
                             </div>
-                        </div>
-                    </Parallax>
+                        </Parallax>
+                    </motion.div>
                     <div className='team-members-content'>
                         <span>ACCOUNT MANAGER</span>
                         <div className='line'> </div>
@@ -93,19 +159,37 @@ function TeamMembers() {
 
 
 
-                <div className='team-members-cards-items'>
-                    <Parallax bgImage={image3} strength={paraStrength}>
-                        <div style={{ height: 450}}>
-                            <div style={insideStyles}>
-                                <div className='team-members-social'>
-                                    <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{fontSize: "15px"}}/></div></a>
-                                    <div className='team-members-social-icons'><FacebookIcon sx={{fontSize: "15px"}} /></div>
-                                    <div className='team-members-social-icons'><LinkedInIcon sx={{fontSize: "15px"}} /></div>
+                <div className='team-members-cards-items'
+                    ref={ref3}
+                    style={{
+                        transform: cardInView3 ? "none" : "translateY(100px)",
+                        opacity: cardInView3 ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+
+                    <motion.div
+                        initial={false}
+                        animate={
+                             cardInView3
+                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        }
+                        transition={{ duration: 1, delay: 1 }}
+                    >
+                        <Parallax bgImage={image3} strength={paraStrength} onLoad={() => toggleImageLoad(2)}>
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                    </div>
+
                                 </div>
-                                
                             </div>
-                        </div>
-                    </Parallax>
+                        </Parallax>
+                    </motion.div>
                     <div className='team-members-content'>
                         <span>ACCOUNT MANAGER</span>
                         <div className='line'> </div>
@@ -118,19 +202,37 @@ function TeamMembers() {
 
 
 
-                <div className='team-members-cards-items'>
-                    <Parallax bgImage={image4} strength={paraStrength}>
-                        <div style={{ height: 450}}>
-                            <div style={insideStyles}>
-                                <div className='team-members-social'>
-                                    <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{fontSize: "15px"}}/></div></a>
-                                    <div className='team-members-social-icons'><FacebookIcon sx={{fontSize: "15px"}} /></div>
-                                    <div className='team-members-social-icons'><LinkedInIcon sx={{fontSize: "15px"}} /></div>
+                <div className='team-members-cards-items'
+                    ref={ref4}
+                    style={{
+                        transform: cardInView4 ? "none" : "translateY(100px)",
+                        opacity: cardInView4 ? 1 : 0,
+                        transition: "all 1.1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+
+                    <motion.div
+                        initial={false}
+                        animate={
+                             cardInView4
+                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        }
+                        transition={{ duration: 1, delay: 1 }}
+                    >
+                        <Parallax bgImage={image4} strength={paraStrength} onLoad={() => toggleImageLoad(3)}>
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                    </div>
+
                                 </div>
-                                
                             </div>
-                        </div>
-                    </Parallax>
+                        </Parallax>
+                    </motion.div>
                     <div className='team-members-content'>
                         <span>SENIOR DEVELOPER</span>
                         <div className='line'> </div>
@@ -143,19 +245,36 @@ function TeamMembers() {
 
 
 
-                <div className='team-members-cards-items'>
-                    <Parallax bgImage={image5} strength={paraStrength}>
-                        <div style={{ height: 450}}>
-                            <div style={insideStyles}>
-                                <div className='team-members-social'>
-                                    <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{fontSize: "15px"}}/></div></a>
-                                    <div className='team-members-social-icons'><FacebookIcon sx={{fontSize: "15px"}} /></div>
-                                    <div className='team-members-social-icons'><LinkedInIcon sx={{fontSize: "15px"}} /></div>
+                <div className='team-members-cards-items'
+                    ref={ref5}
+                    style={{
+                        transform: cardInView5 ? "none" : "translateY(100px)",
+                        opacity: cardInView5 ? 1 : 0,
+                        transition: "all 1.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+                    <motion.div
+                        initial={false}
+                        animate={
+                            cardInView5
+                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        }
+                        transition={{ duration: 1, delay: 1 }}
+                    >
+                        <Parallax bgImage={image5} strength={paraStrength} onLoad={() => toggleImageLoad(4)}>
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                    </div>
+
                                 </div>
-                                
                             </div>
-                        </div>
-                    </Parallax>
+                        </Parallax>
+                    </motion.div>
                     <div className='team-members-content'>
                         <span>FRONTEND DEVELOPER</span>
                         <div className='line'> </div>
@@ -192,11 +311,11 @@ function TeamMembers() {
 
 
 
-                
+
 
             </div>
         </div>
-  )
+    )
 }
 
 export default TeamMembers

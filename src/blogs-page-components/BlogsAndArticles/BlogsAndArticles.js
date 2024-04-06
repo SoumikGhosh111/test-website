@@ -1,9 +1,22 @@
-import React, {useState, useEffect} from 'react'; 
+import React, {useState, useEffect, useRef} from 'react'; 
 import "./BlogsAndArticles.css"
 import { Parallax } from 'react-parallax';
 
+import { UseInView, useInView } from 'framer-motion';
+
 function BlogsAndArticles() {
-    const [paraStrength, setParaStrength] = useState(200)
+    const ref1 = useRef(null); 
+    const ref2 = useRef(null);
+    const ref3 = useRef(null);
+    const ref4 = useRef(null);
+
+    const isInView1  = useInView(ref1); 
+    const isInView2  = useInView(ref2);
+    const isInView3 = useInView(ref3);
+    const isInView4  = useInView(ref4);
+
+
+    const [paraStrength, setParaStrength] = useState(100)
     const image1 = "https://picsum.photos/id/386/1920/1080";
     const image2 = "https://picsum.photos/id/387/1920/1080";
     const image3 = "https://picsum.photos/id/388/1920/1080";
@@ -29,7 +42,7 @@ function BlogsAndArticles() {
     useEffect(() => {
             const handleOrientationChange = () => {
                 const isPortrait = window.matchMedia("(orientation: portrait)").matches;
-                setParaStrength(isPortrait ? 50 : paraStrength);
+                setParaStrength(isPortrait ? 40 : paraStrength);
             };
         
             window.addEventListener('resize', handleOrientationChange);
@@ -48,7 +61,14 @@ function BlogsAndArticles() {
                 <div className='ver-line mob-view-ver-line'> </div>
             </div>
             <div className='blogs-articles-cards'>
-                <div className='blogs-articles-cards-items'>
+                <div className='blogs-articles-cards-items'
+                     ref={ref1}
+                     style={{ 
+                         transform : isInView1 ? "none" : "translateY(50px)",
+                         opacity: isInView1 ? 1 : 0, 
+                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                     }}
+                >
                     <Parallax bgImage={image1} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -70,7 +90,14 @@ function BlogsAndArticles() {
                 </div>
 
 
-                <div className='blogs-articles-cards-items'>
+                <div className='blogs-articles-cards-items'
+                     ref={ref1}
+                     style={{ 
+                         transform : isInView1 ? "none" : "translateY(50px)",
+                         opacity: isInView1 ? 1 : 0, 
+                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                     }}
+                >
                     <Parallax bgImage={image2} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -93,7 +120,14 @@ function BlogsAndArticles() {
 
 
 
-                <div className='blogs-articles-cards-items'>
+                <div className='blogs-articles-cards-items'
+                     ref={ref2}
+                     style={{ 
+                         transform : isInView2 ? "none" : "translateY(50px)",
+                         opacity: isInView2 ? 1 : 0, 
+                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                     }}
+                >
                     <Parallax bgImage={image3} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -115,7 +149,14 @@ function BlogsAndArticles() {
                 </div>
 
 
-                <div className='blogs-articles-cards-items'>
+                <div className='blogs-articles-cards-items'
+                    ref={ref2}
+                    style={{ 
+                        transform : isInView2 ? "none" : "translateY(50px)",
+                        opacity: isInView2 ? 1 : 0, 
+                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
                     <Parallax bgImage={image4} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -137,7 +178,14 @@ function BlogsAndArticles() {
                 </div>
 
 
-                <div className='blogs-articles-cards-items'>
+                <div className='blogs-articles-cards-items'
+                    ref={ref3}
+                    style={{ 
+                        transform : isInView3 ? "none" : "translateY(50px)",
+                        opacity: isInView3 ? 1 : 0, 
+                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
                     <Parallax bgImage={image5} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -159,7 +207,14 @@ function BlogsAndArticles() {
                 </div>
 
 
-                <div className='blogs-articles-cards-items'>
+                <div className='blogs-articles-cards-items'
+                     ref={ref3}
+                     style={{ 
+                         transform : isInView3 ? "none" : "translateY(50px)",
+                         opacity: isInView3 ? 1 : 0, 
+                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                     }}
+                >
                     <Parallax bgImage={image6} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -182,7 +237,14 @@ function BlogsAndArticles() {
 
 
 
-                <div className='blogs-articles-cards-items'>
+                <div className='blogs-articles-cards-items'
+                     ref={ref4}
+                     style={{ 
+                         transform : isInView4 ? "none" : "translateY(50px)",
+                         opacity: isInView4 ? 1 : 0, 
+                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                     }}
+                >
                     <Parallax bgImage={image7} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
@@ -205,7 +267,14 @@ function BlogsAndArticles() {
 
 
 
-                <div className='blogs-articles-cards-items'>
+                <div className='blogs-articles-cards-items'
+                     ref={ref4}
+                     style={{ 
+                         transform : isInView4 ? "none" : "translateY(50px)",
+                         opacity: isInView4 ? 1 : 0, 
+                         transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                     }}
+                >
                     <Parallax bgImage={image8} strength={paraStrength}>
                         <div style={{ height: 300 }}>
                             <div style={insideStyles}>
