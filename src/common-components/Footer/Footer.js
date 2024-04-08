@@ -13,7 +13,7 @@ import {useNavigate} from 'react-router-dom'
 
 
 function Footer() {
-    const [paraStrength, setParaStrength] = useState(150)
+    const [paraStrength, setParaStrength] = useState(100)
     const image1 =
         "https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D ";
     const insideStyles = {
@@ -122,12 +122,16 @@ function Footer() {
                 <div className='footer-body-items padd'>
                     <h2>Our Solutions</h2>
                     <div className='footer-ver-line'></div>
-                    <a href='/services'>Web Developement</a>
-                    <a href='/services'>Mobile Developement</a>
-                    <a href='/services'>Consulting Services</a>
-                    <a href='/services'>E-Commerce Solutions</a>
-                    <a href='/services'>UI/UX Design</a>
-                    <a href='/services'>Software developement</a>
+                    <span className='disabled-anchor-tags'>Web Developement</span>
+                    <span className='disabled-anchor-tags'>Mobile Developement</span>
+                    <span className='disabled-anchor-tags'>Consulting Services</span>
+                    <span className='disabled-anchor-tags'>E-Commerce Solutions</span>
+                    <span className='disabled-anchor-tags'>UI/UX Design</span>
+                    <span className='disabled-anchor-tags'>Software developement</span>
+
+                    <div className='disabled-anchors-buttons'>
+                    <Button text={"Our Solutions"} bgColor={"var(--lightgrey)"} color={"var(--darkblue)"} linkToOpen={"/services"}/>
+                    </div>
                 </div>
 
 

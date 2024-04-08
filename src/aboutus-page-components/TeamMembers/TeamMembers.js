@@ -82,13 +82,13 @@ function TeamMembers() {
                     }}
                 >
                     <motion.div
-                        initial={false}
-                        animate={
-                            cardInView1
-                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-                        }
-                        transition={{ duration: 1}}
+                        // initial={false}
+                        // animate={
+                        //     cardInView1
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
                     >
                         <Parallax bgImage={image1} strength={paraStrength} >
                             <div style={{ height: 450 }}>
@@ -123,17 +123,17 @@ function TeamMembers() {
                 >
                     <motion.div
 
-                        initial={false}
-                        animate={
-                             cardInView2
-                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-                        }
-                        transition={{ duration: 1}}
+                        // initial={false}
+                        // animate={
+                        //      cardInView2
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
                     // viewport={{ once: true }}
                     // onViewportEnter={() => setIsInView(true)}
                     >
-                        <Parallax bgImage={image2} strength={paraStrength} onLoad={() => toggleImageLoad(1)}>
+                        <Parallax bgImage={image2} strength={paraStrength} >
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
@@ -169,15 +169,15 @@ function TeamMembers() {
                 >
 
                     <motion.div
-                        initial={false}
-                        animate={
-                             cardInView3
-                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-                        }
-                        transition={{ duration: 1}}
+                        // initial={false}
+                        // animate={
+                        //      cardInView3
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
                     >
-                        <Parallax bgImage={image3} strength={paraStrength} onLoad={() => toggleImageLoad(2)}>
+                        <Parallax bgImage={image3} strength={paraStrength}>
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
@@ -212,15 +212,15 @@ function TeamMembers() {
                 >
 
                     <motion.div
-                        initial={false}
-                        animate={
-                             cardInView4
-                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-                        }
-                        transition={{ duration: 1}}
+                        // initial={false}
+                        // animate={
+                        //      cardInView4
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
                     >
-                        <Parallax bgImage={image4} strength={paraStrength} onLoad={() => toggleImageLoad(3)}>
+                        <Parallax bgImage={image4} strength={paraStrength}>
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
@@ -254,15 +254,15 @@ function TeamMembers() {
                     }}
                 >
                     <motion.div
-                        initial={false}
-                        animate={
-                            cardInView5
-                                ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-                                : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-                        }
-                        transition={{ duration: 1}}
+                        // initial={false}
+                        // animate={
+                        //     cardInView5
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
                     >
-                        <Parallax bgImage={image5} strength={paraStrength} onLoad={() => toggleImageLoad(4)}>
+                        <Parallax bgImage={image5} strength={paraStrength}>
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>

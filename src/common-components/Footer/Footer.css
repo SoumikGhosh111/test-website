@@ -147,6 +147,18 @@
     font-weight: 100;
     position: relative;
 }
+.disabled-anchor-tags{ 
+    color: var(--darkgrey);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 0.5rem 0rem;
+    font-weight: 100;
+}
+
+.disabled-anchors-buttons{ 
+    margin-top: 4rem;
+}
 .footer-body-items a::before{ 
     content: "";
     position: absolute;

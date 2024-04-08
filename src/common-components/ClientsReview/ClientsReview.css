@@ -20,8 +20,8 @@
   }
   .wrapper-clients-review i {
     top: 50%;
-    height: 30px;
-    width: 30px;
+    height: 37px;
+    width: 37px;
     cursor: pointer;
     font-size: 1.25rem;
     position: absolute;
@@ -33,7 +33,7 @@
     transform: translateY(-50%);
     transition: transform 0.1s linear;
     color: var(--darkblue);
-    
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -44,7 +44,7 @@
     transform: translateY(-50%)(0.85);
   }
   .wrapper-clients-review i:first-child{
-    left: -35px;
+    left: -50px;
   }
   .wrapper-clients-review i:last-child{
     right: -30px;
@@ -135,8 +135,12 @@
     .wrapper-clients-review{ 
         width: 90%;
     }
-    .d-none{
-        display: flex !important;
+    .wrapper-clients-review i{
+        width: 30px;
+        height: 30px;
+    }
+    .wrapper-clients-review i:first-child{ 
+      left: -31px;
     }
 
 }
