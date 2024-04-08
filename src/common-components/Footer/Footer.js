@@ -150,8 +150,8 @@ function Footer() {
                 <div className='footer-body-items padd'>
                     <h2>Resources</h2>
                     <div className='footer-ver-line'></div>
-                    <a href='#'>Support Area</a>
-                    <a href='#'>Support Policy</a>
+                    {/* <a href='#'>Support Area</a>
+                    <a href='#'>Support Policy</a> */}
                     <a href='#'>Terms & Conditions</a>
                     <a href='#'>Privacy Policy</a>
                     <a href='#'>Career</a>
