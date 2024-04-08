@@ -1,4 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{ 
+  transition: all 0.01s;
+}
 html{ 
   scroll-behavior: smooth;
 }
