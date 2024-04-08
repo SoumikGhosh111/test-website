@@ -113,7 +113,7 @@ function ClientsReview() {
                 <div className='ver-line mob-view-ver-line'></div>
             </div>
             <div className="wrapper-clients-review">
-                <i id="right-clients-review" className="fa-solid fa-angle-right "><WestRoundedIcon  sx={{fontSize: "13px"}}/></i>
+                <i id="left-clients-review" className="fa-solid fa-angle-right "><WestRoundedIcon  sx={{fontSize: "13px"}}/></i>
 
 
                 <div className='carousel-clients-review'>
@@ -233,7 +233,7 @@ function ClientsReview() {
                     </div>
                   
                 </div>
-                <i id="left-clients-review" className="fa-solid fa-angle-left "><EastRoundedIcon sx={{fontSize: "13px"}}/></i>
+                <i id="right-clients-review" className="fa-solid fa-angle-left "><EastRoundedIcon sx={{fontSize: "13px"}}/></i>
               
             </div>
         </div>
