@@ -51,7 +51,7 @@ function ServicesPageHeroSection() {
                 ease: [0, 0.71, 0.2, 1.01]
               }}
             >
-              <span className='footer-header'>Crafting Solutions for <br />
+              <span className='footer-header'>Crafting Solutions For <br />
                 Your Unique Needs</span>
 
               <p className='footer-para'>

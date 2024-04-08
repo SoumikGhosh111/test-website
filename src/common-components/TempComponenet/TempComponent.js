@@ -5,7 +5,7 @@ import "./TempComponent.css"
 import Stars from '../Review/Stars';
 
 function TempComponent() {
-    const [paraStrength, setParaStrength] = useState(200)
+    const [paraStrength, setParaStrength] = useState(100)
     const image = "https://picsum.photos/id/323/1920/1080";
     const unQuote = "https://assets-global.website-files.com/653e50f60ac329e82ba89473/6542276b627fc9baf1f06120_quote-icon-inverse.svg";
     const googleLogo = "https://powermycode.com/assets/img/home-5/google-1.svg";
@@ -47,7 +47,7 @@ function TempComponent() {
                     <div style={insideStyles}>
                         <span className='temp-comp-wrapper-span'>
                             <div><img src={unQuote} /></div>
-                            Their commitment surpassed our expectations. A innovative collaboration!
+                            Their commitment surpassed our expectations. An innovative collaboration!
                             <div className='company-review'>
                                 <img src={googleLogo} />
                                 <div className='google-ratting'><Stars rate={4} />4.5/5</div>
