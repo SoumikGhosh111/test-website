@@ -84,7 +84,7 @@ function Navbar() {
           </ul>
         </div>
         <div className='notification-button'>
-          <div className='notification'>0</div>
+          {/* <div className='notification'>0</div> */}
           <Button text={"Get in Touch"} bgColor={"var(--blur-bg)"} color={"var(--white)"} linkToOpen={"/contact_us"} />
         </div>
       </div>

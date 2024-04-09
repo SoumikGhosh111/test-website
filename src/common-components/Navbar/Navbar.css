@@ -65,7 +65,7 @@
     gap: 3rem;
 }
 
-.notification{ 
+/* .notification{ 
     width: 40px;
     height: 40px;
     background-color: var(--blur-bg);
@@ -77,7 +77,7 @@
     align-items: center;
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
-}
+} */
 
 
 

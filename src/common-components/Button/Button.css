@@ -3,7 +3,7 @@ button{
     height: 45px;
     margin-right: 1rem;
     border: none;
-    color: var(--white); 
+    /* color: var(--white);  */
     font-size: 15px;
      backdrop-filter: blur(20px);
      -webkit-backdrop-filter: blur(20px);
@@ -12,18 +12,19 @@ button{
      position: relative;
      overflow: hidden;
      cursor: pointer;
+     transition: all 0.3s ease-in-out;
   }
   
- button::before{ 
+ /* button::before{ 
       content: attr(data-attr); 
       position: absolute;
       width: 100%;
       transform: translate(-50%, -50%);
       transition: all 0.2s ease;
   
-  }
+  } */
   
-button::after{ 
+/* button::after{ 
       content: attr(data-attr); 
       position: absolute;
       width: 100%;
@@ -36,9 +37,11 @@ button::after{
   
 button:hover::before{ 
       transform: translate(-50%, -300%);
-  }
+  } */
 
-
+button:hover{ 
+  color: var(--green-highlight);
+}
 
 
   /* media queries */
