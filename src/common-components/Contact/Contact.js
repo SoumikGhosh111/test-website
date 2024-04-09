@@ -82,7 +82,7 @@ function Contact() {
             </div>
 
             <div className='form-items-button'>
-              <button>Get in Touch</button>
+              <button className='form-button'>Get in Touch</button>
             </div>
           </form>
         </motion.div>

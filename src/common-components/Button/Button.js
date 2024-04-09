@@ -16,15 +16,17 @@ function Button({text ,bgColor, color, linkToOpen}) {
   const handleMouseLeave = () => { 
     setHover(false); 
   }
-
+  console.log(color, "thisi is from button component")
   const buttonStyles = { 
     default:{ 
       backgroundColor: bgColor, 
-      color: color
+      color: color,
+      borderColor: bgColor === "var(--blur-bg)" && "var(--white)"
     },
     hover: { 
-      backgroundColor: "var(--green-highlight)",
-      color: color
+      backgroundColor: bgColor === "var(--blur-bg)" ? bgColor : "var(--green-highlight)",
+      color: bgColor === "var(--blur-bg)" ? "var(--green-highlight-light)" : color, 
+      borderColor: bgColor === "var(--blur-bg)" && "var(--green-highlight-light)"
     }
   }
   return (

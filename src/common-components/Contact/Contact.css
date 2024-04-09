@@ -152,12 +152,20 @@ textarea:focus{
     margin: 1.5rem 0rem;
 
 }
-.form-items-button button{ 
+.form-items-button .form-button{ 
     width: 100%;
     background-color: var(--darkblue);
-
+    color: var(--white-white);
+    padding: 1rem 0rem;
+    border-radius: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
-
+.form-button:hover{ 
+    color: var(--green-highlight-light);
+}
 .name-email input{ 
     padding: 1rem 0.5rem;
     border: 0.5px solid var(--contact-form-border-color);

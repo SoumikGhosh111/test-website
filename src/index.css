@@ -29,7 +29,8 @@ body {
   --footer-body-head: #142528; 
   --footer-body-body: #0C1E21;
   --contact-form-border-color: rgb(217, 219, 219);  
-  --green-highlight: #00C063; 
+  --green-highlight: #00C063;
+  --green-highlight-light: #34ff9d;
 }
 
 
