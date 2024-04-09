@@ -22,7 +22,7 @@ function OurMisson() {
                 </div>
             </div>
             <div className='our-misson-content our-misson-container-items'>
-                <p>At PowerMyCode, innovation isn't just a buzzword. It's the heartbeat of our mission. With a relentless commitment to excellence and a client-centric approach, we stand at the forefront of empowering businesses through transformative solutions.</p>
+                <p>At PowerMyCode Pvt Ltd Solution, innovation isn't just a buzzword. It's the heartbeat of our mission. With a relentless commitment to excellence and a client-centric approach, we stand at the forefront of empowering businesses through transformative solutions.</p>
 
                 <span className='sub-span'> Join us as we pioneer innovation, infusing creativity into every project and collaborating with unwavering dedication to our clients' success.</span> <br/> <br/>
                 <span>Welcome to a mission that transcends mere statements—it's a promise to craft a future where your success is our sole mission.</span>

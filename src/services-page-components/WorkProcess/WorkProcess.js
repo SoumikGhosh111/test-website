@@ -24,7 +24,7 @@ function WorkProcess() {
             <div className='work-rpocess-content work-rpocess-container-items'>
                 <p>Experience business excellence with our array of tailored solutions. Our services are crafted to meet the unique demands of your industry, ensuring strategic alignment and maximum impact. From cutting-edge technology solutions to personalized consultancy, we prioritize your success journey.
 </p>
-                <span className='sub-span'>At PowerMyCode, our commitment to innovation, client-centricity, and continuous improvement defines our service philosophy. Dive into a world of strategic planning, operational efficiency, and transformative business solutions.</span> <br /> <br />
+                <span className='sub-span'>At PowerMyCode Pvt Ltd Solution, Our commitment to innovation, client-centricity, and continuous improvement defines our service philosophy. Dive into a world of strategic planning, operational efficiency, and transformative business solutions.</span> <br /> <br />
                 <span>Whether you are a startup or an established enterprise, our services are designed to elevate your performance, amplify your strengths, and guide you toward sustained success.</span>
 
             </div>
