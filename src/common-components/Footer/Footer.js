@@ -94,7 +94,7 @@ function Footer() {
 
                 <div className='footer-body-items padd'>
 
-                   <h1>PowerMyCode Pvt Ltd Solutions</h1>
+                   <h1>PowerMyCode Solutions Pvt Ltd</h1>
                     <p>Lets Power Your Code Together</p>
 
                     <div className='footer-social-links'>
@@ -160,7 +160,7 @@ function Footer() {
             <div className='copy-right'>
             {/* <div className='copy-right-border-line'></div> */}
 
-                <span>© 2024 PowerMyCode Pvt Ltd Solutions. All rights reserved.</span>
+                <span>© 2024 PowerMyCode Solutions Pvt Ltd. All rights reserved.</span>
             </div>
 
         </div>

@@ -140,7 +140,7 @@ function Process() {
                     <Parallax bgImage={image2} strength={paraStrength}>
                         <div style={{ height: windowHeight }}>
                             <div style={insideStyles}>
-                                <span className='process-header'>Mobile App Developmen</span>
+                                <span className='process-header'>Mobile App Development</span>
                             </div>
                         </div>
                     </Parallax>

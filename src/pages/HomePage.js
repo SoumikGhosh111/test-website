@@ -14,7 +14,7 @@ function HomePage() {
   return (
     <div className='homePage'>
         <HeroSection />
-        <MarqueeImages />
+        {/* <MarqueeImages /> */}
         <AboutUsComp />
         <Services />
         {/* <OurProcess /> */}

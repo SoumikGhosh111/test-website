@@ -48,10 +48,10 @@ function TempComponent() {
                         <span className='temp-comp-wrapper-span'>
                             <div><img src={unQuote} /></div>
                             Their commitment surpassed our expectations. An innovative collaboration!
-                            <div className='company-review'>
+                            {/* <div className='company-review'>
                                 <img src={googleLogo} />
                                 <div className='google-ratting'><Stars rate={4} />4.5/5</div>
-                            </div>
+                            </div> */}
                         </span>
                         
                     </div>

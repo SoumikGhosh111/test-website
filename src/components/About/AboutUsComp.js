@@ -3,7 +3,7 @@ import "./AboutUsComp.css";
 
 function AboutUsComp() {
     return (
-        <div className='about-us-comp-wrapper'>
+        <div className='about-us-comp-wrapper' id='about_us'>
             <div className='about-us-title about-us-container-items' >
                 ABOUT
                 <div className='ver-line mob-view-ver-line'></div>

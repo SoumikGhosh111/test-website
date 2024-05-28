@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 function HeroSection() {
 
     const handleClick = () => {
-        window.location.href = '#our_colabrators'
+        window.location.href = '#about_us'
     }
     return (
         <div className='hero-section-wrapper'>
