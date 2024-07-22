@@ -19,14 +19,20 @@ function TeamMembers() {
     const ref1 = useRef(null);
     const ref2 = useRef(null);
     const ref3 = useRef(null);
-    const ref4 = useRef(null);
+    // const ref4 = useRef(null);
     const ref5 = useRef(null);
+    const ref6 = useRef(null); 
+    const ref7 = useRef(null);
+    const ref8 = useRef(null);
 
     const cardInView1 = useInView(ref1);
     const cardInView2 = useInView(ref2);
     const cardInView3 = useInView(ref3);
-    const cardInView4 = useInView(ref4);
+    // const cardInView4 = useInView(ref4);
     const cardInView5 = useInView(ref5);
+    const cardInView6 = useInView(ref6); 
+    const cardInView7 = useInView(ref7); 
+    const cardInView8 = useInView(ref8); 
 
 
     const toggleImageLoad = (index) => {
@@ -200,51 +206,6 @@ function TeamMembers() {
                 </div>
 
 
-
-
-                <div className='team-members-cards-items'
-                    ref={ref4}
-                    style={{
-                        transform: cardInView4 ? "none" : "translateY(100px)",
-                        opacity: cardInView4 ? 1 : 0,
-                        transition: "all 1.1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                    }}
-                >
-
-                    <motion.div
-                        // initial={false}
-                        // animate={
-                        //      cardInView4
-                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
-                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
-                        // }
-                        // transition={{ duration: 1}}
-                    >
-                        <Parallax bgImage={image4} strength={paraStrength}>
-                            <div style={{ height: 450 }}>
-                                <div style={insideStyles}>
-                                    <div className='team-members-social'>
-                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </Parallax>
-                    </motion.div>
-                    <div className='team-members-content'>
-                        <span>SENIOR DEVELOPER</span>
-                        <div className='line'> </div>
-                        <h2>SOMNATH MISTRY</h2>
-                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
-
-                    </div>
-                </div>
-
-
-
-
                 <div className='team-members-cards-items'
                     ref={ref5}
                     style={{
@@ -279,6 +240,127 @@ function TeamMembers() {
                         <span>FRONTEND DEVELOPER</span>
                         <div className='line'> </div>
                         <h2>SUBHANKAR GHOSH</h2>
+                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+
+                    </div>
+                </div>
+
+                <div className='team-members-cards-items'
+                    ref={ref6}
+                    style={{
+                        transform: cardInView6 ? "none" : "translateY(100px)",
+                        opacity: cardInView6 ? 1 : 0,
+                        transition: "all 1.1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+
+                    <motion.div
+                        // initial={false}
+                        // animate={
+                        //      cardInView4
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
+                    >
+                        <Parallax bgImage={image4} strength={paraStrength}>
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </Parallax>
+                    </motion.div>
+                    <div className='team-members-content'>
+                        <span>FRONTEND DEVELOPER</span>
+                        <div className='line'> </div>
+                        <h2>SOUMIK GHOSH</h2>
+                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+
+                    </div>
+                </div>
+
+                <div className='team-members-cards-items'
+                    ref={ref7}
+                    style={{
+                        transform: cardInView7 ? "none" : "translateY(100px)",
+                        opacity: cardInView7 ? 1 : 0,
+                        transition: "all 1.1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+
+                    <motion.div
+                        // initial={false}
+                        // animate={
+                        //      cardInView4
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
+                    >
+                        <Parallax bgImage={image4} strength={paraStrength}>
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </Parallax>
+                    </motion.div>
+                    <div className='team-members-content'>
+                        <span>FULLSTACK DEVELOPER</span>
+                        <div className='line'> </div>
+                        <h2>RAJESH KAYAL</h2>
+                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+
+                    </div>
+                </div>
+
+
+                <div className='team-members-cards-items'
+                    ref={ref8}
+                    style={{
+                        transform: cardInView8 ? "none" : "translateY(100px)",
+                        opacity: cardInView8 ? 1 : 0,
+                        transition: "all 1.1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+
+                    <motion.div
+                        // initial={false}
+                        // animate={
+                        //      cardInView4
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
+                    >
+                        <Parallax bgImage={image4} strength={paraStrength}>
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </Parallax>
+                    </motion.div>
+                    <div className='team-members-content'>
+                        <span>BACKEND DEVELOPER</span>
+                        <div className='line'> </div>
+                        <h2>MOHIT MISHRA</h2>
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>

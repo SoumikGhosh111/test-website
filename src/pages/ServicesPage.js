@@ -25,7 +25,6 @@ function ServicesPage() {
   return (
     <>
       <ServicesPageHeroSection />
-      <MarqueeImages />
       <WorkProcess />
       <div id='process_section'><Process /></div>
       <ProjectDetails />

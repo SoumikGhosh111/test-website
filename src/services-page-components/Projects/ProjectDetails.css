@@ -22,6 +22,9 @@
    
     background-color: var(--lightgrey);
 }
+.project-card-1 .project-details{ 
+    text-align: justify;
+}
 .project-card-2{ 
     flex-direction: row-reverse;
 }
@@ -37,6 +40,7 @@
 }
 .carousel-comp{ 
     width: 40%;
+    position: relative;
 }
 .project-card-2 .project-content{ 
     align-items: flex-end;
@@ -45,7 +49,7 @@
 }
 .project-card-2 .project-details{ 
     align-items: flex-end;
-    text-align: right;
+    text-align: justify;
     height: 100%;
     padding: 0;
 }
@@ -93,6 +97,79 @@
 }
 
 
+/* Swiper JS Classes */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Bwc Slider Arrow Buttons */
+  .bwc-slider{ 
+    /* position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid red;
+    text-align: center; */
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    line-height: 50px;
+    /* background: #fff; */
+    /* background: linear-gradient(-45deg, #212725, #1c1c1c); */
+    background-color: var(--lightgrey);
+    color: var(--darkblue);
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+    color: var(--green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bwc-slider:active{
+    /* transform: scale(0.9); */
+  }
+  .bwc-prev-arrow{ 
+    left: 0;
+    top: 50%;
+    transform: translate(-40%, -50%);
+    z-index: 1;
+  }
+  .bwc-next-arrow{ 
+    right: 0;
+    top: 50%;
+    transform: translate(40%, -50%);
+    z-index: 1;
+  }
 
 
 

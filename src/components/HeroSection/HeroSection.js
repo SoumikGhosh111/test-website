@@ -48,7 +48,7 @@ function HeroSection() {
                     <div className='scroll-animation-icon'>
                         SCROLL DOWN <div className='scroll-icon' onClick={handleClick}><SouthRoundedIcon sx={{ fontSize: "18px" }} /></div>
                     </div>
-                    <div className='stars-images-hero'>
+                    {/* <div className='stars-images-hero'>
                         <div className='review-stars'>
                             <Stars rate={5} /> 
                             Trusted by our clients and partners.
@@ -70,7 +70,7 @@ function HeroSection() {
                         </div>
 
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

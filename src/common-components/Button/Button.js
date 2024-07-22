@@ -16,7 +16,7 @@ function Button({text ,bgColor, color, linkToOpen}) {
   const handleMouseLeave = () => { 
     setHover(false); 
   }
-  console.log(color, "thisi is from button component")
+  // console.log(color, "thisi is from button component")
   const buttonStyles = { 
     default:{ 
       backgroundColor: bgColor, 
