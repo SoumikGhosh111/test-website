@@ -41,7 +41,7 @@ function Contact() {
       from_email: formData.email, 
       to_name: "PowerMyCode", 
       message: formData.message, 
-    }
+    } 
     
     emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
     .then((response) => { 
