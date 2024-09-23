@@ -533,7 +533,7 @@ The website's responsive design is a crucial aspect of its development. By ensur
                         <div className="bwc-next-arrow bwc-slider" onClick={nextDeks} ><EastRoundedIcon /></div>
                     </div>
                 </div>
-            </div>
+            </div> 
         </>
     )
 }
