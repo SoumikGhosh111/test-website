@@ -19,7 +19,7 @@ function TeamMembers() {
     const ref1 = useRef(null);
     const ref2 = useRef(null);
     const ref3 = useRef(null);
-    // const ref4 = useRef(null);
+    const ref4 = useRef(null);
     const ref5 = useRef(null);
     const ref6 = useRef(null); 
     const ref7 = useRef(null);
@@ -28,7 +28,7 @@ function TeamMembers() {
     const cardInView1 = useInView(ref1);
     const cardInView2 = useInView(ref2);
     const cardInView3 = useInView(ref3);
-    // const cardInView4 = useInView(ref4);
+    const cardInView4 = useInView(ref4);
     const cardInView5 = useInView(ref5);
     const cardInView6 = useInView(ref6); 
     const cardInView7 = useInView(ref7); 
@@ -100,9 +100,9 @@ function TeamMembers() {
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
-                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                        <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
                                     </div>
 
                                 </div>
@@ -113,7 +113,7 @@ function TeamMembers() {
                         <span>DIRECTOR/CEO</span>
                         <div className='line'> </div>
                         <h2>ARUN RACHURI</h2>
-                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+                        <p>Visionary leader with a passion for innovation, steering the company towards sustainable growth through strategic decision-making.</p>
 
                     </div>
                 </div>
@@ -143,9 +143,9 @@ function TeamMembers() {
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
-                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                        <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
                                     </div>
 
                                 </div>
@@ -156,7 +156,7 @@ function TeamMembers() {
                         <span>ACCOUNT MANAGER</span>
                         <div className='line'> </div>
                         <h2>BARRY GOENKA</h2>
-                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+                        <p>Client-focused professional, ensuring seamless service delivery and building lasting relationships through clear communication and collaboration.</p>
 
                     </div>
                 </div>
@@ -187,9 +187,9 @@ function TeamMembers() {
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
-                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                        <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
                                     </div>
 
                                 </div>
@@ -200,7 +200,48 @@ function TeamMembers() {
                         <span>ACCOUNT MANAGER</span>
                         <div className='line'> </div>
                         <h2>TINA D</h2>
-                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+                        <p>Proactive problem-solver, excelling in client relations by offering efficient solutions and maintaining open communication.</p>
+
+                    </div>
+                </div>
+
+
+                <div className='team-members-cards-items'
+                    ref={ref4}
+                    style={{
+                        transform: cardInView4 ? "none" : "translateY(100px)",
+                        opacity: cardInView4 ? 1 : 0,
+                        transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    }}
+                >
+
+                    <motion.div
+                        // initial={false}
+                        // animate={
+                        //      cardInView3
+                        //         ? { WebkitMaskImage: visibleMask, maskImage: visibleMask }
+                        //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
+                        // }
+                        // transition={{ duration: 1}}
+                    >
+                        <Parallax bgImage={image3} strength={paraStrength}>
+                            <div style={{ height: 450 }}>
+                                <div style={insideStyles}>
+                                    <div className='team-members-social'>
+                                        <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
+                                    </div>
+
+                                </div>
+                            </div>
+                        </Parallax>
+                    </motion.div>
+                    <div className='team-members-content'>
+                        <span>ACCOUNT MANAGER</span>
+                        <div className='line'> </div>
+                        <h2>NAMAN SHRIVASTAV</h2>
+                        <p>Dedicated strategist with a keen eye for detail, driving client satisfaction through personalized support and tailored solutions.</p>
 
                     </div>
                 </div>
@@ -227,9 +268,9 @@ function TeamMembers() {
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
-                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                        <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
                                     </div>
 
                                 </div>
@@ -240,7 +281,7 @@ function TeamMembers() {
                         <span>FRONTEND DEVELOPER</span>
                         <div className='line'> </div>
                         <h2>SUBHANKAR GHOSH</h2>
-                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+                        <p>Passionate about clean code and user-centric design, delivering responsive and engaging interfaces that enhance usability.</p>
 
                     </div>
                 </div>
@@ -267,9 +308,9 @@ function TeamMembers() {
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
-                                        <a href='#'><div className='team-members-social-icons'><InstagramIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div>
+                                        <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
+                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
                                     </div>
 
                                 </div>
@@ -280,12 +321,12 @@ function TeamMembers() {
                         <span>FRONTEND DEVELOPER</span>
                         <div className='line'> </div>
                         <h2>SOUMIK GHOSH</h2>
-                        <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
+                        <p>Innovative thinker and UI expert, turning creative ideas into functional, aesthetically pleasing websites that resonate with users.</p>
 
                     </div>
                 </div>
 
-                <div className='team-members-cards-items'
+                {/* <div className='team-members-cards-items'
                     ref={ref7}
                     style={{
                         transform: cardInView7 ? "none" : "translateY(100px)",
@@ -323,10 +364,10 @@ function TeamMembers() {
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
-                </div>
+                </div> */}
 
 
-                <div className='team-members-cards-items'
+                {/* <div className='team-members-cards-items'
                     ref={ref8}
                     style={{
                         transform: cardInView8 ? "none" : "translateY(100px)",
@@ -364,7 +405,7 @@ function TeamMembers() {
                         <p>Proactive organizer and communicator, driving project success through meticulous planning and seamless coordination.</p>
 
                     </div>
-                </div>
+                </div> */}
 
 
 

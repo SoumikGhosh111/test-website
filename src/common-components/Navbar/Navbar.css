@@ -183,7 +183,7 @@
 
 
 /* media queries */
-@media screen and (max-width: 963px){ 
+@media screen and (max-width: 1446px){ 
     .mob-view-nav{ 
         display: flex;
         justify-content: space-between;

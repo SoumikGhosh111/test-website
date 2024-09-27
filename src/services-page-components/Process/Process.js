@@ -3,6 +3,7 @@ import "./Process.css";
 import { Parallax } from 'react-parallax';
 import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
 import { useLocation } from 'react-router-dom';
+import webdev from "../../assets/web-dev.jpg";
 
 function Process() {
     // const location = useLocation(); 
@@ -13,7 +14,8 @@ function Process() {
     //     }
     // }, [scrollOp]); 
 
-    const image1 = "https://picsum.photos/id/539/1920/1080";
+    // const image1 = "https://picsum.photos/id/539/1920/1080";
+    const image1 = webdev; 
     const image2 = "https://picsum.photos/id/542/1920/1080";
     const image3 = "https://picsum.photos/id/543/1920/1080";
     const image4 = "https://picsum.photos/id/600/1920/1080";

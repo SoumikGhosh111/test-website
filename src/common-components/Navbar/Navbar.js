@@ -5,6 +5,8 @@ import logoImg from "../../assets/logo.svg";
 import { useLocation } from "react-router-dom";
 import TemporaryDrawer from './Drawer';
 
+
+
 function Navbar() {
   const [scroll, setScroll] = useState(0);
   const location = useLocation();

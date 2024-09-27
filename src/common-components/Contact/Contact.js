@@ -10,6 +10,9 @@ import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from '../../functions/urls';
 import axios from 'axios';
 import emailjs from '@emailjs/browser'; 
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 // importing framer motions
 import { motion } from 'framer-motion';
@@ -51,9 +54,12 @@ function Contact() {
         email: "", 
         message: ""
       })
+
+      toast.success("Message Sent Successfully !"); 
     })
     .catch((e) => { 
       console.log(e); 
+      toast.error("Error Sending Message !"); 
     })
 
    
@@ -136,6 +142,8 @@ function Contact() {
           </form>
         </motion.div>
       </div>
+
+      <ToastContainer />
     </div>
   )
 }

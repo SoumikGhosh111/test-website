@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import "./HeroSection.css";
 import Button from "../../common-components/Button/Button"
 import bgVideo from "../../assets/bg-video.mp4";
@@ -10,6 +10,14 @@ import Stars from '../../common-components/Review/Stars';
 import { motion } from 'framer-motion';
 
 function HeroSection() {
+
+    const videoRef = useRef(null);
+    
+    useEffect(() => { 
+        if(videoRef.current){ 
+            videoRef.current.playbackRate = 0.8; //controling the video speed
+        }
+    }, []); 
 
     const handleClick = () => {
         window.location.href = '#about_us'
@@ -38,7 +46,7 @@ function HeroSection() {
 
             </div>
             <div className='hero-section-container-2'>
-                <video playsInline="playsIvideo-bgnline" autoPlay="autoPlay" muted="muted" loop="loop">
+                <video playsInline="playsIvideo-bgnline" autoPlay="autoPlay" muted="muted" loop="loop" ref={videoRef}>
                     <source src={bgVideo} type='video/mp4' />
                     Browser not supported
                 </video>
