@@ -4,6 +4,7 @@ import { Parallax } from 'react-parallax';
 import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
 import { useLocation } from 'react-router-dom';
 import webdev from "../../assets/web-dev.jpg";
+import ParallaxImg from '../../common-components/ParallaxImg/ParallaxImg';
 
 function Process() {
     // const location = useLocation(); 
@@ -84,13 +85,15 @@ function Process() {
         <div className='process-wrapper'>
             <div className='process-section-1'>
                 <div className='process-bg-img-1'>
-                    <Parallax bgImage={image1} strength={paraStrength}>
+                    {/* <Parallax bgImage={image1} strength={paraStrength}>
                         <div style={{ height: windowHeight }}>
                             <div style={insideStyles}>
                                 <span className='process-header'>Web Application Development</span>
                             </div>
                         </div>
-                    </Parallax>
+                    </Parallax> */}
+
+                    <ParallaxImg img={webdev} sentence={"Web Application Development"} className={"process-header"}/>
                 </div>
                 <div className='process-content' id='web_dev'>
                     <div className='process-content-wrapper' >

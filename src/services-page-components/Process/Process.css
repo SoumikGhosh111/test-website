@@ -7,6 +7,7 @@
 
 .process-bg-img-1{ 
     flex: 0.5;
+    /* border: 1px solid blue; */
 }
 .process-header{ 
     color: white;

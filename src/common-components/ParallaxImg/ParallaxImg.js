@@ -1,8 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import "./ParallaxImg.css"
+import "./ParallaxImg.css"; 
+import webdev from "../../assets/web-dev.jpg"
 
-function ParallaxImg() {
+function ParallaxImg({img, sentence, className}) {
 
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -14,7 +15,17 @@ function ParallaxImg() {
     const y = useTransform(scrollYProgress, [0, 1], [-150, 0]);
 
     return (
-        <div>ParallaxImg</div>
+        <div style={{ overflow: "hidden", width: '100%', height: '100%' }}>
+            {/* <div className="first"></div> */}
+            <div className="second" ref={container}>
+                <div className="second-div-inner">
+                    <motion.img src={img} style={{ width: '120%', height: '120%', objectFit: 'cover', objectPosition: 'center', y: y }} />
+                    <span className={className}>{sentence}</span>
+                </div>
+            </div>
+            {/* <div className="third"></div> */}
+
+        </div>
     )
 }
 
