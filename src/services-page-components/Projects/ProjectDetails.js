@@ -371,9 +371,9 @@ The website's responsive design is a crucial aspect of its development. By ensur
                     }}
                 >
                     <div className='project-content project-card-items'>
-                        <h1 >Inwoodpizzallc</h1>
+                        <h1 >Inwoodpizza</h1>
                         <div className='project-details'>
-                            <h2>A website build with ReactJs and NodeJs</h2>
+                            <h2>A website built with ReactJs and NodeJs</h2>
                             <div className='carousel-comp project-card-items mob-view-d-block'>
                                 {/* <CarouselComp carouselId={5} /> */}
                                 <Swiper
@@ -453,9 +453,9 @@ The website's responsive design is a crucial aspect of its development. By ensur
                     }}
                 >
                     <div className='project-content project-card-items'>
-                        <h1 >BWC</h1>
+                        <h1 >Bread Winners Circle</h1>
                         <div className='project-details'>
-                            <h2>A website build with PHP Laravel</h2>
+                            <h2>A website built with PHP Laravel</h2>
                             <div className='carousel-comp project-card-items mob-view-d-block'>
                                 {/* <CarouselComp carouselId={7} /> */}
                                 <Swiper

@@ -5,7 +5,7 @@ import bgVideo from "../../assets/bg-video.mp4";
 import SouthRoundedIcon from '@mui/icons-material/SouthRounded';
 import Stars from '../../common-components/Review/Stars';
 
-import demoBg from "../../assets/demo-bg-2.mp4"; 
+import demoBg from "../../assets/demo-bg-3.mp4"; 
 
 
 // importing framer motions 
@@ -17,7 +17,7 @@ function HeroSection() {
     
     useEffect(() => { 
         if(videoRef.current){ 
-            videoRef.current.playbackRate = 0.8; //controling the video speed
+            videoRef.current.playbackRate = 1.5; //controling the video speed
         }
     }, []); 
 
@@ -49,7 +49,7 @@ function HeroSection() {
             </div>
             <div className='hero-section-container-2'>
                 <video playsInline="playsIvideo-bgnline" autoPlay="autoPlay" muted="muted" loop="loop" ref={videoRef}>
-                    <source src={bgVideo} type='video/mp4' />
+                    <source src={demoBg} type='video/mp4' />
                     Browser not supported
                 </video>
                 <div className='video-bg'>
