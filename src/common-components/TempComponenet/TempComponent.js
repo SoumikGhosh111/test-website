@@ -6,7 +6,7 @@ import Stars from '../Review/Stars';
 
 function TempComponent() {
     const [paraStrength, setParaStrength] = useState(100)
-    const image = "https://picsum.photos/id/323/1920/1080";
+    const image = "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg";
     const unQuote = "https://assets-global.website-files.com/653e50f60ac329e82ba89473/6542276b627fc9baf1f06120_quote-icon-inverse.svg";
     const googleLogo = "https://powermycode.com/assets/img/home-5/google-1.svg";
     const insideStyles = {

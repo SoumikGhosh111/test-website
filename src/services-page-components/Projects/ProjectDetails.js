@@ -19,8 +19,20 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import WestRoundedIcon from '@mui/icons-material/WestRounded';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
 
-// sample 
+// in-website images
+import inwood1 from "../../assets/in-website-images/inwood-1.jpg";
+import inwood2 from "../../assets/in-website-images/inwood-2.jpg";
+import inwood3 from "../../assets/in-website-images/inwood-3.jpg";
+import inwood4 from "../../assets/in-website-images/inwood-4.jpg";
+import inwood5 from "../../assets/in-website-images/inwood-5.jpg";
+import inwood6 from "../../assets/in-website-images/inwood-6.jpg";
 
+import bwc1 from "../../assets/in-website-images/bwc-1.jpg";
+import bwc2 from "../../assets/in-website-images/bwc-2.jpg";
+import bwc3 from "../../assets/in-website-images/bwc-3.jpg";
+import bwc4 from "../../assets/in-website-images/bwc-4.jpg";
+import bwc5 from "../../assets/in-website-images/bwc-5.jpg";
+import bwc6 from "../../assets/in-website-images/bwc-6.jpg";
 
 function ProjectDetails() {
     const ref1 = useRef(null);
@@ -392,15 +404,20 @@ The website's responsive design is a crucial aspect of its development. By ensur
                                     modules={[Autoplay, Navigation]}
                                     className="mySwiper"
                                 >
-                                    <SwiperSlide><img src='https://picsum.photos/id/217/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
-                                    <SwiperSlide><img src='https://picsum.photos/id/213/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={inwood1} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={inwood2} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={inwood3} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={inwood4} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={inwood5} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={inwood6} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    {/* <SwiperSlide><img src='https://picsum.photos/id/213/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/215/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/218/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/219/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/221/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/329/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/330/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
-                                    <SwiperSlide><img src='https://picsum.photos/id/220/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src='https://picsum.photos/id/220/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide> */}
                                 </Swiper>
                                 <div className="bwc-prev-arrow bwc-slider" onClick={inwoodPrevMob} ><WestRoundedIcon /></div>
                                 <div className="bwc-next-arrow bwc-slider" onClick={inwoodNextMob} ><EastRoundedIcon /></div>
@@ -428,15 +445,20 @@ The website's responsive design is a crucial aspect of its development. By ensur
                             modules={[Autoplay, Navigation]}
                             className="mySwiper"
                         >
-                            <SwiperSlide><img src='https://picsum.photos/id/217/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
-                            <SwiperSlide><img src='https://picsum.photos/id/213/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={inwood1} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={inwood2} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={inwood3} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={inwood4} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={inwood5} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={inwood6} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            {/* <SwiperSlide><img src='https://picsum.photos/id/213/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/215/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/218/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/219/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/221/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/329/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/330/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
-                            <SwiperSlide><img src='https://picsum.photos/id/220/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src='https://picsum.photos/id/220/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide> */}
                         </Swiper>
                         <div className="bwc-prev-arrow bwc-slider" onClick={inwoodPrevDeks} ><WestRoundedIcon /></div>
                         <div className="bwc-next-arrow bwc-slider" onClick={inwoodNextDeks} ><EastRoundedIcon /></div>
@@ -474,7 +496,13 @@ The website's responsive design is a crucial aspect of its development. By ensur
                                     modules={[Autoplay, Navigation]}
                                     className="mySwiper"
                                 >
-                                    <SwiperSlide><img src='https://picsum.photos/id/217/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={bwc1} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={bwc2} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={bwc3} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={bwc4} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={bwc5} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src={bwc6} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    {/* <SwiperSlide><img src='https://picsum.photos/id/217/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/213/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/215/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/218/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
@@ -482,7 +510,7 @@ The website's responsive design is a crucial aspect of its development. By ensur
                                     <SwiperSlide><img src='https://picsum.photos/id/221/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/329/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                                     <SwiperSlide><img src='https://picsum.photos/id/330/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
-                                    <SwiperSlide><img src='https://picsum.photos/id/220/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
+                                    <SwiperSlide><img src='https://picsum.photos/id/220/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide> */}
                                 </Swiper>
                                 <div className="bwc-prev-arrow bwc-slider" onClick={prevMob} ><WestRoundedIcon /></div>
                                 <div className="bwc-next-arrow bwc-slider" onClick={nextMob} ><EastRoundedIcon /></div>
@@ -511,7 +539,13 @@ The website's responsive design is a crucial aspect of its development. By ensur
                             modules={[Autoplay, Navigation]}
                             className="mySwiper"
                         >
-                            <SwiperSlide><img src='https://picsum.photos/id/217/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={bwc1} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={bwc2} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={bwc3} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={bwc4} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={bwc5} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src={bwc6} style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            {/* <SwiperSlide><img src='https://picsum.photos/id/217/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/213/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/215/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/218/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
@@ -519,13 +553,13 @@ The website's responsive design is a crucial aspect of its development. By ensur
                             <SwiperSlide><img src='https://picsum.photos/id/221/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/329/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
                             <SwiperSlide><img src='https://picsum.photos/id/330/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
-                            <SwiperSlide><img src='https://picsum.photos/id/220/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide>
+                            <SwiperSlide><img src='https://picsum.photos/id/220/500/300' style={{ borderRadius: '20px' }} /></SwiperSlide> */}
                         </Swiper>
                         <div className="bwc-prev-arrow bwc-slider" onClick={prevDeks} ><WestRoundedIcon /></div>
                         <div className="bwc-next-arrow bwc-slider" onClick={nextDeks} ><EastRoundedIcon /></div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </>
     )
 }

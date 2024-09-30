@@ -6,7 +6,8 @@ import { Parallax } from 'react-parallax';
 import { motion } from 'framer-motion';
 
 function AboutUsHeroSection() {
-    const image1 = "https://picsum.photos/id/247/1920/1080";
+    // const image1 = "https://picsum.photos/id/247/1920/1080";
+    const image1 = "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"; 
     const [paraStrength, setParaStrength] = useState(200)
     const insideStyles = {
         // background: "white",

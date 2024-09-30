@@ -5,7 +5,7 @@ import { Parallax } from 'react-parallax';
 import Stars from '../../common-components/Review/Stars';
 
 function Quotation() {
-    const video = "https://picsum.photos/id/327/1920/1080"; 
+    const video = "https://images.pexels.com/photos/5092813/pexels-photo-5092813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"; 
     const [paraStrength ,setParaStrength] = useState(200); 
     const trustPilotLogo = "https://powermycode.com/assets/img/home-5/trustpilot-1.svg"; 
     const unQuote = "https://assets-global.website-files.com/653e50f60ac329e82ba89473/6542276b627fc9baf1f06120_quote-icon-inverse.svg";

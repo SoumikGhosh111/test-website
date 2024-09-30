@@ -15,8 +15,8 @@ function AboutUsPage() {
       <StatsSection />
       <Quotation />
       <OurTeam />
-      <TeamMembers />
-      <ClientsReview />
+      {/* <TeamMembers />
+      <ClientsReview /> */}
     </>
   )
 }
