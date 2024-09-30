@@ -82,7 +82,7 @@ function Navbar() {
             <li><a href='/'>Home</a></li>
             <li><a href='/services'>Services</a></li>
             <li><a href='/about'>About us</a></li>
-            <li><a href='/blogs'>News</a></li>
+            {/* <li><a href='/blogs'>News</a></li> */}
           </ul>
         </div>
         <div className='notification-button'>

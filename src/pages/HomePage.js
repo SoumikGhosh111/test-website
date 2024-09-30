@@ -21,7 +21,7 @@ function HomePage() {
         <OurMisson />
         <TempComponent />
         <OurValues />
-        <Blogs />
+        {/* <Blogs /> */}
     </div>
   )
 }

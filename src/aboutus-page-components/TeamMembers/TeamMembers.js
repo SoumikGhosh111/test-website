@@ -95,19 +95,20 @@ function TeamMembers() {
                         //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         // }
                         // transition={{ duration: 1}}
+                        style={{height: '450px'}}
                     >
-                        <Parallax bgImage={image1} strength={paraStrength} >
+                        {/* <Parallax bgImage={image1} strength={paraStrength} >
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
                                         <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
+                                        
                                     </div>
 
                                 </div>
                             </div>
-                        </Parallax>
+                        </Parallax> */}
+                        <img src={image1} style={{width: '100%', height: '100%'}} />
                     </motion.div>
                     <div className='team-members-content'>
                         <span>DIRECTOR/CEO</span>
@@ -138,19 +139,21 @@ function TeamMembers() {
                         // transition={{ duration: 1}}
                     // viewport={{ once: true }}
                     // onViewportEnter={() => setIsInView(true)}
+                    style={{height: '450px'}}
                     >
-                        <Parallax bgImage={image2} strength={paraStrength} >
+                        {/* <Parallax bgImage={image2} strength={paraStrength} >
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
                                         <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
+                                        
                                     </div>
 
                                 </div>
                             </div>
-                        </Parallax>
+                        </Parallax> */}
+                        <img src={image2} style={{width: '100%', height: '100%'}} />
+                        {/* <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a> */}
                     </motion.div>
                     <div className='team-members-content'>
                         <span>ACCOUNT MANAGER</span>
@@ -182,19 +185,20 @@ function TeamMembers() {
                         //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         // }
                         // transition={{ duration: 1}}
+                        style={{height: '450px'}}
                     >
-                        <Parallax bgImage={image3} strength={paraStrength}>
+                        {/* <Parallax bgImage={image3} strength={paraStrength}>
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
                                         <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
+                                       
                                     </div>
 
                                 </div>
                             </div>
-                        </Parallax>
+                        </Parallax> */}
+                        <img src={image3} style={{width: '100%', height: '100%'}} />
                     </motion.div>
                     <div className='team-members-content'>
                         <span>ACCOUNT MANAGER</span>
@@ -223,19 +227,20 @@ function TeamMembers() {
                         //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         // }
                         // transition={{ duration: 1}}
+                        style={{height: '450px'}}
                     >
-                        <Parallax bgImage={image3} strength={paraStrength}>
+                        {/* <Parallax bgImage={image3} strength={paraStrength}>
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
                                         <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
+                                        
                                     </div>
 
                                 </div>
                             </div>
-                        </Parallax>
+                        </Parallax> */}
+                        <img src={image4} style={{width: '100%', height: '100%'}} />
                     </motion.div>
                     <div className='team-members-content'>
                         <span>ACCOUNT MANAGER</span>
@@ -263,19 +268,20 @@ function TeamMembers() {
                         //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         // }
                         // transition={{ duration: 1}}
+                        style={{height: '450px'}}
                     >
-                        <Parallax bgImage={image5} strength={paraStrength}>
+                        {/* <Parallax bgImage={image5} strength={paraStrength}>
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
                                         <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
+                                        
                                     </div>
 
                                 </div>
                             </div>
-                        </Parallax>
+                        </Parallax> */}
+                        <img src={image5} style={{width: '100%', height: '100%'}} />
                     </motion.div>
                     <div className='team-members-content'>
                         <span>FRONTEND DEVELOPER</span>
@@ -303,19 +309,21 @@ function TeamMembers() {
                         //         : { WebkitMaskImage: hiddenMask, maskImage: hiddenMask }
                         // }
                         // transition={{ duration: 1}}
+                        
+                        style={{height: '450px'}}
                     >
-                        <Parallax bgImage={image4} strength={paraStrength}>
+                        {/* <Parallax bgImage={image4} strength={paraStrength}>
                             <div style={{ height: 450 }}>
                                 <div style={insideStyles}>
                                     <div className='team-members-social'>
                                         <a href='#'><div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div></a>
-                                        {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
-                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}
+                                       
                                     </div>
 
                                 </div>
                             </div>
-                        </Parallax>
+                        </Parallax> */}
+                        <img src={image6} style={{width: '100%', height: '100%'}} />
                     </motion.div>
                     <div className='team-members-content'>
                         <span>FRONTEND DEVELOPER</span>
@@ -449,3 +457,9 @@ export default TeamMembers
 {/* <div className='team-members-wrapper'>
         <div className='team-members'></div>
     </div> */}
+
+
+
+
+    {/* <div className='team-members-social-icons'><FacebookIcon sx={{ fontSize: "15px" }} /></div>
+                                        <div className='team-members-social-icons'><LinkedInIcon sx={{ fontSize: "15px" }} /></div> */}

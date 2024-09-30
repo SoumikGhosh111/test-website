@@ -5,6 +5,8 @@ import bgVideo from "../../assets/bg-video.mp4";
 import SouthRoundedIcon from '@mui/icons-material/SouthRounded';
 import Stars from '../../common-components/Review/Stars';
 
+import demoBg from "../../assets/demo-bg-2.mp4"; 
+
 
 // importing framer motions 
 import { motion } from 'framer-motion';

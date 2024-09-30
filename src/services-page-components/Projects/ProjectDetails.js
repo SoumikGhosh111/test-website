@@ -209,7 +209,7 @@ The website's responsive design is a crucial aspect of its development. By ensur
             <span style={{ fontSize: '55px', fontWeight: '100' }}>Our Projects</span>
             <div className='project-details-section-wrapper'>
 
-                <div className='project-card-1 project-card'
+                {/* <div className='project-card-1 project-card'
                     ref={ref1}
                     style={{
                         transform: isInView1 ? "none" : "translateY(100px)",
@@ -222,15 +222,13 @@ The website's responsive design is a crucial aspect of its development. By ensur
                         <div className='project-details'>
                             <h2>An application developed using Flutter</h2>
                             <div className='carousel-comp project-card-items mob-view-d-block'>
-                                {/* <CarouselComp carouselId={1} /> */}
+                              
                                 <Swiper
                                     ref={eminentCastleSliderMob}
                                     slidesPerView={1}
                                     spaceBetween={30}
                                     loop={true}
-                                    // pagination={{
-                                    //     clickable: true,
-                                    // }}
+                                   
                                     navigation={false}
                                     autoplay={{
                                         delay: 2500,
@@ -257,15 +255,13 @@ The website's responsive design is a crucial aspect of its development. By ensur
                         </div>
                     </div>
                     <div className='carousel-comp project-card-items mob-view-d-none'>
-                        {/* <CarouselComp carouselId={2} /> */}
+                       
                         <Swiper
                             ref={eminentCastleSlider}
                             slidesPerView={1}
                             spaceBetween={30}
                             loop={true}
-                            // pagination={{
-                            //     clickable: true,
-                            // }}
+                          
                             navigation={false}
                             autoplay={{
                                 delay: 2500,
@@ -302,15 +298,13 @@ The website's responsive design is a crucial aspect of its development. By ensur
                         <div className='project-details'>
                             <h2>A website build with React</h2>
                             <div className='carousel-comp project-card-items mob-view-d-block'>
-                                {/* <CarouselComp carouselId={3} /> */}
+                              
                                 <Swiper
                                     ref={carteSliderMob}
                                     slidesPerView={1}
                                     spaceBetween={30}
                                     loop={true}
-                                    // pagination={{
-                                    //     clickable: true,
-                                    // }}
+                                   
                                     navigation={false}
                                     autoplay={{
                                         delay: 2500,
@@ -337,15 +331,13 @@ The website's responsive design is a crucial aspect of its development. By ensur
                         </div>
                     </div>
                     <div className='carousel-comp project-card-items mob-view-d-none'>
-                        {/* <CarouselComp carouselId={4} /> */}
+                       
                         <Swiper
                             ref={carteSlider}
                             slidesPerView={1}
                             spaceBetween={30}
                             loop={true}
-                            // pagination={{
-                            //     clickable: true,
-                            // }}
+                            
                             navigation={false}
                             autoplay={{
                                 delay: 2500,
@@ -367,7 +359,7 @@ The website's responsive design is a crucial aspect of its development. By ensur
                         <div className="bwc-prev-arrow bwc-slider" onClick={cartePrevDeks} ><WestRoundedIcon /></div>
                         <div className="bwc-next-arrow bwc-slider" onClick={carteNextDeks} ><EastRoundedIcon /></div>
                     </div>
-                </div>
+                </div> */}
 
 
                 <div className='project-card-1 project-card'
