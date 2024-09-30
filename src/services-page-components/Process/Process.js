@@ -5,7 +5,11 @@ import DoneRoundedIcon from '@mui/icons-material/DoneRounded';
 import { useLocation } from 'react-router-dom';
 import webdev from "../../assets/web-dev.jpg";
 import ParallaxImg from '../../common-components/ParallaxImg/ParallaxImg';
-
+import appdev from "../../assets/app-dev.jpg"; 
+import softsoln from "../../assets/custom-soft-soln.jpg"; 
+import uiux from "../../assets/ui-ux.jpg"; 
+import ecomm from "../../assets/e-comm.jpg"; 
+import consulting from "../../assets/consulting.jpg"; 
 function Process() {
     // const location = useLocation(); 
     // console.log(scrollOp); 
@@ -17,11 +21,11 @@ function Process() {
 
     // const image1 = "https://picsum.photos/id/539/1920/1080";
     const image1 = webdev; 
-    const image2 = "https://picsum.photos/id/542/1920/1080";
-    const image3 = "https://picsum.photos/id/543/1920/1080";
-    const image4 = "https://picsum.photos/id/600/1920/1080";
-    const image5 = "https://picsum.photos/id/551/1920/1080";
-    const image6 = "https://picsum.photos/id/610/1920/1080";
+    const image2 = appdev;
+    const image3 = softsoln;
+    const image4 = uiux;
+    const image5 = ecomm;
+    const image6 = consulting;
 
     const [windowHeight, setWindowHeight] = useState(window.innerHeight);
     const [paraStrength, setParaStrength] = useState(200)
@@ -142,13 +146,14 @@ function Process() {
             </div>
             <div className='process-section-2'>
                 <div className='process-bg-img-1'>
-                    <Parallax bgImage={image2} strength={paraStrength}>
+                    {/* <Parallax bgImage={image2} strength={paraStrength}>
                         <div style={{ height: windowHeight }}>
                             <div style={insideStyles}>
                                 <span className='process-header'>Mobile App Development</span>
                             </div>
                         </div>
-                    </Parallax>
+                    </Parallax> */}
+                    <ParallaxImg img={appdev} sentence={"Mobile App Developement"} className={"process-header"}/>
                 </div>
                 <div className='process-content'>
                     <div className='process-content-wrapper'>
@@ -206,13 +211,14 @@ function Process() {
 
             <div className='process-section-1'>
                 <div className='process-bg-img-1'>
-                    <Parallax bgImage={image3} strength={paraStrength}>
+                    {/* <Parallax bgImage={image3} strength={paraStrength}>
                         <div style={{ height: windowHeight }}>
                             <div style={insideStyles}>
                                 <span className='process-header'>Custom Software Solutions</span>
                             </div>
                         </div>
-                    </Parallax>
+                    </Parallax> */}
+                    <ParallaxImg img={softsoln} sentence={"Custom Software Solutins"} className={"process-header"}/>
                 </div>
                 <div className='process-content'>
                     <div className='process-content-wrapper'>
@@ -261,13 +267,14 @@ function Process() {
             </div>
             <div className='process-section-2'>
                 <div className='process-bg-img-1'>
-                    <Parallax bgImage={image4} strength={paraStrength}>
+                    {/* <Parallax bgImage={image4} strength={paraStrength}>
                         <div style={{ height: windowHeight }}>
                             <div style={insideStyles}>
                                 <span className='process-header'>UI/UX Design</span>
                             </div>
                         </div>
-                    </Parallax>
+                    </Parallax> */}
+                    <ParallaxImg img={uiux} sentence={"UI/UX Design"} className={"process-header"}/>
                 </div>
                 <div className='process-content'>
                     <div className='process-content-wrapper'>
@@ -322,13 +329,14 @@ function Process() {
 
             <div className='process-section-1'>
                 <div className='process-bg-img-1'>
-                    <Parallax bgImage={image5} strength={paraStrength}>
+                    {/* <Parallax bgImage={image5} strength={paraStrength}>
                         <div style={{ height: windowHeight }}>
                             <div style={insideStyles}>
                                 <span className='process-header'>E-Commerce Solutions</span>
                             </div>
                         </div>
-                    </Parallax>
+                    </Parallax> */}
+                    <ParallaxImg img={ecomm} sentence={"E-Commerce Solutions"} className={"process-header"}/>
                 </div>
                 <div className='process-content'>
                     <div className='process-content-wrapper'>
@@ -377,13 +385,14 @@ function Process() {
             </div>
             <div className='process-section-2'>
                 <div className='process-bg-img-1'>
-                    <Parallax bgImage={image6} strength={paraStrength}>
+                    {/* <Parallax bgImage={image6} strength={paraStrength}>
                         <div style={{ height: windowHeight }}>
                             <div style={insideStyles}>
                                 <span className='process-header'>Consulting Service</span>
                             </div>
                         </div>
-                    </Parallax>
+                    </Parallax> */}
+                    <ParallaxImg img={consulting} sentence={"Consulting Services"} className={"process-header"}/>
                 </div>
                 <div className='process-content'>
                     <div className='process-content-wrapper'>
