@@ -101,7 +101,7 @@ function Footer() {
 
                         <div className='footer-social-links-items'>
                             <div className='footer-social-links-icons'><InstagramIcon sx={{fontSize: "18px"}}/></div>
-                            <a href='https://www.instagram.com/abhishek.rachuri'>INSTAGRAM</a>
+                            <a href='https://www.instagram.com/power_my_code/'>INSTAGRAM</a>
                         </div>
                         <div className='footer-social-links-items'>
                             <div className='footer-social-links-icons'><LinkedInIcon sx={{fontSize: "18px"}}/></div>
@@ -122,15 +122,15 @@ function Footer() {
                 <div className='footer-body-items padd'>
                     <h2>Our Solutions</h2>
                     <div className='footer-ver-line'></div>
-                    <span className='disabled-anchor-tags'>Web Developement</span>
-                    <span className='disabled-anchor-tags'>Mobile Developement</span>
-                    <span className='disabled-anchor-tags'>Consulting Services</span>
-                    <span className='disabled-anchor-tags'>E-Commerce Solutions</span>
-                    <span className='disabled-anchor-tags'>UI/UX Design</span>
-                    <span className='disabled-anchor-tags'>Software developement</span>
+                    <a className='disabled-anchor-tags' href='/services'>Web Developement</a>
+                    <a className='disabled-anchor-tags' href='/services'>Mobile Developement</a>
+                    <a className='disabled-anchor-tags' href='/services'>Consulting Services</a>
+                    <a className='disabled-anchor-tags' href='/services'>E-Commerce Solutions</a>
+                    <a className='disabled-anchor-tags' href='/services'>UI/UX Design</a>
+                    <a className='disabled-anchor-tags' href='/services'>Software developement</a>
 
                     <div className='disabled-anchors-buttons'>
-                    <Button text={"Our Solutions"} bgColor={"var(--lightgrey)"} color={"var(--darkblue)"} linkToOpen={"/services"}/>
+                    {/* <Button text={"Our Solutions"} bgColor={"var(--lightgrey)"} color={"var(--darkblue)"} linkToOpen={"/services"}/> */}
                     </div>
                 </div>
 

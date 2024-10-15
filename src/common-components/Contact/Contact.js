@@ -84,7 +84,7 @@ function Contact() {
 
             <div className='contact-us-links-items'>
               <div className='contact-us-links-icons'><InstagramIcon sx={{ fontSize: "18px" }} /></div>
-              <a href='https://www.instagram.com/abhishek.rachuri'>INSTAGRAM</a>
+              <a href='https://www.instagram.com/power_my_code/'>INSTAGRAM</a>
             </div>
             <div className='contact-us-links-items'>
               <div className='contact-us-links-icons'><LinkedInIcon sx={{ fontSize: "18px" }} /></div>
