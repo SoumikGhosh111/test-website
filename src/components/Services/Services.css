@@ -112,3 +112,11 @@
     }
     
 }
+
+
+@media screen and (max-width: 377px) {
+    .services-section-items{ 
+        padding: 0.8rem 1.5rem;
+        height: fit-content
+    }
+}

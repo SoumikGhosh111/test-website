@@ -383,7 +383,7 @@ The website's responsive design is a crucial aspect of its development. By ensur
                     }}
                 >
                     <div className='project-content project-card-items'>
-                        <h1 >Inwoodpizza</h1>
+                        <h1 >Inwood Pizza</h1>
                         <div className='project-details'>
                             <h2>A website built with ReactJs and NodeJs</h2>
                             <div className='carousel-comp project-card-items mob-view-d-block'>

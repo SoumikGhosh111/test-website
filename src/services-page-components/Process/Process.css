@@ -136,3 +136,14 @@
         font-size: 13px;
     } */
 }
+@media screen and (max-width: 382px) {
+    .process-header{ 
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 305px) {
+    .process-header{ 
+        font-size: 30px;
+    }
+}

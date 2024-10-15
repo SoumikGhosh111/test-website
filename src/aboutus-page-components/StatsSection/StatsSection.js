@@ -20,11 +20,11 @@ function StatsSection() {
             <div className='stats-section-cards'>
                 <div className='stats-section-items' 
                     ref={ref1}
-                    style={{ 
-                        transform : isInView1 ? "none" : "translateY(100px)",
-                        opacity: isInView1 ? 1 : 0, 
-                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                    }}
+                    // style={{ 
+                    //     transform : isInView1 ? "none" : "translateY(50px)",
+                    //     opacity: isInView1 ? 1 : 0, 
+                    //     transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    // }}
                 >
                     <span className='stats-section-card-title'>CLIENTS</span>
                     <div className='stats-line'></div>
@@ -34,11 +34,11 @@ function StatsSection() {
 
                 <div className='stats-section-items'
                     ref={ref1}
-                    style={{ 
-                        transform : isInView1 ? "none" : "translateY(100px)",
-                        opacity: isInView1 ? 1 : 0, 
-                        transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                    }}
+                    // style={{ 
+                    //     transform : isInView1 ? "none" : "translateY(50px)",
+                    //     opacity: isInView1 ? 1 : 0, 
+                    //     transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    // }}
                 >
                     <span className='stats-section-card-title'>PROJECTS</span>
                     <div className='stats-line'></div>
@@ -49,11 +49,11 @@ function StatsSection() {
 
                 <div className='stats-section-items'
                     ref={ref1}
-                    style={{ 
-                        transform : isInView1 ? "none" : "translateY(100px)",
-                        opacity: isInView1 ? 1 : 0, 
-                        transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                    }}
+                    // style={{ 
+                    //     transform : isInView1 ? "none" : "translateY(50px)",
+                    //     opacity: isInView1 ? 1 : 0, 
+                    //     transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    // }}
                 >
                     <span className='stats-section-card-title'>HAPPY CLIENTS</span>
                     <div className='stats-line'></div>
@@ -64,11 +64,11 @@ function StatsSection() {
 
                 <div className='stats-section-items'
                     ref={ref2}
-                    style={{ 
-                        transform : isInView2 ? "none" : "translateY(100px)",
-                        opacity: isInView2 ? 1 : 0, 
-                        transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                    }}
+                    // style={{ 
+                    //     transform : isInView2 ? "none" : "translateY(50px)",
+                    //     opacity: isInView2 ? 1 : 0, 
+                    //     transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    // }}
                 >
                     <span className='stats-section-card-title'>COMMITMENT</span>
                     <div className='stats-line'></div>
@@ -79,11 +79,11 @@ function StatsSection() {
 
                 <div className='stats-section-items'
                     ref={ref2}
-                    style={{ 
-                        transform : isInView2 ? "none" : "translateY(100px)",
-                        opacity: isInView2 ? 1 : 0, 
-                        transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                    }}
+                    // style={{ 
+                    //     transform : isInView2 ? "none" : "translateY(50px)",
+                    //     opacity: isInView2 ? 1 : 0, 
+                    //     transition: "all 1s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    // }}
                 >
                     <span className='stats-section-card-title'>FOLLOWERS</span>
                     <div className='stats-line'></div>
@@ -94,11 +94,11 @@ function StatsSection() {
 
                 <div className='stats-section-items'
                     ref={ref2}
-                    style={{ 
-                        transform : isInView2 ? "none" : "translateY(100px)",
-                        opacity: isInView2 ? 1 : 0, 
-                        transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-                    }}
+                    // style={{ 
+                    //     transform : isInView2 ? "none" : "translateY(50px)",
+                    //     opacity: isInView2 ? 1 : 0, 
+                    //     transition: "all 1.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+                    // }}
                 >
                     <span className='stats-section-card-title'>TEAM</span>
                     <div className='stats-line'></div>
