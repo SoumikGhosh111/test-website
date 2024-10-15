@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./Navbar.css";
 import Button from '../Button/Button';
 import logoImg from "../../assets/logo.svg";
+import smlogo from "../../assets/sm-logo.png"; 
 import { useLocation } from "react-router-dom";
 import TemporaryDrawer from './Drawer';
 

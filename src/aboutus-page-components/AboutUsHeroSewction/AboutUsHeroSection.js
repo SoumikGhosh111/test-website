@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 function AboutUsHeroSection() {
     // const image1 = "https://picsum.photos/id/247/1920/1080";
-    const image1 = "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"; 
+    const image1 = "https://images.unsplash.com/photo-1419675871098-db2745078906?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"; 
     const [paraStrength, setParaStrength] = useState(200)
     const insideStyles = {
         // background: "white",
@@ -67,3 +67,7 @@ function AboutUsHeroSection() {
 }
 
 export default AboutUsHeroSection
+
+
+    
+// const image1 = "https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"; 
