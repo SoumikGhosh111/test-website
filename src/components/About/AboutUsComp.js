@@ -4,6 +4,8 @@ import "./AboutUsComp.css";
 // right side arrow icon
 import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
 import EastRoundedIcon from '@mui/icons-material/EastRounded';
+import TrendingFlatRoundedIcon from '@mui/icons-material/TrendingFlatRounded';
+import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 
 function AboutUsComp() {
     return (
@@ -20,7 +22,7 @@ function AboutUsComp() {
                 <span>With a commitment to excellence, innovation, and client success, discover how our integrated services can elevate your business journey and unlock its full potential.</span>
 
                 <div className='link-to-about-us'>
-                <a href='/about'>About us <EastRoundedIcon style={{transform: "translateY(30%)"}}/></a>
+                <a href='/about'>About us <TrendingFlatRoundedIcon style={{transform: "translateY(30%)"}}/></a>
                 
                 </div>
 

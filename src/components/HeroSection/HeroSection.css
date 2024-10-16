@@ -222,8 +222,9 @@
     .hero-section-buttons{ 
         /* border: 1px solid rebeccapurple; */
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+        gap: 1rem;
     }
     .buttons{ 
         margin-bottom: 1rem;
