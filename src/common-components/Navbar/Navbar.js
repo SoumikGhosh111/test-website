@@ -79,8 +79,8 @@ function Navbar() {
       <div className='nav-section-wrapper' style={{ backgroundColor: getNavBarColor(), height: scroll > 200 ? '80px' : '' }}>
         <div className='nav-section-container-1'>
           <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '18vw' }}>
-            <img src={smlogo} alt='PowerMyCode' style={{ width: "50px", height: "50px", marginRight: '0.1rem' }} />
-            <span style={{ color: 'white', fontSize: '20px' }}>Powermycode</span>
+            <img src={smlogo} alt='PowerMyCode' style={{ width: "50px", height: "50px", marginRight: '0.4rem' }} />
+            <span style={{ color: 'white', fontSize: '20px', fontWeight: '900' }}>Powermycode</span>
           </div>
           <ul>
             <li><a href='/'>Home</a></li>
@@ -97,8 +97,8 @@ function Navbar() {
       <div className='mob-view-nav'>
         {/* <img src={logoImg} /> */}
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <img src={smlogo} alt='PowerMyCode' style={{ width: "50px", height: "50px" }} />
-          <span className='mob-view-nav-logo-text' style={{ color: 'white', fontSize: '20px' }}>Powermycode</span>
+          <img src={smlogo} alt='PowerMyCode' style={{ width: "50px", height: "50px", marginRight: '0.4rem'  }} />
+          <span className='mob-view-nav-logo-text' style={{ color: 'white', fontSize: '20px', fontWeight: '900' }}>Powermycode</span>
         </div>
         <TemporaryDrawer />
       </div>
