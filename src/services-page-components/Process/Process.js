@@ -392,7 +392,7 @@ function Process() {
                             </div>
                         </div>
                     </Parallax> */}
-                    <ParallaxImg img={"https://www.shutterstock.com/image-photo/team-diverse-partners-mature-latin-600nw-2346448085.jpg"} sentence={"Consulting Services"} className={"process-header"}/>
+                    <ParallaxImg img={"https://www.shutterstock.com/image-photo/team-diverse-partners-mature-latin-600nw-2346448085.jpg"} sentence={"Consulting Services"} className={"process-header for-only-consulting"}/>
                 </div>
                 <div className='process-content'>
                     <div className='process-content-wrapper'>

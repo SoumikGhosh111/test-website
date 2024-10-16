@@ -14,6 +14,7 @@
      overflow: hidden;
      cursor: pointer;
      transition: all 0.3s ease-in-out;
+     /* border: 1px solid red; */
   }
   
  /* button::before{ 
@@ -48,10 +49,11 @@ button:hover::before{
   /* media queries */
   @media screen and (orientation: portrait){ 
     .universal-button { 
-        width: 80px;
+        width: 100px;
         height: fit-content;
         font-size: 13px;
         padding: 0.5rem 0rem;
         text-align: center;
+      margin-right: 0rem;
     }
   }

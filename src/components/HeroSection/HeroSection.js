@@ -40,7 +40,7 @@ function HeroSection() {
                         <span>Innovate <br /> Today, <br /></span> Lead <br />Tommorow.
                     </span>
                     <p>Navigate the future with our innovative consulting, where today's breakthroughs become the leadership strategies propelling your business into tomorrow's forefront.</p>
-                    <div className='buttons'>
+                    <div className='buttons hero-section-buttons'>
                         <Button text={"Our Services"} bgColor={"var(--white-white)"} color={"var(--darkblue)"} linkToOpen={"/services"} />
                         <Button text={"About Us"} bgColor={"var(--blur-bg)"} color={"var(--white-white)"} linkToOpen={"/about"} />
                     </div>

@@ -117,4 +117,11 @@
     .our-misson-content span{ 
         font-size: 14px;
     }
+    .icons{ 
+        min-width: 40px;
+        min-height: 40px;
+    }
+    .our-misson-icons{ 
+        width: 100%;
+    }
 }

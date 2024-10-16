@@ -141,7 +141,7 @@ function Footer() {
                     <div className='footer-ver-line'></div>
                     <a href='/services'>Services</a>
                     <a href='/about'>About Us</a>
-                    <a href='/blogs'>News & Article</a>
+                    {/* <a href='/blogs'>News & Article</a> */}
                     <a href='/contact_us'>Contact Us</a>
                 </div>
 
@@ -160,7 +160,7 @@ function Footer() {
             <div className='copy-right'>
             {/* <div className='copy-right-border-line'></div> */}
 
-                <span>© 2024 Powermycode Solutions Private Limited. All rights reserved.</span>
+                <span style={{fontSize: "15px"}}>© 2024 Powermycode Solutions Private Limited. All rights reserved.</span>
             </div>
 
         </div>

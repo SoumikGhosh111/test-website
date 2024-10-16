@@ -1,6 +1,10 @@
 import React from 'react';
 import "./AboutUsComp.css";
 
+// right side arrow icon
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import EastRoundedIcon from '@mui/icons-material/EastRounded';
+
 function AboutUsComp() {
     return (
         <div className='about-us-comp-wrapper' id='about_us'>
@@ -16,7 +20,8 @@ function AboutUsComp() {
                 <span>With a commitment to excellence, innovation, and client success, discover how our integrated services can elevate your business journey and unlock its full potential.</span>
 
                 <div className='link-to-about-us'>
-                <a href='/about'>About us</a>
+                <a href='/about'>About us <EastRoundedIcon style={{transform: "translateY(30%)"}}/></a>
+                
                 </div>
 
             </div>

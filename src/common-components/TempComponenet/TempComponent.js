@@ -6,7 +6,8 @@ import Stars from '../Review/Stars';
 
 function TempComponent() {
     const [paraStrength, setParaStrength] = useState(100)
-    const image = "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg";
+    // const image = "https://images.pexels.com/photos/3183183/pexels-photo-3183183.jpeg";
+    const image = "https://img.freepik.com/free-photo/creative-people-working-office_23-2147656715.jpg?t=st=1729062944~exp=1729066544~hmac=aef5bf548f29ab85e8751fdf4af04448f559651f45faefe0e760318e64e5b44e&w=1060"
     const unQuote = "https://assets-global.website-files.com/653e50f60ac329e82ba89473/6542276b627fc9baf1f06120_quote-icon-inverse.svg";
     const googleLogo = "https://powermycode.com/assets/img/home-5/google-1.svg";
     const insideStyles = {

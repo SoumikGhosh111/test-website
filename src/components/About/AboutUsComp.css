@@ -85,8 +85,9 @@
 @media screen and (orientation: portrait){ 
     .about-us-comp-wrapper{ 
         flex-direction: column;
-        padding: 1rem 1rem;
+        padding: 0rem 1rem;
         box-sizing: border-box;
+        margin: 1.5rem 0rem;
     }
     .about-us-container-items{ 
         width: 100%;

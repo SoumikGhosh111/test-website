@@ -254,4 +254,8 @@
     .footer-social-links{ 
         margin-top: 2rem;
     }
+
+    .padd{ 
+        padding: 1.5rem 0rem;
+    }
 }

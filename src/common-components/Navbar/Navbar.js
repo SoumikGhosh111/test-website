@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./Navbar.css";
 import Button from '../Button/Button';
 import logoImg from "../../assets/logo.svg";
-import smlogo from "../../assets/sm-logo.png"; 
+import smlogo from "../../assets/sm-logo.png";
 import { useLocation } from "react-router-dom";
 import TemporaryDrawer from './Drawer';
 
@@ -78,7 +78,10 @@ function Navbar() {
     <>
       <div className='nav-section-wrapper' style={{ backgroundColor: getNavBarColor(), height: scroll > 200 ? '80px' : '' }}>
         <div className='nav-section-container-1'>
-          <img src={logoImg} alt='PowerMyCode' />
+          <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '18vw' }}>
+            <img src={smlogo} alt='PowerMyCode' style={{ width: "50px", height: "50px", marginRight: '0.1rem' }} />
+            <span style={{ color: 'white', fontSize: '20px' }}>Powermycode</span>
+          </div>
           <ul>
             <li><a href='/'>Home</a></li>
             <li><a href='/services'>Services</a></li>
@@ -92,9 +95,13 @@ function Navbar() {
         </div>
       </div>
       <div className='mob-view-nav'>
-        <img src={logoImg} />
-        <TemporaryDrawer />
+        {/* <img src={logoImg} /> */}
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <img src={smlogo} alt='PowerMyCode' style={{ width: "50px", height: "50px" }} />
+          <span className='mob-view-nav-logo-text' style={{ color: 'white', fontSize: '20px' }}>Powermycode</span>
         </div>
+        <TemporaryDrawer />
+      </div>
     </>
   )
 }

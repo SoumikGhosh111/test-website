@@ -18,6 +18,9 @@
     bottom: 35%;
     /* transform: translate(-1  0%); */
 }
+.for-only-consulting{ 
+    bottom: 20%;
+}
 .process-content{ 
     flex: 0.5;
     padding: 1rem 0rem;
@@ -135,6 +138,9 @@
     /* .process-list-items{ 
         font-size: 13px;
     } */
+     .for-only-consulting{ 
+        bottom: 30%;
+     }
 }
 @media screen and (max-width: 382px) {
     .process-header{ 

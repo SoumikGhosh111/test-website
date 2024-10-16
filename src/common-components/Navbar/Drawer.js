@@ -29,7 +29,7 @@ export default function TemporaryDrawer() {
                     <a href='/services' ><div className='link'><div className='drawer-link-items'><DesignServicesRoundedIcon  /></div>Services</div></a>
                     <a href='/about' ><div className='link'><div className='drawer-link-items'><InfoRoundedIcon  /></div>About Us</div></a>
                     {/* <a href='/blogs' ><div className='link'><div className='drawer-link-items'><NewspaperRoundedIcon /></div>News</div></a> */}
-                    <a href='/contact_us' ><div className='link'><div className='drawer-link-items'><ContactPhoneRoundedIcon /></div>Get in Touch</div></a>
+                    <a href='/contact_us' ><div className='link'><div className='drawer-link-items'><ContactPhoneRoundedIcon /></div>Contact Us</div></a>
                    {/* <SwitchModes /> */}
                 </div>
             </Drawer>
