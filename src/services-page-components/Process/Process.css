@@ -1,6 +1,6 @@
 .process-section-1{ 
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh;  this was the problem */
     display: flex;
     flex: 1;
 }
@@ -78,7 +78,7 @@
 
 .process-section-2{ 
     width: 100vw;
-    height: 100vh;
+    /* height: 100vh;  this was the problem */
     display: flex;
     flex: 1;
     flex-direction: row-reverse;
@@ -128,6 +128,9 @@
         width: 100%;
         padding: 1rem 1rem ;
         box-sizing: border-box;
+    }
+    .process-content-wrapper{ 
+        padding: 3rem 0rem;
     }
     .process-content-wrapper h1{ 
         font-size: 30px;
