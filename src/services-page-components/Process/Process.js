@@ -218,7 +218,7 @@ function Process() {
                             </div>
                         </div>
                     </Parallax> */}
-                    <ParallaxImg img={softsoln} sentence={"Custom Software Solutins"} className={"process-header"}/>
+                    <ParallaxImg img={softsoln} sentence={"Custom Software Solutions"} className={"process-header"}/>
                 </div>
                 <div className='process-content'>
                     <div className='process-content-wrapper'>
